@@ -1,0 +1,258 @@
+/* Rumira's editorial palette: aubergine, paprika, peach and oat. */
+:root {
+  --green: #302438;
+  --cream: #fff7ed;
+  --paper: #fffcf7;
+  --gold: #f3c285;
+  --coral: #b64b35;
+  --muted: #685f67;
+  --line: #e6d7cd;
+  --rumira-plum: #302438;
+  --rumira-paprika: #b64b35;
+  --rumira-peach: #f7dcc7;
+  --rumira-lilac: #f1e9ef;
+}
+
+body { background: var(--cream); color: var(--green); }
+.r-hero h1, .r-page-hero h1, .r-contact h1, .r-heading h2, .r-story h2,
+.r-process-intro h2, .r-process-note h2, .r-grid h3, .r-steps h3,
+.r-quote blockquote, .px-hero h1, .px-intro h2, .px-group-heading h2,
+.px-card h3, .px-detail h1, .px-related-title h2, .px-banner h2,
+.px-footer h2, .px-modal h2 { font-family: 'Fraunces', Georgia, serif; }
+
+/* Home, process and contact pages */
+.r-header { background: rgba(255,252,247,.96); border-color: var(--line); box-shadow: 0 8px 30px #30243808; }
+.r-logo b { background: var(--rumira-paprika); color: #fff; border-radius: 9px 21px 9px 21px; transform: rotate(-8deg); }
+.r-nav { color: #5e515f; }
+.r-nav a.active, .r-nav a:hover { color: var(--rumira-paprika); }
+.r-hero { background: radial-gradient(circle at 7% 12%,#f7dcc7 0 7%,transparent 7.2%),var(--cream); }
+.r-hero small, .r-heading small, .r-process-intro small, .r-contact>div>small,
+.r-footer small, .r-page-hero small { color: #994130; }
+.r-hero em, .r-heading em, .r-contact em, .r-process-intro em,
+.r-quote blockquote::first-line { color: var(--rumira-paprika); }
+.r-hero p, .r-contact>div>p, .r-process-intro p { color: var(--muted); }
+.r-btn { background: var(--rumira-plum); color: #fff; border-radius: 100px; padding-inline: 23px; transition: transform .2s ease, box-shadow .2s ease; }
+.r-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px #30243829; }
+.r-btn.green { background: var(--rumira-paprika); }
+.r-promise { color: #625764; }
+.r-hero-photo { background-image: linear-gradient(0deg,#30243817,transparent),url('/product-images/fruits-apple-slices.jpg'); border-radius: 240px 240px 28px 28px; box-shadow: 18px 18px 0 var(--rumira-peach); }
+.r-hero-photo span { background: var(--rumira-paprika); color: #fff; box-shadow: 0 7px 22px #3024382b; }
+.r-stats, .r-story, .r-page-hero.dark { background: var(--rumira-plum); }
+.r-stats b, .r-story em, .r-page-hero.dark em { color: #f3c285; }
+.r-stats div { border-color: #79667d; }
+.r-stats p, .r-story p, .r-page-hero.dark p { color: #e7dfe7; }
+.r-section, .r-process-note { background: var(--paper); }
+.r-grid>a { background-color: #765365; border-radius: 22px 22px 58px 22px; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
+.r-grid>a:nth-child(even) { border-radius: 58px 22px 22px 22px; }
+.r-grid>a:hover { transform: translateY(-5px); box-shadow: 0 16px 30px #3024382b; }
+.r-story>div { background-image: url('/product-images/powders-onion-powder.jpg'); }
+.r-story small, .r-page-hero.dark small { color: #f3c285; }
+.r-quote { background: var(--cream); }
+.r-page-hero, .r-steps, .r-contact, .r-footer { background: var(--rumira-lilac); }
+.r-steps article { border-color: var(--rumira-paprika); }
+.r-steps b { color: var(--rumira-paprika); }
+.r-process-intro>div { background-image: url('/product-images/seasonings-chilli-flakes.jpg'); border-radius: 180px 180px 24px 24px; }
+.r-contact form { background: var(--paper); border-radius: 24px; box-shadow: 0 16px 45px #30243813; }
+.r-contact input, .r-contact select, .r-contact textarea { border-color: #cbbdc9; }
+.r-contact input:focus, .r-contact textarea:focus { border-color: var(--rumira-paprika); }
+.r-footer { color: #5f5260; }
+.r-footer .r-logo { color: var(--rumira-plum); }
+.r-float { background: var(--rumira-paprika); box-shadow: 0 7px 24px #b64b354d; }
+
+/* Catalogue and product detail pages */
+.px-body { background: var(--cream); }
+.px-site {
+  --px-green: #302438;
+  --px-dark: #302438;
+  --px-muted: #685f67;
+  --px-line: #e6d7cd;
+  --px-orange: #b64b35;
+  background: var(--cream);
+}
+.px-topline, .px-banner { background: var(--rumira-plum); }
+.px-header { background: var(--paper); border-color: var(--line); }
+.px-header nav a { color: #5d4e60; }
+.px-header nav a.active::after { height: 3px; background: var(--rumira-paprika); }
+.px-brand-mark, .px-brand-name b { color: var(--rumira-paprika); }
+.px-brand-mark span, .px-brand-name { color: var(--rumira-plum); }
+.px-brand-name small { color: #776b76; }
+.px-enquire-btn, .px-primary { border-radius: 100px; }
+.px-basket-btn { background: var(--paper); }
+.px-basket-btn span { background: var(--rumira-paprika); }
+.px-hero { background: radial-gradient(circle at 85% 18%,#f7dcc7 0 10%,transparent 10.2%),linear-gradient(115deg,#f1e9ef,#fff1e5); }
+.px-hero small, .px-intro small, .px-group-heading small, .px-related-title small,
+.px-eyebrow { color: #994130; }
+.px-hero h1 em, .px-detail h1 em { color: var(--rumira-paprika); }
+.px-hero p, .px-intro p, .px-group-heading p, .px-card p, .px-description { color: var(--muted); }
+.px-tabs button { color: #5d4e60; border-radius: 100px; }
+.px-tabs button.active { color: #fff; background: var(--rumira-paprika); }
+.px-search { border-color: #cbbdc9; }
+.px-card { background: var(--paper); border: 1px solid #e8d9d0; border-radius: 24px; overflow: hidden; box-shadow: 0 6px 22px #3024380c; transition: transform .25s ease, box-shadow .25s ease; }
+.px-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px #3024381c; }
+.px-card > :not(.px-card-image) { margin-left: 17px; margin-right: 17px; }
+.px-card .px-explore { margin-bottom: 20px; color: var(--rumira-paprika); }
+.px-card-meta { color: #945744; }
+.px-card-image { background: var(--rumira-peach); }
+.px-photo { border-radius: 0; background: #f8ede5; }
+.px-photo>small { color: var(--rumira-plum); }
+.px-plus { background: var(--paper); color: var(--rumira-paprika); }
+.px-plus:hover { background: var(--rumira-paprika); color: #fff; }
+.px-photo-large { border-radius: 210px 210px 24px 24px; }
+.px-detail-info { background: var(--paper); padding: 26px; border-radius: 24px; }
+.px-regulatory { background: #fff0e5; border-color: var(--rumira-paprika); }
+.px-secondary { background: #f3c285; color: var(--rumira-plum); border-radius: 100px; }
+.px-banner small { color: #f3c285; }
+.px-banner p { color: #e7dfe7; }
+.px-banner a { background: #f3c285; color: var(--rumira-plum); border-radius: 100px; }
+.px-footer { background: var(--rumira-lilac); }
+.px-footer-grid a:not(.px-brand), .px-footer-grid p { color: #695c68; }
+.px-float { background: var(--rumira-paprika); }
+.px-drawer, .px-modal { background: var(--paper); }
+
+@media(max-width:700px) {
+  .r-hero-photo { box-shadow: 10px 10px 0 var(--rumira-peach); }
+  .px-header nav.open { background: var(--paper); }
+  .px-detail-info { padding: 18px; }
+  .px-photo-large { border-radius: 120px 120px 18px 18px; }
+}
+
+/* A small amount of motion gives the pages life without slowing navigation. */
+@keyframes rumira-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes rumira-photo {
+  from { opacity: 0; transform: scale(.97) translateY(12px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+@keyframes rumira-sway {
+  0%, 100% { transform: rotate(-10deg) translateY(0); }
+  50% { transform: rotate(-7deg) translateY(-6px); }
+}
+
+@media(prefers-reduced-motion: no-preference) {
+  .r-hero small, .px-hero small { animation: rumira-rise .55s ease both; }
+  .r-hero h1, .px-hero h1, .r-page-hero h1, .r-contact h1 { animation: rumira-rise .65s .08s ease both; }
+  .r-hero p, .px-hero p, .r-page-hero p, .r-contact>div>p { animation: rumira-rise .65s .17s ease both; }
+  .r-hero .r-actions, .r-hero .r-promise { animation: rumira-rise .65s .26s ease both; }
+  .r-hero-photo, .px-detail>.px-photo { animation: rumira-photo .75s .12s ease both; }
+  .r-hero-photo span { animation: rumira-sway 5s 1s ease-in-out infinite; }
+  .px-detail-info { animation: rumira-rise .65s .18s ease both; }
+  .r-grid>a, .px-card, .r-steps article { transition: transform .25s ease, box-shadow .25s ease; }
+  .r-grid>a:hover, .px-card:hover, .r-steps article:hover { transform: translateY(-5px); }
+  .px-photo img { transition: transform .4s ease; }
+  .px-card:hover .px-photo img, .px-card-image:focus-visible .px-photo img { transform: scale(1.045); }
+  .px-plus, .px-tabs button, .px-banner a, .r-float, .px-float { transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease; }
+  .px-plus:hover { transform: rotate(90deg); }
+  .px-tabs button:hover, .px-banner a:hover, .r-float:hover, .px-float:hover { transform: translateY(-2px); }
+  .r-btn:focus-visible, .r-grid>a:focus-visible, .px-card a:focus-visible, .px-tabs button:focus-visible { outline: 3px solid #b64b35; outline-offset: 3px; }
+}
+
+@media(prefers-reduced-motion: reduce) {
+  .r-hero *, .r-hero-photo, .px-hero *, .r-page-hero *, .r-contact h1,
+  .px-detail-info, .px-detail>.px-photo, .px-card, .r-grid>a,
+  .px-photo img, .px-plus, .px-tabs button, .r-float, .px-float {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Quick WhatsApp and phone actions on every page. */
+.rumira-contact-float {
+  position: fixed;
+  left: 24px;
+  right: 24px;
+  bottom: 22px;
+  z-index: 20;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  pointer-events: none;
+}
+.rumira-contact-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 148px;
+  min-height: 50px;
+  padding: 10px 17px;
+  border-radius: 100px;
+  color: #fff !important;
+  font: 700 13px 'DM Sans', Arial, sans-serif;
+  text-decoration: none !important;
+  box-shadow: 0 8px 22px #30243833;
+  isolation: isolate;
+  pointer-events: auto;
+}
+.rumira-contact-link svg { width: 22px; height: 22px; flex: none; }
+.rumira-contact-phone { background: var(--rumira-plum); }
+.rumira-contact-whatsapp { background: #168b5b; }
+.rumira-contact-link:hover { box-shadow: 0 12px 26px #30243845; }
+.rumira-contact-link:focus-visible { outline: 3px solid var(--rumira-paprika); outline-offset: 4px; }
+
+@keyframes rumira-cta-enter {
+  from { opacity: 0; transform: translateX(18px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes rumira-cta-enter-left {
+  from { opacity: 0; transform: translateX(-18px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes rumira-cta-ring {
+  0%, 67%, 100% { opacity: 0; transform: scale(1); }
+  72% { opacity: .6; }
+  87% { opacity: 0; transform: scale(1.25); }
+}
+@keyframes rumira-phone-nudge {
+  0%, 83%, 100% { transform: rotate(0); }
+  87%, 95% { transform: rotate(-12deg); }
+  91% { transform: rotate(12deg); }
+}
+@media(prefers-reduced-motion: no-preference) {
+  .rumira-contact-link { transition: transform .2s ease, box-shadow .2s ease; animation: rumira-cta-enter .5s ease both; }
+  .rumira-contact-phone { animation-name: rumira-cta-enter-left; }
+  .rumira-contact-whatsapp { animation-delay: .15s; }
+  .rumira-contact-phone:hover { transform: translateX(4px); }
+  .rumira-contact-whatsapp:hover { transform: translateX(-4px); }
+  .rumira-contact-whatsapp::after {
+    content: '';
+    position: absolute;
+    inset: -5px;
+    border: 2px solid #168b5b;
+    border-radius: inherit;
+    pointer-events: none;
+    animation: rumira-cta-ring 3.8s 1.5s ease-out infinite;
+  }
+  .rumira-contact-phone svg { animation: rumira-phone-nudge 4.5s 1.5s ease-in-out infinite; }
+}
+@media(max-width:700px) {
+  .rumira-contact-float { left: 14px; right: 14px; bottom: 14px; }
+  .rumira-contact-link { min-width: 52px; width: 52px; min-height: 52px; padding: 0; }
+  .rumira-contact-link span { display: none; }
+}
+
+/* Sections reveal as they enter the viewport. */
+@media(prefers-reduced-motion: no-preference) {
+  .rumira-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .65s ease var(--rumira-delay, 0ms), transform .65s cubic-bezier(.2,.7,.2,1) var(--rumira-delay, 0ms);
+  }
+  .rumira-reveal.is-visible { opacity: 1; transform: translateY(0); }
+  .r-grid>a.rumira-reveal.is-visible:hover,
+  .px-card.rumira-reveal.is-visible:hover,
+  .r-steps article.rumira-reveal.is-visible:hover { transform: translateY(-5px); }
+  .r-grid>a:hover h3, .px-card:hover h3 { color: #f7dcc7; }
+  .px-card:hover h3 { color: var(--rumira-paprika); }
+  .r-grid>a h3, .px-card h3 { transition: color .25s ease; }
+  .r-grid>a:hover b { transform: translate(3px,-3px); }
+  .r-grid>a b { display: inline-block; transition: transform .25s ease; }
+}
+@media(prefers-reduced-motion: reduce) {
+  .rumira-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .rumira-contact-link, .rumira-contact-link::after, .rumira-contact-link svg { animation: none !important; transition: none !important; }
+}

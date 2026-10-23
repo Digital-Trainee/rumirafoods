@@ -1,0 +1,92 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Install Rumira Foods dependencies",
+			"type": "shell",
+			"command": "npm.cmd install",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build Rumira Foods",
+			"type": "shell",
+			"command": "npm.cmd run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Launch Rumira Foods",
+			"type": "shell",
+			"command": "npm.cmd run dev -- --host 0.0.0.0",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build Rumira Foods after catalogue fix",
+			"type": "shell",
+			"command": "npm.cmd run build",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Build Rumira Foods product card layout",
+			"type": "shell",
+			"command": "npm.cmd run build",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Build Rumira Foods spacing correction",
+			"type": "shell",
+			"command": "npm.cmd run build",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Build Rumira Foods final catalogue polish",
+			"type": "shell",
+			"command": "npm.cmd run build",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run Rumira Foods dev server",
+			"type": "shell",
+			"command": "npm.cmd run dev -- --host 0.0.0.0",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run Rumira Foods clean server",
+			"type": "shell",
+			"command": "npm.cmd run dev -- --host 0.0.0.0 --port 5175",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check Rumira server response",
+			"type": "shell",
+			"command": "powershell -NoProfile -Command \"(Invoke-WebRequest -UseBasicParsing http://localhost:5175/products).StatusCode\" ",
+			"problemMatcher": []
+		},
+		{
+			"label": "Diagnose Rumira loading",
+			"type": "shell",
+			"command": "node -e \"fetch('http://127.0.0.1:5175/products',{signal:AbortSignal.timeout(5000)}).then(async r=>console.log(r.status,(await r.text()).slice(0,300))).catch(e=>console.error(e.message))\"",
+			"problemMatcher": []
+		},
+		{
+			"label": "Check Rumira HTTP",
+			"type": "shell",
+			"command": "Invoke-WebRequest -Uri http://127.0.0.1:5175/products -UseBasicParsing -TimeoutSec 5 | Select-Object StatusCode,Content",
+			"problemMatcher": []
+		},
+		{
+			"label": "Inspect Rumira entrypoint",
+			"type": "shell",
+			"command": "Select-String -Path index.html -Pattern 'src/main|script|stylesheet' | Select-Object -Last 12",
+			"problemMatcher": []
+		}
+	]
+}

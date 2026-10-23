@@ -1,0 +1,289 @@
+[
+    {
+        "id":  "powders-onion-powder",
+        "name":  "Onion Powder",
+        "groupId":  "powders",
+        "description":  "Selected onions are processed through controlled dehydration and fine milling to create a uniform, easy-to-dose ingredient. Suitable for gravies, soups, sauces and seasoning blends, with emphasis on hygienic handling and batch-to-batch consistency.",
+        "image":  "/product-images/powders-onion-powder.jpg"
+    },
+    {
+        "id":  "powders-tomato-powder",
+        "name":  "Tomato Powder",
+        "groupId":  "powders",
+        "description":  "Quality tomatoes are transformed into a concentrated dry ingredient through controlled moisture reduction and milling. Ideal for instant soups, sauces, spice blends and food manufacturing applications requiring convenient tomato flavour.",
+        "image":  "/product-images/powders-tomato-powder.jpg"
+    },
+    {
+        "id":  "powders-green-chilli-powder",
+        "name":  "Green Chilli Powder",
+        "groupId":  "powders",
+        "description":  "Carefully selected green chillies are dried and milled into a convenient seasoning ingredient. Designed for consistent dosing in chutneys, marinades, spice formulations and savoury foods.",
+        "image":  "/product-images/powders-green-chilli-powder.jpg"
+    },
+    {
+        "id":  "powders-methi-powder",
+        "name":  "Methi Powder",
+        "groupId":  "powders",
+        "description":  "Fenugreek leaves are carefully dried and milled to produce a practical ingredient with a distinctive herbal aroma. Suitable for Indian gravies, parathas, instant mixes and commercial food preparations.",
+        "image":  "/product-images/powders-methi-powder.jpg"
+    },
+    {
+        "id":  "powders-moringa-powder",
+        "name":  "Moringa Powder",
+        "groupId":  "powders",
+        "description":  "Selected moringa leaves are processed using controlled drying and fine milling to deliver a convenient botanical food ingredient. Batch-wise checks for identity, moisture and relevant contaminants support product consistency.",
+        "image":  "/product-images/powders-moringa-powder.jpg"
+    },
+    {
+        "id":  "powders-amla-powder",
+        "name":  "Amla Powder",
+        "groupId":  "powders",
+        "description":  "Carefully sourced Indian gooseberries are processed into a fine powder with attention to raw-material quality and moisture control. Suitable for permitted food formulations and other approved applications, subject to product specifications.",
+        "image":  "/product-images/powders-amla-powder.jpg"
+    },
+    {
+        "id":  "powders-neem-powder",
+        "name":  "Neem Powder",
+        "groupId":  "powders",
+        "description":  "Authenticated neem leaves are processed with attention to raw-material identity, cleanliness and batch consistency. Intended only for applications permitted under the relevant product regulations; edible use must be verified before sale.",
+        "image":  "/product-images/powders-neem-powder.jpg"
+    },
+    {
+        "id":  "powders-beetroot-powder",
+        "name":  "Beetroot Powder",
+        "groupId":  "powders",
+        "description":  "Selected beetroot is dried and milled into a fine ingredient with a distinctive colour and earthy flavour. Designed for bakery mixes, beverage formulations, soups, pasta and other suitable food applications.",
+        "image":  "/product-images/powders-beetroot-powder.jpg"
+    },
+    {
+        "id":  "powders-curry-leaf-powder",
+        "name":  "Curry Leaf Powder",
+        "groupId":  "powders",
+        "description":  "Freshly sourced curry leaves are carefully dried and milled into a convenient culinary ingredient. Suitable for podi, rice seasonings, chutney blends and food-service formulations that require consistent flavour delivery.",
+        "image":  "/product-images/powders-curry-leaf-powder.jpg"
+    },
+    {
+        "id":  "powders-carrot-powder",
+        "name":  "Carrot Powder",
+        "groupId":  "powders",
+        "description":  "Quality carrots undergo controlled drying and milling to create a versatile, shelf-stable ingredient when correctly packed. Suitable for soups, sauces, bakery products and vegetable-based food formulations.",
+        "image":  "/product-images/powders-carrot-powder.jpg"
+    },
+    {
+        "id":  "fruits-apple-slices",
+        "name":  "Apple Slices",
+        "groupId":  "fruits",
+        "description":  "Carefully selected apples are sliced and dried under controlled conditions to produce a convenient fruit snack. Clear ingredient declarations and suitable moisture-barrier packaging help protect flavour, texture and shelf stability.",
+        "image":  "/product-images/fruits-apple-slices.jpg"
+    },
+    {
+        "id":  "fruits-chikoo-slices",
+        "name":  "Chikoo Slices",
+        "groupId":  "fruits",
+        "description":  "Ripe chikoo is prepared and dried to create a distinctive tropical fruit snack. A simple fruit-focused formulation can highlight the ingredient\u0027s naturally sweet character without unnecessary additives, where technically feasible.",
+        "image":  "/product-images/fruits-chikoo-slices.jpg"
+    },
+    {
+        "id":  "fruits-jamun-bites",
+        "name":  "Jamun Bites",
+        "groupId":  "fruits",
+        "description":  "Selected jamun fruit is processed into a convenient dried format that showcases its characteristic tart-sweet flavour. A distinctive Indian fruit offering for snack assortments and premium seasonal collections.",
+        "image":  "/product-images/fruits-jamun-bites.jpg"
+    },
+    {
+        "id":  "fruits-strawberry-slices",
+        "name":  "Strawberry Slices",
+        "groupId":  "fruits",
+        "description":  "Selected strawberries are sliced and dried to create a convenient ingredient for snacking, cereals and dessert toppings. Processing parameters are selected to balance flavour retention, final moisture and desired texture.",
+        "image":  "/product-images/fruits-strawberry-slices.jpg"
+    },
+    {
+        "id":  "fruits-pineapple-pieces",
+        "name":  "Pineapple Pieces",
+        "groupId":  "fruits",
+        "description":  "Quality pineapple is cut and dried into convenient pieces with a recognisable tropical flavour. Suitable for ready-to-eat snack packs, trail mixes, bakery ingredients and food-service applications.",
+        "image":  "/product-images/fruits-pineapple-pieces.jpg"
+    },
+    {
+        "id":  "fruits-guava-slices",
+        "name":  "Guava Slices",
+        "groupId":  "fruits",
+        "description":  "Carefully selected guavas are processed into a convenient dried-fruit format that highlights their characteristic aroma. A versatile addition to tropical snack mixes and modern fruit-based retail collections.",
+        "image":  "/product-images/fruits-guava-slices.jpg"
+    },
+    {
+        "id":  "millets-millet-laddu",
+        "name":  "Millet Laddu",
+        "groupId":  "millets",
+        "description":  "Prepared using selected millet ingredients and a standardised recipe for consistent taste, shape and portioning. An Indian sweet snack developed with attention to ingredient transparency and hygienic production practices.",
+        "image":  "/product-images/millets-millet-laddu.jpg"
+    },
+    {
+        "id":  "millets-ragi-laddu",
+        "name":  "Ragi Laddu",
+        "groupId":  "millets",
+        "description":  "Finger millet forms the foundation of this traditional-style sweet, prepared in controlled batches for consistent product quality. A convenient portioned snack with clear ingredient and allergen declarations.",
+        "image":  "/product-images/millets-ragi-laddu.jpg"
+    },
+    {
+        "id":  "millets-millet-dosa-premix",
+        "name":  "Millet Dosa Premix",
+        "groupId":  "millets",
+        "description":  "A measured blend formulated for convenient millet-based dosa preparation at home. Standardised ingredient ratios and clear preparation instructions help customers achieve repeatable cooking results.",
+        "image":  "/product-images/millets-millet-dosa-premix.jpg"
+    },
+    {
+        "id":  "millets-millet-pancake-premix",
+        "name":  "Millet Pancake Premix",
+        "groupId":  "millets",
+        "description":  "A ready-to-cook blend designed to simplify breakfast preparation with millet-based ingredients. Developed for consistent mixing, convenient portioning and versatile sweet or savoury serving options.",
+        "image":  "/product-images/millets-millet-pancake-premix.jpg"
+    },
+    {
+        "id":  "millets-millet-pasta-with-masala",
+        "name":  "Millet Pasta with Masala",
+        "groupId":  "millets",
+        "description":  "A contemporary pasta formulation combining millet ingredients with a carefully balanced Indian-style seasoning. Designed for convenient meal preparation, consistent cooking performance and clearly declared ingredients.",
+        "image":  "/product-images/millets-millet-pasta-with-masala.jpg"
+    },
+    {
+        "id":  "millets-millet-cookies-regular-gluten-free",
+        "name":  "Millet Cookies — Regular \u0026 Gluten-Free",
+        "groupId":  "millets",
+        "description":  "A versatile cookie range developed around millet ingredients with defined formulations for each variant. Gluten-free claims require suitable ingredient controls, cross-contact prevention and verification against applicable standards.",
+        "image":  "/product-images/millets-millet-cookies-regular-gluten-free.jpg"
+    },
+    {
+        "id":  "millets-ragi-chips",
+        "name":  "Ragi Chips",
+        "groupId":  "millets",
+        "description":  "A savoury snack formulated with finger millet as a key ingredient and a defined seasoning profile. Developed for consistent crunch, portion control and convenient retail packaging.",
+        "image":  "/product-images/millets-ragi-chips.jpg"
+    },
+    {
+        "id":  "snacks-flavoured-makhana-four-variants",
+        "name":  "Flavoured Makhana — Four Variants",
+        "groupId":  "snacks",
+        "description":  "Selected fox nuts are roasted or otherwise processed using a defined method and finished with carefully formulated seasonings. Four flavour profiles create variety while supporting standardised batch production and clear ingredient declarations.",
+        "image":  "/product-images/snacks-flavoured-makhana-four-variants.jpg"
+    },
+    {
+        "id":  "snacks-sweet-potato-chips",
+        "name":  "Sweet Potato Chips",
+        "groupId":  "snacks",
+        "description":  "Sweet potatoes are sliced and processed to achieve the desired crispness, colour and flavour. Defined cut thickness, processing parameters and suitable barrier packaging help support consistent finished-product quality.",
+        "image":  "/product-images/snacks-sweet-potato-chips.jpg"
+    },
+    {
+        "id":  "snacks-roasted-masala-corn",
+        "name":  "Roasted Masala Corn",
+        "groupId":  "snacks",
+        "description":  "Corn kernels are roasted and seasoned with a balanced savoury spice blend for a crunchy snack format. A controlled roasting process and appropriate moisture protection support texture retention during storage.",
+        "image":  "/product-images/snacks-roasted-masala-corn.jpg"
+    },
+    {
+        "id":  "snacks-masala-okra-chips",
+        "name":  "Masala Okra Chips",
+        "groupId":  "snacks",
+        "description":  "Carefully selected okra is processed into a distinctive savoury snack with a seasoned finish. Product development focuses on slice consistency, texture control, hygienic handling and suitable packaging for the chosen process.",
+        "image":  "/product-images/snacks-masala-okra-chips.jpg"
+    },
+    {
+        "id":  "snacks-beetroot-chips",
+        "name":  "Beetroot Chips",
+        "groupId":  "snacks",
+        "description":  "Selected beetroot is sliced and processed to create a visually distinctive savoury snack. Controlled processing and appropriate packaging help preserve the intended texture and characteristic colour.",
+        "image":  "/product-images/snacks-beetroot-chips.jpg"
+    },
+    {
+        "id":  "seasonings-chilli-flakes",
+        "name":  "Chilli Flakes",
+        "groupId":  "seasonings",
+        "description":  "Selected dried chillies are cut to a defined flake size for convenient use across food-service and retail applications. Controlled raw-material selection, hygienic handling and moisture-protective packaging help maintain quality and flavour.",
+        "image":  "/product-images/seasonings-chilli-flakes.jpg"
+    },
+    {
+        "id":  "seasonings-parsley-flakes",
+        "name":  "Parsley Flakes",
+        "groupId":  "seasonings",
+        "description":  "Carefully dried parsley is processed into a convenient herb format for consistent culinary use. Suitable for soups, pasta, dressings, savoury bakery products and food-manufacturing applications.",
+        "image":  "/product-images/seasonings-parsley-flakes.jpg"
+    },
+    {
+        "id":  "seasonings-oregano-flakes",
+        "name":  "Oregano Flakes",
+        "groupId":  "seasonings",
+        "description":  "Dried oregano is handled and packed to protect its characteristic aromatic profile. A versatile seasoning ingredient for pizza, pasta, sauces, marinades and ready-to-use culinary blends.",
+        "image":  "/product-images/seasonings-oregano-flakes.jpg"
+    },
+    {
+        "id":  "seasonings-thetcha-powder",
+        "name":  "Thetcha Powder",
+        "groupId":  "seasonings",
+        "description":  "Inspired by Maharashtra\u0027s traditional thecha, this regional seasoning is developed in a controlled dry formulation for convenient everyday use. Ingredient ratios and spice intensity can be standardised for consistent batches and reliable flavour delivery.",
+        "image":  "/product-images/seasonings-thetcha-powder.jpg"
+    },
+    {
+        "id":  "seasonings-black-masala-flakes",
+        "name":  "Black Masala Flakes",
+        "groupId":  "seasonings",
+        "description":  "A regional-inspired spice blend developed around the deep, roasted notes of traditional black masala. Carefully balanced ingredients and controlled blending help deliver a consistent seasoning for curries, gravies and savoury preparations.",
+        "image":  "/product-images/seasonings-black-masala-flakes.jpg"
+    },
+    {
+        "id":  "botanicals-shilajit",
+        "name":  "Shilajit",
+        "groupId":  "botanicals",
+        "description":  "A specialised mineral-origin ingredient procured through qualified suppliers and evaluated against defined identity and purity specifications. Batch documentation and appropriate testing for heavy metals and other contaminants are central to responsible sourcing.",
+        "image":  "/product-images/botanicals-shilajit.jpg"
+    },
+    {
+        "id":  "botanicals-ashwagandha",
+        "name":  "Ashwagandha",
+        "groupId":  "botanicals",
+        "description":  "Authenticated ashwagandha raw material is selected with attention to botanical identity, cleanliness and supplier traceability. Processing specifications and batch-wise quality checks support consistency for appropriately permitted product applications.",
+        "image":  "/product-images/botanicals-ashwagandha.jpg"
+    },
+    {
+        "id":  "botanicals-shatavari",
+        "name":  "Shatavari",
+        "groupId":  "botanicals",
+        "description":  "Sourced with a focus on verified botanical identity, raw-material documentation and defined quality parameters. Intended for suitable formulations that meet the applicable ingredient, manufacturing and product-labelling requirements.",
+        "image":  "/product-images/botanicals-shatavari.jpg"
+    },
+    {
+        "id":  "botanicals-white-musli",
+        "name":  "White Musli",
+        "groupId":  "botanicals",
+        "description":  "A specialised botanical ingredient selected for traceable sourcing, verified identity and appropriate purity checks. Suitable for qualified formulation partners, subject to applicable product classification and permitted use.",
+        "image":  "/product-images/botanicals-white-musli.jpg"
+    },
+    {
+        "id":  "botanicals-lakadong-turmeric",
+        "name":  "Lakadong Turmeric",
+        "groupId":  "botanicals",
+        "description":  "Region-specific turmeric sourced with emphasis on origin documentation and raw-material authenticity. Suitable for culinary applications and other permitted uses, with quality specifications established for each batch.",
+        "image":  "/product-images/botanicals-lakadong-turmeric.jpg"
+    },
+    {
+        "id":  "botanicals-sea-buckthorn",
+        "name":  "Sea Buckthorn",
+        "groupId":  "botanicals",
+        "description":  "A distinctive botanical ingredient sourced through qualified supply chains with documented material specifications. Potential product formats depend on validated processing methods, ingredient quality and applicable regulatory permissions.",
+        "image":  "/product-images/botanicals-sea-buckthorn.jpg"
+    },
+    {
+        "id":  "botanicals-spirulina",
+        "name":  "Spirulina",
+        "groupId":  "botanicals",
+        "description":  "Sourced from qualified producers with attention to identity, microbiological quality and relevant contaminant limits. Appropriate testing and traceability support responsible use in permitted food formulations.",
+        "image":  "/product-images/botanicals-spirulina.jpg"
+    },
+    {
+        "id":  "botanicals-moringa-powder",
+        "name":  "Moringa Powder",
+        "groupId":  "botanicals",
+        "description":  "Selected moringa leaf material is processed or procured to defined specifications, with emphasis on identity, moisture control and batch consistency. Suitable for permitted applications where ingredient quality and regulatory requirements are met.",
+        "image":  "/product-images/botanicals-moringa-powder.jpg"
+    }
+]
