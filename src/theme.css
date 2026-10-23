@@ -256,3 +256,15 @@ body { background: var(--cream); color: var(--green); }
   .rumira-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
   .rumira-contact-link, .rumira-contact-link::after, .rumira-contact-link svg { animation: none !important; transition: none !important; }
 }
+
+.lead-honeypot { position: absolute !important; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
+.lead-error { color: #a83535 !important; font-size: 13px; line-height: 1.5; margin: 0; }
+.r-btn:disabled, .px-primary:disabled { opacity: .65; cursor: wait; }
+.rumira-thank-you { min-height: min(75vh, 700px); display: grid; place-items: center; padding: 80px 8vw; background: radial-gradient(circle at 78% 18%, #ead9df, transparent 40%), var(--rumira-lilac); }
+.rumira-thank-you-card { max-width: 700px; text-align: center; padding: clamp(36px, 7vw, 80px); background: var(--paper); border: 1px solid #e8d9d0; border-radius: 30px; box-shadow: 0 20px 60px #30243814; }
+.rumira-thank-you-icon { width: 62px; height: 62px; margin: 0 auto 28px; display: grid; place-items: center; border-radius: 50%; background: #e0efe6; color: #168b5b; font-size: 30px; }
+.rumira-thank-you-card small { color: var(--rumira-paprika); font-size: 11px; font-weight: 700; letter-spacing: .16em; }
+.rumira-thank-you-card h1 { font: 600 clamp(42px, 6vw, 72px)/1.08 'Playfair Display', serif; letter-spacing: -.04em; margin: 18px 0; }
+.rumira-thank-you-card h1 em { color: var(--rumira-paprika); }
+.rumira-thank-you-card p { color: var(--muted); line-height: 1.7; margin: 0 auto; max-width: 470px; }
+.rumira-thank-you-card .r-actions { justify-content: center; }

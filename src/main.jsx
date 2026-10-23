@@ -5,6 +5,8 @@ import './product-experience.css';
 import './theme.css';
 import ProductCatalogue from './ProductCatalogue.jsx';
 import ContactFloat from './ContactFloat.jsx';
+import ContactForm from './ContactForm.jsx';
+import ThankYou from './ThankYou.jsx';
 import { setupScrollReveal } from './scrollReveal.js';
 import { catalog, groups, groupImage } from './catalog.js';
 
@@ -32,11 +34,6 @@ function Process() {
   return <><section className="r-page-hero dark"><small>PROCESS & PRODUCTION</small><h1>Care in every <em>process.</em></h1><p>From raw-material selection to finished-product packaging, quality requirements should match each ingredient, process and application.</p></section><section className="r-process-intro"><div></div><article><small>PRODUCT-SPECIFIC STANDARDS</small><h2>Quality starts with<br /><em>clear specifications.</em></h2><p>Our range includes dehydrated foods, formulated products and sourced botanical ingredients. Processing, documentation and testing vary by product. Contact us for current product specifications and the checks available for your order.</p></article></section><section className="r-steps">{steps.map(([number, title, description]) => <article key={number}><b>{number}</b><h3>{title}</h3><p>{description}</p></article>)}</section><section className="r-process-note"><h2>Ask for the details that matter</h2><p>Ingredient declarations, allergens, testing, pack formats and permitted applications should be confirmed against the final product specification. Botanical ingredients may be sourced through qualified suppliers; their production process is not represented as in-house.</p><Btn href="/contact">Request a specification</Btn></section></>;
 }
 
-function Contact() {
-  const [sent, setSent] = useState(false);
-  return <section className="r-contact"><div><small>LET’S TALK FOOD</small><h1>Tell us what<br /><em>you need.</em></h1><p>Share the products, quantities and application you have in mind. We can discuss current specifications, pack formats and availability.</p><div className="r-details"><div><small>Email</small><a href={`mailto:${email}`}>{email}</a></div><div><small>WhatsApp</small><a href={`https://wa.me/${phone}`} target="_blank" rel="noreferrer">+91 98218 09292</a></div></div></div><form onSubmit={(event) => { event.preventDefault(); const data = new FormData(event.currentTarget); const body = `Name: ${data.get('name')}\nEmail: ${data.get('email')}\nCategory: ${data.get('category')}\nMessage: ${data.get('message')}`; setSent(true); location.href = `mailto:${email}?subject=${encodeURIComponent('Rumira Foods enquiry')}&body=${encodeURIComponent(body)}`; }}><label>Your name<input required name="name" placeholder="How should we call you?" /></label><label>Email address<input required name="email" type="email" placeholder="you@company.com" /></label><label>What are you interested in?<select name="category"><option>Choose a category</option>{groups.map((group) => <option key={group.id}>{group.title}</option>)}</select></label><label>Your message<textarea required name="message" rows="4" placeholder="Tell us about the products and quantities you need..." /></label><div className="r-actions"><button className="r-btn" type="submit">Continue by email ↗</button><Btn green href={wa('Hello Rumira Foods, I would like to make an enquiry.')}>WhatsApp us</Btn></div>{sent && <p className="success">Please send the draft in your email app so our team receives your enquiry.</p>}</form></section>;
-}
-
 function App() {
   const [path, setPath] = useState(location.pathname);
   useEffect(() => {
@@ -49,7 +46,7 @@ function App() {
   if (path === '/products' || path.startsWith('/products/')) {
     return <ProductCatalogue path={path} navigate={go} />;
   }
-  const page = path === '/process' ? <Process /> : path === '/contact' ? <Contact /> : <Home />;
+  const page = path === '/process' ? <Process /> : path === '/contact' ? <ContactForm navigate={go} /> : path === '/thank-you' ? <ThankYou navigate={go} /> : <Home />;
   return <><Header /><main>{page}</main><Footer /><ContactFloat /></>;
 }
 
