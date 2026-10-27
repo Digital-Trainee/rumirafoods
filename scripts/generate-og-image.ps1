@@ -31,14 +31,14 @@ try {
     $graphics.FillEllipse($paprika, 70, 68, 57, 57)
     $brandMark = [System.Drawing.Font]::new('Georgia', 36, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
     try { $graphics.DrawString('R', $brandMark, $white, 84, 73) } finally { $brandMark.Dispose() }
-    $graphics.DrawString('FARM TO FACTORY  /  THOUGHTFUL PROCESSING', $eyebrow, $paprika, 146, 83)
+    $graphics.DrawString('WOMEN LED  /  WOMEN RUN  /  WOMEN GROWN', $eyebrow, $paprika, 146, 83)
 
     $graphics.DrawString('RUMIRA', $heading, $plum, 68, 168)
     $graphics.DrawString('FOODS', $heading, $paprika, 68, 257)
-    $graphics.DrawString('Quality in every ingredient.', $body, $plum, 72, 385)
-    $graphics.DrawString('Care in every process.', $body, $plum, 72, 427)
+    $graphics.DrawString('Healthy food everyday.', $body, $plum, 72, 385)
+    $graphics.DrawString('Your go-to clean label food brand.', $body, $plum, 72, 427)
     $graphics.FillRectangle($paprika, 72, 493, 72, 5)
-    $graphics.DrawString('INGREDIENTS  /  MILLETS  /  SNACKS  /  BOTANICALS', $footer, $muted, 72, 530)
+    $graphics.DrawString('MILLET & YOU  /  COFFEE DIPS  /  HERBAL TEAS', $footer, $muted, 72, 530)
 
     $graphics.FillEllipse($peach, 825, 105, 330, 330)
     $graphics.FillEllipse($white, 867, 145, 247, 247)

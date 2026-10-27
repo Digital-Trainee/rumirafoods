@@ -268,3 +268,80 @@ body { background: var(--cream); color: var(--green); }
 .rumira-thank-you-card h1 em { color: var(--rumira-paprika); }
 .rumira-thank-you-card p { color: var(--muted); line-height: 1.7; margin: 0 auto; max-width: 470px; }
 .rumira-thank-you-card .r-actions { justify-content: center; }
+
+/* The rotating product feature on the home page. */
+.r-featured { min-width: 0; }
+.r-featured-frame { height: 470px; position: relative; overflow: hidden; border-radius: 240px 240px 28px 28px; box-shadow: 18px 18px 0 var(--rumira-peach); background: var(--rumira-lilac); }
+.r-featured-frame img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.r-featured-frame::after { content: ''; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, #302438b8); pointer-events: none; }
+.r-featured-frame a { position: absolute; z-index: 1; left: 30px; right: 30px; bottom: 28px; display: grid; gap: 7px; color: #fff; }
+.r-featured-frame small { color: #ffdec4; font: 700 10px 'DM Sans', sans-serif; letter-spacing: .13em; }
+.r-featured-frame strong { font: 600 clamp(25px, 3vw, 38px)/1.1 'Fraunces', Georgia, serif; }
+.r-featured-frame span { font-size: 12px; font-weight: 700; }
+.r-featured-controls { display: flex; align-items: center; justify-content: center; gap: 9px; margin-top: 26px; }
+.r-featured-controls button { width: 11px; height: 11px; padding: 0; border: 0; border-radius: 50%; background: #cbb7be; cursor: pointer; }
+.r-featured-controls button.active { width: 28px; border-radius: 20px; background: var(--rumira-paprika); }
+.r-featured-controls button:focus-visible, .r-featured-frame a:focus-visible { outline: 3px solid var(--rumira-paprika); outline-offset: 4px; }
+.r-story figure, .r-process-image { position: relative; min-height: 420px; margin: 0; overflow: hidden; }
+.r-story figure img, .r-process-image img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.r-story figcaption, .r-process-image figcaption { position: absolute; bottom: 15px; left: 16px; padding: 5px 9px; border-radius: 12px; background: #fffddc; color: #493d46; font-size: 10px; }
+
+/* Rumira's farm-to-food story and production details. */
+.r-about-hero { background: var(--cream); text-align: center; padding-block: 100px 85px; }
+.r-about-hero h1 { font-size: clamp(44px, 5.5vw, 78px); }
+.r-about-hero p { margin: 0 auto; max-width: 760px; }
+.r-about-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #715a6e; color: #fff; }
+.r-about-stats div { display: grid; align-content: center; gap: 9px; min-height: 145px; padding: 25px; text-align: center; background: var(--rumira-plum); }
+.r-about-stats strong { color: #f3c285; font: 600 clamp(25px, 3vw, 37px) 'Fraunces', Georgia, serif; }
+.r-about-stats span { font-size: 12px; }
+.r-about-chapters { padding: 90px 11vw; background: var(--paper); }
+.r-about-chapters article { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; align-items: center; margin-bottom: 75px; }
+.r-about-chapters article:last-child { margin-bottom: 0; }
+.r-about-chapters article:nth-child(even) .r-about-image { order: 2; }
+.r-about-image { position: relative; height: 420px; overflow: hidden; border-radius: 35% 35% 24px 24px; }
+.r-about-image img { width: 100%; height: 100%; object-fit: cover; }
+.r-about-image small { position: absolute; bottom: 14px; left: 14px; padding: 5px 9px; background: #fffde9; border-radius: 12px; font-size: 10px; }
+.r-about-chapters article>div:last-child>small, .r-about-values>small, .r-about-flow>small, .r-about-difference>small, .r-process-benefits small { color: var(--rumira-paprika); font-size: 11px; font-weight: 700; letter-spacing: .15em; }
+.r-about-chapters h2, .r-about-values h2, .r-about-flow h2, .r-process-benefits h2 { font: 600 clamp(36px, 4vw, 55px)/1.08 'Fraunces', Georgia, serif; letter-spacing: -.035em; margin: 18px 0; }
+.r-about-chapters h2 em, .r-about-values h2 em, .r-process-benefits h2 em { color: var(--rumira-paprika); }
+.r-about-chapters p, .r-about-values p, .r-about-flow p, .r-process-benefits p { color: var(--muted); line-height: 1.75; }
+.r-about-values { padding: 90px 11vw; text-align: center; background: var(--rumira-lilac); }
+.r-about-values p { max-width: 700px; margin: 0 auto; }
+.r-about-values>div { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.r-about-values span { padding: 12px 18px; border: 1px solid #cdbdc9; border-radius: 30px; font-size: 12px; }
+.r-about-flow { padding: 90px 11vw; text-align: center; background: var(--paper); }
+.r-about-flow ol { list-style: none; padding: 0; margin: 40px 0 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; counter-reset: flow; }
+.r-about-flow li { position: relative; padding: 25px 15px; background: var(--rumira-lilac); border-radius: 16px; font-weight: 700; }
+.r-about-flow li::before { counter-increment: flow; content: '0' counter(flow); display: block; margin-bottom: 12px; color: var(--rumira-paprika); font: 600 26px 'Fraunces', Georgia, serif; }
+.r-about-flow p { max-width: 710px; margin: 0 auto 25px; }
+.r-about-difference { padding: 85px 11vw; background: var(--rumira-lilac); }
+.r-about-difference>div { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 25px; }
+.r-about-difference article { padding-top: 18px; border-top: 2px solid var(--rumira-paprika); }
+.r-about-difference h3 { font: 600 21px/1.2 'Fraunces', Georgia, serif; }
+.r-about-difference p { font-size: 13px; line-height: 1.6; color: var(--muted); }
+.r-process-intro .r-process-image { height: 440px; border-radius: 180px 180px 24px 24px; }
+.r-process-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 9vw; align-items: center; padding: 85px 11vw; background: var(--cream); }
+.r-process-benefits ul { margin: 0; padding: 0; list-style: none; }
+.r-process-benefits li { padding: 17px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.r-process-benefits li::before { content: '✳'; color: var(--rumira-paprika); margin-right: 14px; }
+.px-sheet-photo { width: 100%; height: 100%; background-repeat: no-repeat; background-size: 1000% auto; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .r-featured-frame { animation: rumira-feature-in .55s ease both; }
+  @keyframes rumira-feature-in { from { opacity: .45; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+}
+@media (max-width: 800px) {
+  .r-featured-frame { height: 370px; box-shadow: 10px 10px 0 var(--rumira-peach); }
+  .r-about-stats, .r-about-difference>div { grid-template-columns: repeat(2, 1fr); }
+  .r-about-chapters, .r-about-values, .r-about-flow, .r-about-difference, .r-process-benefits { padding: 65px 8vw; }
+  .r-about-chapters article, .r-process-benefits { grid-template-columns: 1fr; gap: 30px; }
+  .r-about-chapters article:nth-child(even) .r-about-image { order: 0; }
+  .r-about-image { height: 350px; }
+}
+@media (max-width: 500px) {
+  .r-featured-frame { height: 320px; }
+  .r-featured-frame a { left: 22px; right: 22px; }
+  .r-about-stats div { min-height: 120px; padding: 15px 8px; }
+  .r-about-flow ol, .r-about-difference>div { grid-template-columns: repeat(2, 1fr); }
+  .r-about-flow li { padding: 18px 8px; }
+}
