@@ -13,10 +13,9 @@ function Brand({ navigate }) {
 }
 
 function Photo({ product, large }) {
-  return <div className={`px-photo${large ? ' px-photo-large' : ''}`}>
-    {product.imagePosition
-      ? <div className="px-sheet-photo" role="img" aria-label={`Illustration of ${product.name}`} style={{ backgroundImage: `url(${product.image})`, backgroundPosition: product.imagePosition }} />
-      : <img src={product.image} alt={`Illustrative image of ${product.name}`} loading={large ? 'eager' : 'lazy'} />}
+  const isDipProduct = ['coffee-dips', 'flavoured-coffee', 'herbal-teas'].includes(product.groupId);
+  return <div className={`px-photo${large ? ' px-photo-large' : ''}${isDipProduct ? ' px-photo-dip' : ''}`}>
+    <img src={product.image} alt={product.name} loading={large ? 'eager' : 'lazy'} />
   </div>;
 }
 

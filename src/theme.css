@@ -332,7 +332,8 @@ body { background: var(--cream); color: var(--green); }
 .r-process-benefits ul { margin: 0; padding: 0; list-style: none; }
 .r-process-benefits li { padding: 17px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
 .r-process-benefits li::before { content: '✳'; color: var(--rumira-coral); margin-right: 14px; }
-.px-sheet-photo { width: 100%; height: 100%; background-repeat: no-repeat; background-size: 1000% auto; }
+.px-photo-dip, .px-photo-dip img { background: #faf8f3; }
+.px-photo-dip img { object-fit: contain; }
 
 @media (prefers-reduced-motion: no-preference) {
   .r-featured-frame { animation: rumira-feature-in .55s ease both; }

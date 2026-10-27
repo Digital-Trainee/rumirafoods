@@ -4,103 +4,90 @@
         "name":  "Ashwagandha Coffee Dip",
         "groupId":  "coffee-dips",
         "description":  "A smooth, aromatic coffee blend with ashwagandha, bringing a distinctive botanical touch to your everyday coffee ritual. Convenient dip bags make every cup simple to prepare.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "7% 9%"
+        "image":  "/dip-product-images/coffee-dips-ashwagandha.jpg"
     },
     {
         "id":  "coffee-dips-herbal",
         "name":  "Herbal Coffee Dip",
         "groupId":  "coffee-dips",
         "description":  "A comforting coffee blend with selected herbs, a rich aroma and a smooth, rounded taste. An easy-to-brew option for those who enjoy a herbal twist on classic coffee.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "27% 9%"
+        "image":  "/dip-product-images/coffee-dips-herbal.jpg"
     },
     {
         "id":  "coffee-dips-shilajit",
         "name":  "Shilajit Coffee Dip",
         "groupId":  "coffee-dips",
         "description":  "A bold, aromatic coffee blend featuring shilajit for a distinctive, ingredient-led twist on your everyday brew.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "50% 9%"
+        "image":  "/dip-product-images/coffee-dips-shilajit.jpg"
     },
     {
         "id":  "coffee-dips-dark-roast",
         "name":  "Dark Roast Coffee Dip",
         "groupId":  "coffee-dips",
         "description":  "Deep, intense and full-bodied, this dark roast delivers a bold aroma and lingering finish for those who enjoy a stronger cup of coffee.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "73% 9%"
+        "image":  "/dip-product-images/coffee-dips-dark-roast.jpg"
     },
     {
         "id":  "coffee-dips-turmeric-pepper",
         "name":  "Turmeric Pepper Coffee Dip",
         "groupId":  "coffee-dips",
         "description":  "An unconventional blend of coffee, turmeric and black pepper, bringing earthy notes and a gentle spice character to your cup.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "96% 9%"
+        "image":  "/dip-product-images/coffee-dips-turmeric-pepper.jpg"
     },
     {
         "id":  "flavoured-coffee-berry",
         "name":  "Berry Coffee Dip",
         "groupId":  "flavoured-coffee",
         "description":  "A fruity, aromatic coffee blend with berry-inspired flavour notes, offering a refreshing twist on your regular coffee ritual.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "7% 47%"
+        "image":  "/dip-product-images/flavoured-coffee-berry.jpg"
     },
     {
         "id":  "flavoured-coffee-orange",
         "name":  "Orange Coffee Dip",
         "groupId":  "flavoured-coffee",
         "description":  "Bright citrus notes meet rich coffee in this distinctive blend, creating a fragrant cup with a fresh orange-inspired finish.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "36% 47%"
+        "image":  "/dip-product-images/flavoured-coffee-orange.jpg"
     },
     {
         "id":  "flavoured-coffee-cardamom",
         "name":  "Cardamom Coffee Dip",
         "groupId":  "flavoured-coffee",
         "description":  "A warm, aromatic blend that pairs coffee with the familiar fragrance of cardamom for a refined take on a classic flavour combination.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "64% 47%"
+        "image":  "/dip-product-images/flavoured-coffee-cardamom.jpg"
     },
     {
         "id":  "flavoured-coffee-chocolate",
         "name":  "Chocolate Coffee Dip",
         "groupId":  "flavoured-coffee",
         "description":  "Rich coffee meets indulgent chocolate notes in a smooth, satisfying blend made for those who enjoy a hint of cocoa in their cup.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "93% 47%"
+        "image":  "/dip-product-images/flavoured-coffee-chocolate.jpg"
     },
     {
         "id":  "herbal-teas-ashwagandha-green",
         "name":  "Ashwagandha Green Tea",
         "groupId":  "herbal-teas",
         "description":  "A light green tea blend featuring ashwagandha, offering a gentle botanical note in an easy-to-prepare tea dip.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "7% 85%"
+        "image":  "/dip-product-images/herbal-teas-ashwagandha-green.jpg"
     },
     {
         "id":  "herbal-teas-turmeric-ginger",
         "name":  "Turmeric Ginger Green Tea",
         "groupId":  "herbal-teas",
         "description":  "Green tea meets the earthy warmth of turmeric and the lively spice of ginger in a comforting, aromatic blend.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "36% 85%"
+        "image":  "/dip-product-images/herbal-teas-turmeric-ginger.jpg"
     },
     {
         "id":  "herbal-teas-ginger-peppermint",
         "name":  "Ginger Peppermint Green Tea",
         "groupId":  "herbal-teas",
         "description":  "A refreshing blend of green tea, ginger and peppermint, combining warming spice with a clean, cooling mint finish.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "64% 85%"
+        "image":  "/dip-product-images/herbal-teas-ginger-peppermint.jpg"
     },
     {
         "id":  "herbal-teas-chamomile-lavender",
         "name":  "Chamomile Lavender Tea",
         "groupId":  "herbal-teas",
         "description":  "A delicate herbal infusion with chamomile and lavender, bringing floral aromas and a gentle flavour to your tea ritual.",
-        "image":  "/dip-tea-coffee-catalog.png",
-        "imagePosition":  "93% 85%"
+        "image":  "/dip-product-images/herbal-teas-chamomile-lavender.jpg"
     }
 ]
