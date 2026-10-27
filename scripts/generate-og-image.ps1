@@ -9,14 +9,15 @@ function New-Brush([string]$hex) {
     return [System.Drawing.SolidBrush]::new([System.Drawing.ColorTranslator]::FromHtml($hex))
 }
 
-$oat = New-Brush '#FFF7ED'
-$plum = New-Brush '#302438'
-$paprika = New-Brush '#B64B35'
-$peach = New-Brush '#F7DCC7'
-$gold = New-Brush '#F3C285'
-$white = New-Brush '#FFFCF7'
-$sage = New-Brush '#7E9A79'
-$muted = New-Brush '#685F67'
+$oat = New-Brush '#F1F3D0'
+$plum = New-Brush '#173B37'
+$paprika = New-Brush '#E85B4A'
+$peach = New-Brush '#8FDDD3'
+$gold = New-Brush '#FFC040'
+$lime = New-Brush '#D6E85A'
+$white = New-Brush '#FFFFFF'
+$sage = New-Brush '#27C7B7'
+$muted = New-Brush '#4F6964'
 $heading = [System.Drawing.Font]::new('Georgia', 80, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
 $body = [System.Drawing.Font]::new('Arial', 32, [System.Drawing.FontStyle]::Regular, [System.Drawing.GraphicsUnit]::Pixel)
 $eyebrow = [System.Drawing.Font]::new('Arial', 22, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
@@ -43,7 +44,7 @@ try {
     $graphics.FillEllipse($peach, 825, 105, 330, 330)
     $graphics.FillEllipse($white, 867, 145, 247, 247)
     $graphics.FillEllipse($paprika, 908, 185, 120, 120)
-    $graphics.FillEllipse($gold, 1014, 226, 57, 57)
+    $graphics.FillEllipse($lime, 1014, 226, 57, 57)
     $graphics.FillEllipse($sage, 936, 283, 72, 40)
     $graphics.FillEllipse($sage, 988, 307, 76, 35)
     $graphics.FillEllipse($gold, 830, 452, 42, 42)
@@ -54,7 +55,7 @@ try {
     $image.Save($destination, [System.Drawing.Imaging.ImageFormat]::Png)
     Write-Output $destination
 } finally {
-    foreach ($item in @($heading, $body, $eyebrow, $footer, $oat, $plum, $paprika, $peach, $gold, $white, $sage, $muted, $graphics, $image)) {
+    foreach ($item in @($heading, $body, $eyebrow, $footer, $oat, $plum, $paprika, $peach, $gold, $lime, $white, $sage, $muted, $graphics, $image)) {
         $item.Dispose()
     }
 }

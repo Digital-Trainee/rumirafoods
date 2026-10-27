@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Rumira Foods">
-  <rect width="64" height="64" rx="16" fill="#302438"/>
-  <path d="M10 10v44" stroke="#f3c285" stroke-width="2" stroke-linecap="round" opacity=".7"/>
-  <text x="16" y="48" fill="#fff7ed" font-family="Georgia, 'Times New Roman', serif" font-size="47" font-weight="700">R</text>
-  <path d="M49 8l2.4 8.6L60 19l-8.6 2.4L49 30l-2.4-8.6L38 19l8.6-2.4z" fill="#f3c285"/>
+  <rect width="64" height="64" rx="16" fill="#8FDDD3"/>
+  <path d="M10 10v44" stroke="#E85B4A" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+  <text x="16" y="48" fill="#173B37" font-family="Georgia, 'Times New Roman', serif" font-size="47" font-weight="700">R</text>
+  <path d="M49 8l2.4 8.6L60 19l-8.6 2.4L49 30l-2.4-8.6L38 19l8.6-2.4z" fill="#D6E85A"/>
 </svg>
