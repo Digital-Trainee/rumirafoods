@@ -17,7 +17,6 @@ function Photo({ product, large }) {
     {product.imagePosition
       ? <div className="px-sheet-photo" role="img" aria-label={`Illustration of ${product.name}`} style={{ backgroundImage: `url(${product.image})`, backgroundPosition: product.imagePosition }} />
       : <img src={product.image} alt={`Illustrative image of ${product.name}`} loading={large ? 'eager' : 'lazy'} />}
-    <small>Illustrative image</small>
   </div>;
 }
 
