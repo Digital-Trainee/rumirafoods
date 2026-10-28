@@ -48,7 +48,7 @@ function Home() {
     <section className="r-section"><div className="r-heading"><div><small>OUR PORTFOLIO</small><h2>Ingredients and foods<br /><em>for different needs.</em></h2></div><Btn href="/products">View all products</Btn></div><div className="r-grid">{groups.map((group, index) => <a key={group.id} href={`/products#${group.id}`} onClick={(event) => { event.preventDefault(); go('/products'); setTimeout(() => document.getElementById(group.id)?.scrollIntoView({ behavior: 'smooth' }), 50); }} style={{ backgroundImage: `linear-gradient(180deg,rgba(23,59,55,.08),rgba(23,59,55,.82)),url(${groupImage(group.id)})` }}><span>{String(index + 1).padStart(2, '0')}</span><div><small>{group.audience}</small><h3>{group.title}</h3><b>↗</b></div></a>)}</div></section>
     <section className="r-story"><figure><img src="/about-farmers.jpg" alt="Illustrative image of women harvesting produce" loading="lazy" /></figure><article><small>THE PEOPLE BEHIND RUMIRA</small><h2>Women led.<br /><em>Women run. Women grown.</em></h2><p>Our work connects more than 500 associated farmers with processing and markets. Women in farming, enterprise and food innovation are central to that vision.</p><Btn href="/about">Discover our story</Btn></article></section>
     <Testimonials navigate={go} />
-    <section className="r-quote">“<blockquote>From farm to food.<br />From women to change.</blockquote><small>RUMIRA FOODS</small></section>
+    <section className="r-quote"><span aria-hidden="true">“</span><blockquote>From farm to food.<br />From women to change.</blockquote><small>RUMIRA FOODS</small></section>
   </>;
 }
 
