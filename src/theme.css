@@ -335,6 +335,38 @@ body { background: var(--cream); color: var(--green); }
 .px-photo-dip, .px-photo-dip img { background: #faf8f3; }
 .px-photo-dip img { object-fit: contain; }
 
+/* Customer words are browsable on the home page and paired with their products. */
+.rumira-testimonials { padding: 90px 11vw 100px; background: var(--rumira-cream); overflow: hidden; }
+.rumira-testimonials-heading { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 32px; }
+.rumira-testimonials-heading small, .px-product-review>div>small { color: #a92e22; font-size: 11px; font-weight: 700; letter-spacing: .15em; }
+.rumira-testimonials-heading h2, .px-product-review h2 { font: 600 clamp(34px, 4vw, 54px)/1.08 'Fraunces', Georgia, serif; letter-spacing: -.035em; margin: 14px 0 10px; }
+.rumira-testimonials-heading h2 em { color: var(--rumira-coral); }
+.rumira-testimonials-heading p { color: var(--muted); line-height: 1.6; margin: 0; }
+.rumira-testimonials-controls { display: flex; gap: 9px; flex: none; }
+.rumira-testimonials-controls button { width: 45px; height: 45px; border: 1px solid var(--rumira-ink); border-radius: 50%; background: var(--paper); color: var(--rumira-ink); font-size: 22px; cursor: pointer; }
+.rumira-testimonials-controls button:hover { background: var(--rumira-lime); }
+.rumira-testimonials-controls button:focus-visible, .rumira-testimonial-card a:focus-visible { outline: 3px solid var(--rumira-brick); outline-offset: 3px; }
+.rumira-testimonials-track { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-color: var(--rumira-turquoise) transparent; padding: 3px 3px 20px; }
+.rumira-testimonial-card { flex: 0 0 clamp(285px, 32vw, 390px); min-height: 310px; margin: 0; padding: 28px; display: flex; flex-direction: column; scroll-snap-align: start; background: var(--paper); border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 8px 25px #173b370c; font: 400 15px/1.6 'DM Sans', Arial, sans-serif; }
+.rumira-testimonial-rating { display: flex; align-items: center; gap: 12px; color: #a92e22; }
+.rumira-testimonial-rating span { color: #e3a516; letter-spacing: .08em; font-size: 20px; }
+.rumira-testimonial-rating b { font-size: 12px; }
+.rumira-testimonial-card p { margin: 20px 0 24px; color: var(--rumira-ink); line-height: 1.65; }
+.rumira-testimonial-card footer { display: flex; flex-direction: column; gap: 4px; margin-top: auto; padding-top: 16px; border-top: 1px solid var(--line); font-size: 12px; }
+.rumira-testimonial-card footer strong { font-size: 14px; }
+.rumira-testimonial-card footer a { color: #a92e22; font-weight: 700; align-self: start; }
+.px-product-review { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 40px; padding: 50px 0; border-top: 1px solid var(--line); }
+.px-product-review .rumira-testimonial-card { min-height: 0; }
+
+@media (max-width: 700px) {
+  .rumira-testimonials { padding: 65px 8vw 75px; }
+  .rumira-testimonials-heading { align-items: end; }
+  .rumira-testimonials-heading p { max-width: 32ch; }
+  .rumira-testimonials-controls button { width: 40px; height: 40px; }
+  .rumira-testimonial-card { flex-basis: min(82vw, 350px); min-height: 330px; padding: 22px; }
+  .px-product-review { grid-template-columns: 1fr; gap: 20px; padding: 42px 0; }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .r-featured-frame { animation: rumira-feature-in .55s ease both; }
   @keyframes rumira-feature-in { from { opacity: .45; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
