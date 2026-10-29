@@ -16,7 +16,7 @@ export const groups = [
 export const catalog = [...productData, ...dipProducts].map((product) => ({ ...product, group: groups.find((group) => group.id === product.groupId) }));
 const categoryImages = {
   'coffee-dips': '/category-images/functional-coffee.jpg',
-  'flavoured-coffee': '/category-images/flavoured-coffee.jpg',
+  'flavoured-coffee': '/dip-product-images/flavoured-coffee-cardamom.jpg',
   'herbal-teas': '/category-images/herbal-tea.jpg'
 };
 
