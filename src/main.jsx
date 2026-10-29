@@ -13,7 +13,7 @@ import Testimonials from './Testimonials.jsx';
 import { setupScrollReveal } from './scrollReveal.js';
 import { catalog, groups, groupImage } from './catalog.js';
 
-const phone = '919821809292';
+const phone = '919999179434';
 const email = 'rumira2025@gmail.com';
 const wa = (message) => `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 const go = (path) => {
@@ -38,7 +38,7 @@ function Header() {
 }
 
 function Footer() {
-  return <footer className="r-footer"><div><Logo /><p>Healthy food everyday.<br />Your go-to clean label food brand.</p></div><div><small>EXPLORE</small><a href="/about" onClick={(event) => { event.preventDefault(); go('/about'); }}>About Rumira</a><a href="/products" onClick={(event) => { event.preventDefault(); go('/products'); }}>Our products</a><a href="/process" onClick={(event) => { event.preventDefault(); go('/process'); }}>Our approach</a></div><div><small>CONNECT</small><a href={`mailto:${email}`}>{email}</a><a href={wa('Hello Rumira Foods')} target="_blank" rel="noreferrer">+91 98218 09292 · WhatsApp</a></div><p className="copyright">© 2026 Rumira Foods <span>Made with care in India</span></p></footer>;
+  return <footer className="r-footer"><div><Logo /><p>Healthy food everyday.<br />Your go-to clean label food brand.</p></div><div><small>EXPLORE</small><a href="/about" onClick={(event) => { event.preventDefault(); go('/about'); }}>About Rumira</a><a href="/products" onClick={(event) => { event.preventDefault(); go('/products'); }}>Our products</a><a href="/process" onClick={(event) => { event.preventDefault(); go('/process'); }}>Our approach</a></div><div><small>CONNECT</small><a href={`mailto:${email}`}>{email}</a><a href={wa('Hello Rumira Foods')} target="_blank" rel="noreferrer">+91 99991 79434 · WhatsApp</a></div><p className="copyright">© 2026 Rumira Foods <span>Made with care in India</span></p></footer>;
 }
 
 function Home() {

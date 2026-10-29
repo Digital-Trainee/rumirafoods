@@ -137,7 +137,7 @@ function updateBasket() {
   if (!count || !items || !send) return;
   count.textContent = `${basket.length} product${basket.length === 1 ? '' : 's'}`;
   items.innerHTML = basket.length ? basket.map((item) => `<span>${item}</span>`).join('') : '<em>Add products to build your enquiry list.</em>';
-  send.href = `https://wa.me/919821809292?text=${encodeURIComponent(`Hello Rumira Foods, I am interested in: ${basket.join(', ') || 'your product range'}.`)}`;
+  send.href = `https://wa.me/919999179434?text=${encodeURIComponent(`Hello Rumira Foods, I am interested in: ${basket.join(', ') || 'your product range'}.`)}`;
 }
 
 const observer = new MutationObserver(() => { initProductTools(); initPageCtas(); initReferenceSections(); });
@@ -157,7 +157,7 @@ function initEnquiryPopup() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const message = `Hello Rumira Foods, I would like to enquire. Name: ${data.get('name')}; Phone: ${data.get('phone')}; Email: ${data.get('email') || 'Not provided'}; Interest: ${data.get('interest')}; Message: ${data.get('message') || 'Not provided'}`;
-    window.open(`https://wa.me/919821809292?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/919999179434?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
     close();
   });
   if (!sessionStorage.getItem('rumira-popup-closed')) setTimeout(() => modal.classList.add('visible'), 3200);

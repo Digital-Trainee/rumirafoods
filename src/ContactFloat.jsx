@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PHONE = '919821809292';
+const PHONE = '919999179434';
 
 export default function ContactFloat({ productName }) {
   const message = productName
@@ -8,7 +8,7 @@ export default function ContactFloat({ productName }) {
     : 'Hello Rumira Foods, I would like to know more about your products.';
 
   return <div className="rumira-contact-float" role="group" aria-label="Quick contact options">
-    <a className="rumira-contact-link rumira-contact-phone" href={`tel:+${PHONE}`} aria-label="Call Rumira Foods at +91 98218 09292">
+    <a className="rumira-contact-link rumira-contact-phone" href={`tel:+${PHONE}`} aria-label="Call Rumira Foods at +91 99991 79434">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 16.4v3a2 2 0 0 1-2.2 2A18.8 18.8 0 0 1 2.6 5.2 2 2 0 0 1 4.6 3h3a2 2 0 0 1 2 1.7l.4 2.6a2 2 0 0 1-.6 1.7l-1.1 1.1a15 15 0 0 0 5.6 5.6l1.1-1.1a2 2 0 0 1 1.7-.6l2.6.4a2 2 0 0 1 1.7 2Z" /></svg>
       <span>Call us</span>
     </a>

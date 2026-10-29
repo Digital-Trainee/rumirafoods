@@ -3,7 +3,7 @@ document.querySelectorAll('.main-nav a').forEach(link=>link.addEventListener('cl
 
 // Contact details and conversion CTAs are kept in one place so every page stays in sync.
 const rumiraEmail = 'rumira2025@gmail.com';
-const rumiraWhatsApp = '919821809292';
+const rumiraWhatsApp = '919999179434';
 const whatsappMessage = encodeURIComponent("Hello Rumira Foods, I'd like to know more about your products.");
 document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
   link.href = `mailto:${rumiraEmail}`;
@@ -16,14 +16,14 @@ document.querySelectorAll('.footer-title').forEach(title => {
     link.href = `https://wa.me/${rumiraWhatsApp}`;
     link.target = '_blank';
     link.rel = 'noopener';
-    link.textContent = '+91 98218 09292 · WhatsApp';
+    link.textContent = '+91 99991 79434 · WhatsApp';
     title.parentElement.appendChild(link);
   }
 });
 if (document.querySelector('.contact-details') && !document.querySelector('.contact-phone')) {
   const phone = document.createElement('div');
   phone.className = 'contact-phone';
-  phone.innerHTML = `<span>WhatsApp</span><a href="https://wa.me/${rumiraWhatsApp}" target="_blank" rel="noopener">+91 98218 09292</a>`;
+  phone.innerHTML = `<span>WhatsApp</span><a href="https://wa.me/${rumiraWhatsApp}" target="_blank" rel="noopener">+91 99991 79434</a>`;
   document.querySelector('.contact-details').appendChild(phone);
 }
 document.querySelectorAll('.nav-cta').forEach(link => {
