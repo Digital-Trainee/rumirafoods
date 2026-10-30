@@ -5,61 +5,43 @@ const slides = [
     id: 'dehydrated',
     name: 'Dehydrated veg & fruits',
     target: '/products',
-    images: [
-      ['/product-images/fruits-pineapple-pieces.jpg', 'Dehydrated pineapple pieces'],
-      ['/product-images/powders-tomato-powder.jpg', 'Dehydrated tomato powder'],
-      ['/product-images/fruits-strawberry-slices.jpg', 'Dehydrated strawberry slices']
-    ]
+    image: '/hero-categories/dehydrated.jpg',
+    alt: 'Illustrative assortment of dehydrated fruit and vegetable pieces'
   },
   {
     id: 'snacks',
     name: 'Healthy snacks',
     target: '/products#snacks',
-    images: [
-      ['/product-images/snacks-flavoured-makhana-four-variants.jpg', 'Flavoured makhana'],
-      ['/product-images/snacks-sweet-potato-chips.jpg', 'Sweet potato chips'],
-      ['/product-images/snacks-beetroot-chips.jpg', 'Beetroot chips']
-    ]
+    image: '/hero-categories/snacks.jpg',
+    alt: 'Illustrative assortment of makhana and vegetable chips'
   },
   {
     id: 'millets',
     name: 'Ready to eat millets',
     target: '/products#millets',
-    images: [
-      ['/product-images/millets-millet-laddu.jpg', 'Millet laddus'],
-      ['/product-images/millets-ragi-laddu.jpg', 'Ragi laddus'],
-      ['/product-images/millets-millet-cookies-regular-gluten-free.jpg', 'Millet cookies']
-    ]
+    image: '/hero-categories/millets.jpg',
+    alt: 'Illustrative assortment of millet laddus and cookies'
   },
   {
     id: 'tea-coffee',
     name: 'Functional tea & coffee dips',
     target: '/products',
-    images: [
-      ['/category-images/functional-coffee.jpg', 'Functional coffee dip'],
-      ['/category-images/herbal-tea.jpg', 'Herbal dip tea'],
-      ['/dip-product-images/herbal-teas-chamomile-lavender.jpg', 'Chamomile lavender herbal tea dip']
-    ]
+    image: '/hero-categories/tea-coffee.jpg',
+    alt: 'Illustrative clear herbal tea and black coffee brewed with dip bags'
   },
   {
     id: 'nutraceuticals',
     name: 'Nutraceutical powders',
     target: '/products#botanicals',
-    images: [
-      ['/product-images/botanicals-moringa-powder.jpg', 'Moringa powder'],
-      ['/product-images/botanicals-spirulina.jpg', 'Spirulina'],
-      ['/product-images/botanicals-lakadong-turmeric.jpg', 'Lakadong turmeric']
-    ]
+    image: '/hero-categories/nutraceuticals.jpg',
+    alt: 'Illustrative assortment of botanical ingredient powders'
   },
   {
     id: 'seasonings',
     name: 'Masala & seasoning',
     target: '/products#seasonings',
-    images: [
-      ['/product-images/seasonings-black-masala-flakes.jpg', 'Black masala flakes'],
-      ['/product-images/seasonings-chilli-flakes.jpg', 'Chilli flakes'],
-      ['/product-images/seasonings-oregano-flakes.jpg', 'Oregano flakes']
-    ]
+    image: '/hero-categories/seasonings.jpg',
+    alt: 'Illustrative assortment of masala and culinary seasoning flakes'
   }
 ];
 
@@ -85,9 +67,7 @@ export default function FeaturedCarousel({ navigate }) {
 
   return <div className="r-featured" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onFocusCapture={() => setPaused(true)} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setPaused(false); }} aria-label="Featured food categories">
     <div className="r-featured-frame" key={slide.id}>
-      <div className="r-featured-collage" aria-hidden="true">
-        {slide.images.map(([src, alt]) => <img key={src} src={src} alt={alt} />)}
-      </div>
+      <img className="r-featured-photo" src={slide.image} alt={slide.alt} />
       <a href={slide.target} onClick={openCategory}><small>EXPLORE THE COLLECTION</small><strong>{slide.name}</strong><span>Explore category ↗</span></a>
     </div>
     <div className="r-featured-controls" aria-label="Choose a featured category">

@@ -42,7 +42,6 @@ body { background: var(--cream); color: var(--green); }
 .r-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px #173b3729; }
 .r-btn.green { background: var(--rumira-lime); color: var(--rumira-ink); }
 .r-header-cta { color: var(--rumira-ink); }
-.r-promise { color: #4f6964; }
 .r-hero-photo { background-image: linear-gradient(0deg,#173b3717,transparent),url('/product-images/fruits-apple-slices.jpg'); border-radius: 240px 240px 28px 28px; box-shadow: 18px 18px 0 var(--rumira-lime); }
 .r-hero-photo span { background: var(--rumira-gold); color: var(--rumira-ink); box-shadow: 0 7px 22px #173b372b; }
 .r-stats, .r-story, .r-page-hero.dark { background: var(--rumira-ink); }
@@ -157,7 +156,7 @@ body { background: var(--cream); color: var(--green); }
   .r-hero small, .px-hero small { animation: rumira-rise .55s ease both; }
   .r-hero h1, .px-hero h1, .r-page-hero h1, .r-contact h1 { animation: rumira-rise .65s .08s ease both; }
   .r-hero p, .px-hero p, .r-page-hero p, .r-contact>div>p { animation: rumira-rise .65s .17s ease both; }
-  .r-hero .r-actions, .r-hero .r-promise { animation: rumira-rise .65s .26s ease both; }
+  .r-hero .r-actions { animation: rumira-rise .65s .26s ease both; }
   .r-hero-photo, .px-detail>.px-photo { animation: rumira-photo .75s .12s ease both; }
   .r-hero-photo span { animation: rumira-sway 5s 1s ease-in-out infinite; }
   .px-detail-info { animation: rumira-rise .65s .18s ease both; }
@@ -295,9 +294,7 @@ body { background: var(--cream); color: var(--green); }
 /* The rotating category feature on the home page. */
 .r-featured { min-width: 0; }
 .r-featured-frame { height: 470px; position: relative; overflow: hidden; border-radius: 240px 240px 28px 28px; box-shadow: 18px 18px 0 var(--rumira-lime); background: var(--rumira-mint); }
-.r-featured-collage { width: 100%; height: 100%; display: grid; grid-template-columns: 1.45fr 1fr; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 7px; }
-.r-featured-collage img { width: 100%; height: 100%; min-height: 0; display: block; object-fit: cover; }
-.r-featured-collage img:first-child { grid-row: 1 / 3; }
+.r-featured-photo { width: 100%; height: 100%; display: block; object-fit: cover; }
 .r-featured-frame::after { content: ''; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, #173b37c9); pointer-events: none; }
 .r-featured-frame a { position: absolute; z-index: 1; left: 30px; right: 30px; bottom: 28px; display: grid; gap: 7px; color: #fff; }
 .r-featured-frame small { color: #d6e85a; font: 700 10px 'DM Sans', sans-serif; letter-spacing: .13em; }
