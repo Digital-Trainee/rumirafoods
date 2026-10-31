@@ -1,9 +1,9 @@
-/* Grapefruit palette from the Rumira reference: lime, mint and coral. */
+/* Rumira palette: cream, gold, turquoise, lime, mint and soft grapefruit coral. */
 :root {
   --green: #173b37;
-  --cream: #f7fcf7;
+  --cream: #f1f3d0;
   --paper: #ffffff;
-  --gold: #d6e85a;
+  --gold: #ffc040;
   --coral: #e85b4a;
   --muted: #4f6964;
   --line: #cde5df;
@@ -11,13 +11,10 @@
   --rumira-coral: #e85b4a;
   --rumira-lime: #d6e85a;
   --rumira-mint: #8fddd3;
-  --rumira-mint-pale: #e8f8f4;
+  --rumira-mint-pale: color-mix(in srgb, var(--rumira-mint) 25%, white);
   --rumira-cream: #f1f3d0;
   --rumira-gold: #ffc040;
   --rumira-turquoise: #27c7b7;
-  --rumira-brick: #dd330a;
-  --rumira-orange: #ed802a;
-  --rumira-bubble-blue: #65b3b5;
 }
 
 body { background: var(--cream); color: var(--green); }
@@ -28,15 +25,15 @@ body { background: var(--cream); color: var(--green); }
 .px-footer h2, .px-modal h2 { font-family: 'Fraunces', Georgia, serif; }
 
 /* Home, process and contact pages */
-.r-header { background: rgba(247,252,247,.96); border-color: var(--line); box-shadow: 0 8px 30px #173b3708; }
+.r-header { background: rgba(241,243,208,.96); border-color: var(--line); box-shadow: 0 8px 30px #173b3708; }
 .r-logo b { background: var(--rumira-lime); color: var(--rumira-ink); border-radius: 9px 21px 9px 21px; transform: rotate(-8deg); }
 .r-nav { color: #3e6059; }
-.r-nav a.active, .r-nav a:hover { color: var(--rumira-coral); }
+.r-nav a.active, .r-nav a:hover { color: var(--rumira-ink); text-decoration: underline 2px var(--rumira-turquoise); text-underline-offset: 6px; }
 .r-hero { background: radial-gradient(circle at 7% 12%,var(--rumira-lime) 0 7%,transparent 7.2%),linear-gradient(130deg,var(--rumira-mint-pale),var(--rumira-cream)); }
 .r-hero small, .r-heading small, .r-process-intro small, .r-contact>div>small,
-.r-footer small, .r-page-hero small { color: #a92e22; }
-.r-hero em, .r-heading em, .r-contact em, .r-process-intro em,
-.r-quote blockquote::first-line { color: #a92e22; }
+.r-footer small, .r-page-hero small { color: var(--rumira-ink); }
+.r-hero em, .r-heading em, .r-contact em, .r-process-intro em { color: var(--rumira-coral); }
+.r-quote blockquote::first-line { color: var(--rumira-ink); }
 .r-hero p, .r-contact>div>p, .r-process-intro p { color: var(--muted); }
 .r-btn { background: var(--rumira-ink); color: #fff; border-radius: 100px; padding-inline: 23px; transition: transform .2s ease, box-shadow .2s ease; }
 .r-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px #173b3729; }
@@ -49,7 +46,7 @@ body { background: var(--cream); color: var(--green); }
 .r-stats div { border-color: #568b83; }
 .r-stats p, .r-story p, .r-page-hero.dark p { color: #d7f1ea; }
 .r-section { background: var(--paper); }
-.r-process-note { background: linear-gradient(125deg, #fff4d8, #ffcf69); }
+.r-process-note { background: var(--rumira-gold); }
 .r-grid>a>span { color: var(--rumira-lime); }
 .r-grid>a { background-color: var(--rumira-ink); border-radius: 22px 22px 58px 22px; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
 .r-grid>a:nth-child(even) { border-radius: 58px 22px 22px 22px; }
@@ -74,7 +71,7 @@ body { background: var(--cream); color: var(--green); }
 .r-footer .r-logo { color: #fff; }
 .r-footer .copyright { border-color: #4c756e; color: #b6d8cf; }
 .r-footer a:hover { color: var(--rumira-lime); }
-.r-float { background: var(--rumira-brick); box-shadow: 0 7px 24px #dd330a4d; }
+.r-float { background: var(--rumira-gold); color: var(--rumira-ink); box-shadow: 0 7px 24px #173b3729; }
 
 /* Catalogue and product detail pages */
 .px-body { background: var(--cream); }
@@ -96,10 +93,10 @@ body { background: var(--cream); color: var(--green); }
 .px-brand-name small { color: #51716a; }
 .px-enquire-btn, .px-primary { border-radius: 100px; }
 .px-basket-btn { background: var(--paper); }
-.px-basket-btn span { background: var(--rumira-brick); }
+.px-basket-btn span { background: var(--rumira-gold); color: var(--rumira-ink); }
 .px-hero { background: radial-gradient(circle at 85% 18%,var(--rumira-lime) 0 10%,transparent 10.2%),linear-gradient(115deg,var(--rumira-mint),var(--rumira-cream)); }
 .px-hero small, .px-intro small, .px-group-heading small, .px-related-title small,
-.px-eyebrow { color: #a92e22; }
+.px-eyebrow { color: var(--rumira-ink); }
 .px-hero h1 em, .px-detail h1 em { color: var(--rumira-coral); }
 .px-hero p, .px-intro p, .px-group-heading p, .px-card p, .px-description { color: var(--muted); }
 .px-tabs button { color: #3e6059; border-radius: 100px; }
@@ -108,17 +105,17 @@ body { background: var(--cream); color: var(--green); }
 .px-card { background: var(--paper); border: 1px solid #cde5df; border-radius: 24px; overflow: hidden; box-shadow: 0 6px 22px #173b370c; transition: transform .25s ease, box-shadow .25s ease; }
 .px-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px #173b371c; }
 .px-card > :not(.px-card-image) { margin-left: 17px; margin-right: 17px; }
-.px-card .px-explore { margin-bottom: 20px; color: var(--rumira-coral); }
-.px-card-meta { color: #a92e22; }
+.px-card .px-explore { margin-bottom: 20px; color: var(--rumira-ink); }
+.px-card-meta { color: var(--rumira-ink); }
 .px-card-image { background: var(--rumira-mint-pale); }
 .px-photo { border-radius: 0; background: #ecf9f4; }
 .px-plus { background: var(--paper); color: var(--rumira-coral); }
-.px-plus:hover { background: var(--rumira-brick); color: #fff; }
+.px-plus:hover { background: var(--rumira-turquoise); color: var(--rumira-ink); }
 .px-photo-large { border-radius: 210px 210px 24px 24px; }
 .px-detail-info { background: var(--paper); padding: 26px; border-radius: 24px; }
-.px-regulatory { background: #fff1e9; border-color: var(--rumira-orange); }
+.px-regulatory { background: var(--rumira-cream); border-color: var(--rumira-gold); }
 .px-secondary { background: #d6e85a; color: var(--rumira-ink); border-radius: 100px; }
-.px-banner small { color: #853014; }
+.px-banner small { color: var(--rumira-ink); }
 .px-banner h2, .px-banner p { color: var(--rumira-ink); }
 .px-banner a { background: var(--rumira-ink); color: #fff; border-radius: 100px; }
 .px-banner a:hover { background: #25564f; }
@@ -128,7 +125,7 @@ body { background: var(--cream); color: var(--green); }
 .px-footer-grid a:not(.px-brand), .px-footer-grid p, .px-footer-bottom { color: #d5ece5; }
 .px-footer-grid a:not(.px-brand):hover { color: var(--rumira-lime); }
 .px-footer-bottom { border-color: #4c756e; }
-.px-float { background: var(--rumira-brick); }
+.px-float { background: var(--rumira-gold); color: var(--rumira-ink); }
 .px-drawer, .px-modal { background: var(--paper); }
 
 @media(max-width:700px) {
@@ -167,7 +164,7 @@ body { background: var(--cream); color: var(--green); }
   .px-plus, .px-tabs button, .px-banner a, .r-float, .px-float { transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease; }
   .px-plus:hover { transform: rotate(90deg); }
   .px-tabs button:hover, .px-banner a:hover, .r-float:hover, .px-float:hover { transform: translateY(-2px); }
-  .r-btn:focus-visible, .r-grid>a:focus-visible, .px-card a:focus-visible, .px-tabs button:focus-visible { outline: 3px solid var(--rumira-brick); outline-offset: 3px; }
+  .r-btn:focus-visible, .r-grid>a:focus-visible, .px-card a:focus-visible, .px-tabs button:focus-visible { outline: 3px solid var(--rumira-turquoise); outline-offset: 3px; }
 }
 
 @media(prefers-reduced-motion: reduce) {
@@ -203,7 +200,7 @@ body { background: var(--cream); color: var(--green); }
   min-height: 50px;
   padding: 10px 17px;
   border-radius: 100px;
-  color: #fff !important;
+  color: var(--rumira-ink) !important;
   font: 700 13px 'DM Sans', Arial, sans-serif;
   text-decoration: none !important;
   box-shadow: 0 8px 22px #173b3733;
@@ -211,8 +208,8 @@ body { background: var(--cream); color: var(--green); }
   pointer-events: auto;
 }
 .rumira-contact-link svg { width: 22px; height: 22px; flex: none; }
-.rumira-contact-phone { background: var(--rumira-brick); }
-.rumira-contact-whatsapp { background: #168b5b; }
+.rumira-contact-phone { background: var(--rumira-gold); }
+.rumira-contact-whatsapp { background: var(--rumira-turquoise); }
 .rumira-contact-link:hover { box-shadow: 0 12px 26px #173b3745; }
 .rumira-contact-link:focus-visible { outline: 3px solid var(--rumira-coral); outline-offset: 4px; }
 
@@ -244,7 +241,7 @@ body { background: var(--cream); color: var(--green); }
     content: '';
     position: absolute;
     inset: -5px;
-    border: 2px solid #168b5b;
+    border: 2px solid var(--rumira-turquoise);
     border-radius: inherit;
     pointer-events: none;
     animation: rumira-cta-ring 3.8s 1.5s ease-out infinite;
@@ -280,12 +277,12 @@ body { background: var(--cream); color: var(--green); }
 }
 
 .lead-honeypot { position: absolute !important; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
-.lead-error { color: #a83535 !important; font-size: 13px; line-height: 1.5; margin: 0; }
+.lead-error { color: var(--rumira-ink) !important; border-left: 3px solid var(--rumira-coral); padding-left: 10px; font-size: 13px; line-height: 1.5; margin: 0; }
 .r-btn:disabled, .px-primary:disabled { opacity: .65; cursor: wait; }
 .rumira-thank-you { min-height: min(75vh, 700px); display: grid; place-items: center; padding: 80px 8vw; background: radial-gradient(circle at 78% 18%, var(--rumira-lime), transparent 40%), var(--rumira-mint); }
 .rumira-thank-you-card { max-width: 700px; text-align: center; padding: clamp(36px, 7vw, 80px); background: var(--paper); border: 1px solid #cde5df; border-radius: 30px; box-shadow: 0 20px 60px #173b3714; }
-.rumira-thank-you-icon { width: 62px; height: 62px; margin: 0 auto 28px; display: grid; place-items: center; border-radius: 50%; background: #e0efe6; color: #168b5b; font-size: 30px; }
-.rumira-thank-you-card small { color: var(--rumira-coral); font-size: 11px; font-weight: 700; letter-spacing: .16em; }
+.rumira-thank-you-icon { width: 62px; height: 62px; margin: 0 auto 28px; display: grid; place-items: center; border-radius: 50%; background: var(--rumira-mint); color: var(--rumira-ink); font-size: 30px; }
+.rumira-thank-you-card small { color: var(--rumira-ink); font-size: 11px; font-weight: 700; letter-spacing: .16em; }
 .rumira-thank-you-card h1 { font: 600 clamp(42px, 6vw, 72px)/1.08 'Playfair Display', serif; letter-spacing: -.04em; margin: 18px 0; }
 .rumira-thank-you-card h1 em { color: var(--rumira-coral); }
 .rumira-thank-you-card p { color: var(--muted); line-height: 1.7; margin: 0 auto; max-width: 470px; }
@@ -321,7 +318,7 @@ body { background: var(--cream); color: var(--green); }
 .r-about-chapters article:nth-child(even) .r-about-image { order: 2; }
 .r-about-image { position: relative; height: 420px; overflow: hidden; border-radius: 35% 35% 24px 24px; }
 .r-about-image img { width: 100%; height: 100%; object-fit: cover; }
-.r-about-chapters article>div:last-child>small, .r-about-values>small, .r-about-flow>small, .r-about-difference>small, .r-process-benefits small { color: var(--rumira-coral); font-size: 11px; font-weight: 700; letter-spacing: .15em; }
+.r-about-chapters article>div:last-child>small, .r-about-values>small, .r-about-flow>small, .r-about-difference>small, .r-process-benefits small { color: var(--rumira-ink); font-size: 11px; font-weight: 700; letter-spacing: .15em; }
 .r-about-chapters h2, .r-about-values h2, .r-about-flow h2, .r-process-benefits h2 { font: 600 clamp(36px, 4vw, 55px)/1.08 'Fraunces', Georgia, serif; letter-spacing: -.035em; margin: 18px 0; }
 .r-about-chapters h2 em, .r-about-values h2 em, .r-process-benefits h2 em { color: var(--rumira-coral); }
 .r-about-chapters p, .r-about-values p, .r-about-flow p, .r-process-benefits p { color: var(--muted); line-height: 1.75; }
@@ -350,23 +347,23 @@ body { background: var(--cream); color: var(--green); }
 /* Customer words are browsable on the home page and paired with their products. */
 .rumira-testimonials { padding: 90px 11vw 100px; background: radial-gradient(circle at 94% 13%, #d6e85a8c 0 90px, transparent 92px), linear-gradient(120deg, #e8f8f4 15%, #b9e9e0 100%); overflow: hidden; }
 .rumira-testimonials-heading { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 32px; }
-.rumira-testimonials-heading small, .px-product-review>div>small { color: #a92e22; font-size: 11px; font-weight: 700; letter-spacing: .15em; }
+.rumira-testimonials-heading small, .px-product-review>div>small { color: var(--rumira-ink); font-size: 11px; font-weight: 700; letter-spacing: .15em; }
 .rumira-testimonials-heading h2, .px-product-review h2 { font: 600 clamp(34px, 4vw, 54px)/1.08 'Fraunces', Georgia, serif; letter-spacing: -.035em; margin: 14px 0 10px; }
 .rumira-testimonials-heading h2 em { color: var(--rumira-coral); }
 .rumira-testimonials-heading p { color: var(--muted); line-height: 1.6; margin: 0; }
 .rumira-testimonials-controls { display: flex; gap: 9px; flex: none; }
 .rumira-testimonials-controls button { width: 45px; height: 45px; border: 1px solid var(--rumira-ink); border-radius: 50%; background: var(--paper); color: var(--rumira-ink); font-size: 22px; cursor: pointer; }
 .rumira-testimonials-controls button:hover { background: var(--rumira-lime); }
-.rumira-testimonials-controls button:focus-visible, .rumira-testimonial-card a:focus-visible { outline: 3px solid var(--rumira-brick); outline-offset: 3px; }
+.rumira-testimonials-controls button:focus-visible, .rumira-testimonial-card a:focus-visible { outline: 3px solid var(--rumira-turquoise); outline-offset: 3px; }
 .rumira-testimonials-track { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-color: var(--rumira-turquoise) transparent; padding: 3px 3px 20px; }
 .rumira-testimonial-card { flex: 0 0 clamp(285px, 32vw, 390px); min-height: 310px; margin: 0; padding: 28px; display: flex; flex-direction: column; scroll-snap-align: start; background: var(--paper); border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 8px 25px #173b370c; font: 400 15px/1.6 'DM Sans', Arial, sans-serif; }
-.rumira-testimonial-rating { display: flex; align-items: center; gap: 12px; color: #a92e22; }
-.rumira-testimonial-rating span { color: #e3a516; letter-spacing: .08em; font-size: 20px; }
+.rumira-testimonial-rating { display: flex; align-items: center; gap: 12px; color: var(--rumira-ink); }
+.rumira-testimonial-rating span { color: var(--rumira-gold); letter-spacing: .08em; font-size: 20px; }
 .rumira-testimonial-rating b { font-size: 12px; }
 .rumira-testimonial-card p { margin: 20px 0 24px; color: var(--rumira-ink); line-height: 1.65; }
 .rumira-testimonial-card footer { display: flex; flex-direction: column; gap: 4px; margin-top: auto; padding-top: 16px; border-top: 1px solid var(--line); font-size: 12px; }
 .rumira-testimonial-card footer strong { font-size: 14px; }
-.rumira-testimonial-card footer a { color: #a92e22; font-weight: 700; align-self: start; }
+.rumira-testimonial-card footer a { color: var(--rumira-ink); font-weight: 700; align-self: start; }
 .px-product-review { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 40px; padding: 50px 0; border-top: 1px solid var(--line); }
 .px-product-review .rumira-testimonial-card { min-height: 0; }
 
