@@ -53,8 +53,9 @@ body { background: var(--cream); color: var(--green); }
 .r-grid>a:hover { transform: translateY(-5px); box-shadow: 0 16px 30px #173b372b; }
 .r-story>div { background-image: url('/product-images/powders-onion-powder.jpg'); }
 .r-story small, .r-page-hero.dark small { color: #d6e85a; }
-.r-quote { position: relative; isolation: isolate; overflow: hidden; background: linear-gradient(135deg, var(--rumira-turquoise), var(--rumira-mint)); color: var(--rumira-ink); }
-.r-quote::after { content: ''; position: absolute; z-index: -1; width: min(440px, 45vw); height: 260px; right: -20px; bottom: -18px; background: url('/decor-field.svg') center / contain no-repeat; opacity: .75; }
+.r-quote { position: relative; isolation: isolate; overflow: hidden; padding: 100px 20px 185px; background: linear-gradient(135deg, var(--rumira-turquoise), var(--rumira-mint)); color: var(--rumira-ink); }
+.r-quote::after { content: ''; position: absolute; z-index: 0; inset: auto 0 0; height: 225px; background: url('/decor-field.svg') center bottom / cover no-repeat; pointer-events: none; }
+.r-quote > * { position: relative; z-index: 1; }
 .r-quote>span { display: block; height: 65px; color: var(--rumira-ink); font: 600 115px/1 'Fraunces', Georgia, serif; }
 .r-quote blockquote { position: relative; }
 .r-quote small { color: var(--rumira-ink); letter-spacing: .22em; font-weight: 700; }
@@ -368,6 +369,9 @@ body { background: var(--cream); color: var(--green); }
 .px-product-review .rumira-testimonial-card { min-height: 0; }
 
 @media (max-width: 700px) {
+  .r-quote { padding: 75px 24px 135px; }
+  .r-quote::after { height: 145px; }
+  .r-quote > span { height: 50px; font-size: 86px; }
   .rumira-testimonials { padding: 65px 8vw 75px; }
   .rumira-testimonials-heading { align-items: end; }
   .rumira-testimonials-heading p { max-width: 32ch; }
