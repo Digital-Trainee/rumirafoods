@@ -29,7 +29,7 @@ body { background: var(--cream); color: var(--green); }
 .r-logo b { background: var(--rumira-lime); color: var(--rumira-ink); border-radius: 9px 21px 9px 21px; transform: rotate(-8deg); }
 .r-nav { color: #3e6059; }
 .r-nav a.active, .r-nav a:hover { color: var(--rumira-ink); text-decoration: underline 2px var(--rumira-turquoise); text-underline-offset: 6px; }
-.r-hero { background: radial-gradient(circle at 7% 12%,var(--rumira-lime) 0 7%,transparent 7.2%),linear-gradient(130deg,var(--rumira-mint-pale),var(--rumira-cream)); }
+.r-hero { background: url('/decor-leaves.svg') left -75px top -30px / 240px auto no-repeat, linear-gradient(130deg,var(--rumira-mint-pale),var(--rumira-cream)); }
 .r-hero small, .r-heading small, .r-process-intro small, .r-contact>div>small,
 .r-footer small, .r-page-hero small { color: var(--rumira-ink); }
 .r-hero em, .r-heading em, .r-contact em, .r-process-intro em { color: var(--rumira-coral); }
@@ -54,7 +54,7 @@ body { background: var(--cream); color: var(--green); }
 .r-story>div { background-image: url('/product-images/powders-onion-powder.jpg'); }
 .r-story small, .r-page-hero.dark small { color: #d6e85a; }
 .r-quote { position: relative; isolation: isolate; overflow: hidden; background: linear-gradient(135deg, var(--rumira-turquoise), var(--rumira-mint)); color: var(--rumira-ink); }
-.r-quote::after { content: ''; position: absolute; z-index: -1; width: 310px; aspect-ratio: 1; right: -100px; bottom: -185px; border: 42px solid #ffc0408c; border-radius: 50%; }
+.r-quote::after { content: ''; position: absolute; z-index: -1; width: min(440px, 45vw); height: 260px; right: -20px; bottom: -18px; background: url('/decor-field.svg') center / contain no-repeat; opacity: .75; }
 .r-quote>span { display: block; height: 65px; color: var(--rumira-ink); font: 600 115px/1 'Fraunces', Georgia, serif; }
 .r-quote blockquote { position: relative; }
 .r-quote small { color: var(--rumira-ink); letter-spacing: .22em; font-weight: 700; }
@@ -94,7 +94,7 @@ body { background: var(--cream); color: var(--green); }
 .px-enquire-btn, .px-primary { border-radius: 100px; }
 .px-basket-btn { background: var(--paper); }
 .px-basket-btn span { background: var(--rumira-gold); color: var(--rumira-ink); }
-.px-hero { background: radial-gradient(circle at 85% 18%,var(--rumira-lime) 0 10%,transparent 10.2%),linear-gradient(115deg,var(--rumira-mint),var(--rumira-cream)); }
+.px-hero { background: url('/decor-grain.svg') right 0 top -20px / 115px auto no-repeat, linear-gradient(115deg,var(--rumira-mint),var(--rumira-cream)); }
 .px-hero small, .px-intro small, .px-group-heading small, .px-related-title small,
 .px-eyebrow { color: var(--rumira-ink); }
 .px-hero h1 em, .px-detail h1 em { color: var(--rumira-coral); }
@@ -279,7 +279,7 @@ body { background: var(--cream); color: var(--green); }
 .lead-honeypot { position: absolute !important; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
 .lead-error { color: var(--rumira-ink) !important; border-left: 3px solid var(--rumira-coral); padding-left: 10px; font-size: 13px; line-height: 1.5; margin: 0; }
 .r-btn:disabled, .px-primary:disabled { opacity: .65; cursor: wait; }
-.rumira-thank-you { min-height: min(75vh, 700px); display: grid; place-items: center; padding: 80px 8vw; background: radial-gradient(circle at 78% 18%, var(--rumira-lime), transparent 40%), var(--rumira-mint); }
+.rumira-thank-you { min-height: min(75vh, 700px); display: grid; place-items: center; padding: 80px 8vw; background: url('/decor-grain.svg') right 5% bottom -55px / 190px auto no-repeat, linear-gradient(125deg, var(--rumira-mint), var(--rumira-cream)); }
 .rumira-thank-you-card { max-width: 700px; text-align: center; padding: clamp(36px, 7vw, 80px); background: var(--paper); border: 1px solid #cde5df; border-radius: 30px; box-shadow: 0 20px 60px #173b3714; }
 .rumira-thank-you-icon { width: 62px; height: 62px; margin: 0 auto 28px; display: grid; place-items: center; border-radius: 50%; background: var(--rumira-mint); color: var(--rumira-ink); font-size: 30px; }
 .rumira-thank-you-card small { color: var(--rumira-ink); font-size: 11px; font-weight: 700; letter-spacing: .16em; }
@@ -305,7 +305,7 @@ body { background: var(--cream); color: var(--green); }
 .r-story figure img, .r-process-image img { width: 100%; height: 100%; display: block; object-fit: cover; }
 
 /* Rumira's farm-to-food story and production details. */
-.r-about-hero { background: radial-gradient(circle at 82% 12%,var(--rumira-lime) 0 8%,transparent 8.2%),var(--rumira-mint); text-align: center; padding-block: 100px 85px; }
+.r-about-hero { background: url('/decor-leaves.svg') right -55px top -35px / 230px auto no-repeat, var(--rumira-mint); text-align: center; padding-block: 100px 85px; }
 .r-about-hero h1 { font-size: clamp(44px, 5.5vw, 78px); }
 .r-about-hero p { margin: 0 auto; max-width: 760px; }
 .r-about-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rumira-turquoise); color: #fff; }
@@ -345,7 +345,7 @@ body { background: var(--cream); color: var(--green); }
 .px-photo-dip img { object-fit: contain; }
 
 /* Customer words are browsable on the home page and paired with their products. */
-.rumira-testimonials { padding: 90px 11vw 100px; background: radial-gradient(circle at 94% 13%, #d6e85a8c 0 90px, transparent 92px), linear-gradient(120deg, #e8f8f4 15%, #b9e9e0 100%); overflow: hidden; }
+.rumira-testimonials { padding: 90px 11vw 100px; background: url('/decor-grain.svg') right 1% top -55px / 135px auto no-repeat, linear-gradient(120deg, var(--rumira-mint-pale) 15%, var(--rumira-mint) 100%); overflow: hidden; }
 .rumira-testimonials-heading { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 32px; }
 .rumira-testimonials-heading small, .px-product-review>div>small { color: var(--rumira-ink); font-size: 11px; font-weight: 700; letter-spacing: .15em; }
 .rumira-testimonials-heading h2, .px-product-review h2 { font: 600 clamp(34px, 4vw, 54px)/1.08 'Fraunces', Georgia, serif; letter-spacing: -.035em; margin: 14px 0 10px; }
@@ -381,6 +381,7 @@ body { background: var(--cream); color: var(--green); }
   @keyframes rumira-feature-in { from { opacity: .45; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 }
 @media (max-width: 800px) {
+  .r-hero { background: url('/decor-leaves.svg') right 12px top -5px / 75px auto no-repeat, linear-gradient(130deg,var(--rumira-mint-pale),var(--rumira-cream)); }
   .r-featured-frame { height: 370px; box-shadow: 10px 10px 0 var(--rumira-lime); }
   .r-about-stats, .r-about-difference>div { grid-template-columns: repeat(2, 1fr); }
   .r-about-chapters, .r-about-values, .r-about-flow, .r-about-difference, .r-process-benefits { padding: 65px 8vw; }
