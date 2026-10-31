@@ -46,7 +46,11 @@ body { background: var(--cream); color: var(--green); }
 .r-stats div { border-color: #568b83; }
 .r-stats p, .r-story p, .r-page-hero.dark p { color: #d7f1ea; }
 .r-section { background: var(--paper); }
-.r-process-note { background: var(--rumira-mint); }
+.r-process-note { position: relative; isolation: isolate; overflow: hidden; background: var(--rumira-mint); }
+.r-process-note::after { content: ''; position: absolute; z-index: 0; width: min(30vw, 420px); height: 300px; right: 7vw; bottom: -22px; background: url('/decor-harvest.svg') center bottom / contain no-repeat; pointer-events: none; }
+.r-process-note > * { position: relative; z-index: 1; }
+.r-process-note h2, .r-process-note p { max-width: min(680px, 52vw); }
+.r-process-note h2::before { content: ''; display: block; width: 52px; height: 5px; margin-bottom: 25px; border-radius: 5px; background: var(--rumira-gold); }
 .r-grid>a>span { color: var(--rumira-lime); }
 .r-grid>a { background-color: var(--rumira-ink); border-radius: 22px 22px 58px 22px; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
 .r-grid>a:nth-child(even) { border-radius: 58px 22px 22px 22px; }
@@ -393,7 +397,14 @@ body { background: var(--cream); color: var(--green); }
   .r-about-chapters article:nth-child(even) .r-about-image { order: 0; }
   .r-about-image { height: 350px; }
 }
+@media (max-width: 1100px) {
+  .r-process-note { padding-bottom: 175px; }
+  .r-process-note h2, .r-process-note p { max-width: 750px; }
+  .r-process-note::after { width: 260px; height: 185px; right: 5vw; bottom: -18px; }
+}
 @media (max-width: 500px) {
+  .r-process-note { padding-bottom: 150px; }
+  .r-process-note::after { width: 205px; height: 150px; right: 3vw; }
   .r-featured-frame { height: 320px; }
   .r-featured-frame a { left: 22px; right: 22px; }
   .r-about-stats div { min-height: 120px; padding: 15px 8px; }
