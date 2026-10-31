@@ -46,7 +46,7 @@ body { background: var(--cream); color: var(--green); }
 .r-stats div { border-color: #568b83; }
 .r-stats p, .r-story p, .r-page-hero.dark p { color: #d7f1ea; }
 .r-section { background: var(--paper); }
-.r-process-note { background: var(--rumira-gold); }
+.r-process-note { background: var(--rumira-mint); }
 .r-grid>a>span { color: var(--rumira-lime); }
 .r-grid>a { background-color: var(--rumira-ink); border-radius: 22px 22px 58px 22px; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
 .r-grid>a:nth-child(even) { border-radius: 58px 22px 22px 22px; }
