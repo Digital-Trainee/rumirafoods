@@ -29,7 +29,7 @@ body { background: var(--cream); color: var(--green); }
 .r-logo b { background: var(--rumira-lime); color: var(--rumira-ink); border-radius: 9px 21px 9px 21px; transform: rotate(-8deg); }
 .r-nav { color: #3e6059; }
 .r-nav a.active, .r-nav a:hover { color: var(--rumira-ink); text-decoration: underline 2px var(--rumira-turquoise); text-underline-offset: 6px; }
-.r-hero { background: url('/decor-leaves.svg') left -75px top -30px / 240px auto no-repeat, linear-gradient(130deg,var(--rumira-mint-pale),var(--rumira-cream)); }
+.r-hero { background: url('/decor-farm-tools.svg') left -35px bottom -20px / 145px auto no-repeat, url('/decor-leaves.svg') left -75px top -30px / 240px auto no-repeat, linear-gradient(130deg,var(--rumira-mint-pale),var(--rumira-cream)); }
 .r-hero small, .r-heading small, .r-process-intro small, .r-contact>div>small,
 .r-footer small, .r-page-hero small { color: var(--rumira-ink); }
 .r-hero em, .r-heading em, .r-contact em, .r-process-intro em { color: var(--rumira-coral); }
@@ -46,7 +46,7 @@ body { background: var(--cream); color: var(--green); }
 .r-stats div { border-color: #568b83; }
 .r-stats p, .r-story p, .r-page-hero.dark p { color: #d7f1ea; }
 .r-section { background: var(--paper); }
-.r-process-note { position: relative; isolation: isolate; overflow: hidden; background: var(--rumira-mint); }
+.r-process-note { position: relative; isolation: isolate; overflow: hidden; background: url('/decor-farm-tools.svg') right 7vw top 20px / 125px auto no-repeat, var(--rumira-mint); }
 .r-process-note::after { content: ''; position: absolute; z-index: 0; width: min(30vw, 420px); height: 300px; right: 7vw; bottom: -22px; background: url('/decor-harvest.svg') center bottom / contain no-repeat; pointer-events: none; }
 .r-process-note > * { position: relative; z-index: 1; }
 .r-process-note h2, .r-process-note p { max-width: min(680px, 52vw); }
@@ -99,7 +99,7 @@ body { background: var(--cream); color: var(--green); }
 .px-enquire-btn, .px-primary { border-radius: 100px; }
 .px-basket-btn { background: var(--paper); }
 .px-basket-btn span { background: var(--rumira-gold); color: var(--rumira-ink); }
-.px-hero { background: url('/decor-food-linework.svg') right -20px top -36px / 180px auto no-repeat, linear-gradient(115deg,var(--rumira-mint),var(--rumira-cream)); }
+.px-hero { background: url('/decor-product-icons.svg') right 9% bottom -45px / 120px auto no-repeat, url('/decor-food-linework.svg') right -20px top -36px / 180px auto no-repeat, linear-gradient(115deg,var(--rumira-mint),var(--rumira-cream)); }
 .px-hero small, .px-intro small, .px-group-heading small, .px-related-title small,
 .px-eyebrow { color: var(--rumira-ink); }
 .px-hero h1 em, .px-detail h1 em { color: var(--rumira-coral); }
@@ -310,7 +310,7 @@ body { background: var(--cream); color: var(--green); }
 .r-story figure img, .r-process-image img { width: 100%; height: 100%; display: block; object-fit: cover; }
 
 /* Rumira's farm-to-food story and production details. */
-.r-about-hero { background: url('/decor-leaves.svg') right -55px top -35px / 230px auto no-repeat, var(--rumira-mint); text-align: center; padding-block: 100px 85px; }
+.r-about-hero { background: url('/decor-product-icons.svg') left -32px bottom -50px / 145px auto no-repeat, url('/decor-leaves.svg') right -55px top -35px / 230px auto no-repeat, var(--rumira-mint); text-align: center; padding-block: 100px 85px; }
 .r-about-hero h1 { font-size: clamp(44px, 5.5vw, 78px); }
 .r-about-hero p { margin: 0 auto; max-width: 760px; }
 .r-about-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rumira-turquoise); color: #fff; }
@@ -390,6 +390,8 @@ body { background: var(--cream); color: var(--green); }
 }
 @media (max-width: 800px) {
   .r-hero { background: url('/decor-leaves.svg') right 12px top -5px / 75px auto no-repeat, linear-gradient(130deg,var(--rumira-mint-pale),var(--rumira-cream)); }
+  .r-about-hero { background: url('/decor-leaves.svg') right -55px top -35px / 230px auto no-repeat, var(--rumira-mint); }
+  .px-hero { background: url('/decor-food-linework.svg') right -20px top -36px / 180px auto no-repeat, linear-gradient(115deg,var(--rumira-mint),var(--rumira-cream)); }
   .r-featured-frame { height: 370px; box-shadow: 10px 10px 0 var(--rumira-lime); }
   .r-about-stats, .r-about-difference>div { grid-template-columns: repeat(2, 1fr); }
   .r-about-chapters, .r-about-values, .r-about-flow, .r-about-difference, .r-process-benefits { padding: 65px 8vw; }
@@ -398,7 +400,7 @@ body { background: var(--cream); color: var(--green); }
   .r-about-image { height: 350px; }
 }
 @media (max-width: 1100px) {
-  .r-process-note { padding-bottom: 175px; }
+  .r-process-note { padding-bottom: 175px; background: var(--rumira-mint); }
   .r-process-note h2, .r-process-note p { max-width: 750px; }
   .r-process-note::after { width: 260px; height: 185px; right: 5vw; bottom: -18px; }
 }
