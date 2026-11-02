@@ -41,11 +41,20 @@ function Footer() {
   return <footer className="r-footer"><div><Logo /><p>Healthy food everyday.<br />Your go-to clean label food brand.</p></div><div><small>EXPLORE</small><a href="/about" onClick={(event) => { event.preventDefault(); go('/about'); }}>About Rumira</a><a href="/products" onClick={(event) => { event.preventDefault(); go('/products'); }}>Our products</a><a href="/process" onClick={(event) => { event.preventDefault(); go('/process'); }}>Our approach</a></div><div><small>CONNECT</small><a href={`mailto:${email}`}>{email}</a><a href={wa('Hello Rumira Foods')} target="_blank" rel="noreferrer">+91 99991 79434 · WhatsApp</a></div><p className="copyright">© 2026 Rumira Foods <span>Made with care in India</span></p></footer>;
 }
 
+function PortfolioCues() {
+  return <ul className="r-portfolio-cues" aria-label="Rumira food themes">
+    <li><i className="r-cue-tractor" aria-hidden="true" /><span>Farmer-linked</span></li>
+    <li><i className="r-cue-coffee" aria-hidden="true" /><span>Coffee dips</span></li>
+    <li><i className="r-cue-tea" aria-hidden="true" /><span>Herbal teas</span></li>
+    <li><i className="r-cue-food" aria-hidden="true" /><span>Everyday foods</span></li>
+  </ul>;
+}
+
 function Home() {
   return <>
     <section className="r-hero"><div><small>WOMEN LED · WOMEN RUN · WOMEN GROWN</small><h1>Healthy food <em>everyday.</em></h1><p>Your go-to clean label food brand. Rumira brings farmer-linked sourcing and thoughtful processing together for convenient food made with care.</p><div className="r-actions"><Btn href="/products">Explore our products</Btn><Btn green href={wa('Hello Rumira Foods, I would like to know more about your products.')}>WhatsApp us</Btn></div></div><FeaturedCarousel navigate={go} /></section>
     <section className="r-stats"><div><b>500+</b><span>associated farmers</span></div><div><b>{groups.length}</b><span>product categories</span></div><div><b>{catalog.length}</b><span>products to explore</span></div><p>Farmer-linked sourcing · In-house processing · B2B and HORECA supply</p></section>
-    <section className="r-section"><div className="r-heading"><div><small>OUR PORTFOLIO</small><h2>Ingredients and foods<br /><em>for different needs.</em></h2></div><Btn href="/products">View all products</Btn></div><div className="r-grid">{groups.map((group, index) => <a key={group.id} href={`/products#${group.id}`} onClick={(event) => { event.preventDefault(); go('/products'); setTimeout(() => document.getElementById(group.id)?.scrollIntoView({ behavior: 'smooth' }), 50); }} style={{ backgroundImage: `linear-gradient(180deg,rgba(23,59,55,.08),rgba(23,59,55,.82)),url(${groupImage(group.id)})` }}><span>{String(index + 1).padStart(2, '0')}</span><div><small>{group.audience}</small><h3>{group.title}</h3><b>↗</b></div></a>)}</div></section>
+    <section className="r-section"><div className="r-heading"><div><small>OUR PORTFOLIO</small><h2>Ingredients and foods<br /><em>for different needs.</em></h2></div><Btn href="/products">View all products</Btn></div><PortfolioCues /><div className="r-grid">{groups.map((group, index) => <a key={group.id} href={`/products#${group.id}`} onClick={(event) => { event.preventDefault(); go('/products'); setTimeout(() => document.getElementById(group.id)?.scrollIntoView({ behavior: 'smooth' }), 50); }} style={{ backgroundImage: `linear-gradient(180deg,rgba(23,59,55,.08),rgba(23,59,55,.82)),url(${groupImage(group.id)})` }}><span>{String(index + 1).padStart(2, '0')}</span><div><small>{group.audience}</small><h3>{group.title}</h3><b>↗</b></div></a>)}</div></section>
     <section className="r-story"><figure><img src="/about-farmers.jpg" alt="Illustrative image of women harvesting produce" loading="lazy" /></figure><article><small>THE PEOPLE BEHIND RUMIRA</small><h2>Women led.<br /><em>Women run. Women grown.</em></h2><p>Our work connects more than 500 associated farmers with processing and markets. Women in farming, enterprise and food innovation are central to that vision.</p><Btn href="/about">Discover our story</Btn></article></section>
     <Testimonials navigate={go} />
     <section className="r-quote"><span aria-hidden="true">“</span><blockquote>From farm to food.<br />From women to change.</blockquote><small>RUMIRA FOODS</small></section>

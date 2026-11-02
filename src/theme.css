@@ -45,7 +45,14 @@ body { background: var(--cream); color: var(--green); }
 .r-stats b, .r-story em, .r-page-hero.dark em { color: #d6e85a; }
 .r-stats div { border-color: #568b83; }
 .r-stats p, .r-story p, .r-page-hero.dark p { color: #d7f1ea; }
-.r-section { background: url('/decor-category-icons.svg') right 18vw top 55px / 300px auto no-repeat, var(--paper); }
+.r-section { background: var(--paper); }
+.r-portfolio-cues { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin: -9px 0 38px; padding: 12px 18px; border: 1px solid var(--line); border-radius: 18px; background: var(--rumira-mint-pale); }
+.r-portfolio-cues li { display: flex; align-items: center; justify-content: center; gap: 9px; min-width: 0; color: var(--rumira-ink); font-size: 12px; font-weight: 700; }
+.r-portfolio-cues li + li { border-left: 1px solid var(--line); }
+.r-portfolio-cues i { display: block; flex: 0 0 80px; width: 80px; height: 76px; background: url('/decor-category-icons.svg') 0 -7px / 320px auto no-repeat; }
+.r-portfolio-cues .r-cue-coffee { background-position-x: -80px; }
+.r-portfolio-cues .r-cue-tea { background-position-x: -160px; }
+.r-portfolio-cues .r-cue-food { background-position-x: -240px; }
 .r-process-note { position: relative; isolation: isolate; overflow: hidden; background: url('/decor-farm-tools.svg') right 7vw top 20px / 125px auto no-repeat, var(--rumira-mint); }
 .r-process-note::after { content: ''; position: absolute; z-index: 0; width: min(30vw, 420px); height: 300px; right: 7vw; bottom: -22px; background: url('/decor-harvest.svg') center bottom / contain no-repeat; pointer-events: none; }
 .r-process-note > * { position: relative; z-index: 1; }
@@ -404,10 +411,18 @@ body { background: var(--cream); color: var(--green); }
   .r-process-note h2, .r-process-note p { max-width: 750px; }
   .r-process-note::after { width: 260px; height: 185px; right: 5vw; bottom: -18px; }
 }
-@media (max-width: 1000px) {
-  .r-section { background: var(--paper); }
+@media (max-width: 900px) {
+  .r-portfolio-cues { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 10px; }
+  .r-portfolio-cues li { justify-content: flex-start; padding-left: 8px; }
+  .r-portfolio-cues li:nth-child(3) { border-left: 0; }
 }
 @media (max-width: 500px) {
+  .r-portfolio-cues { padding: 12px 8px; gap: 8px 0; margin-top: 0; }
+  .r-portfolio-cues li { gap: 4px; padding-left: 0; font-size: 11px; }
+  .r-portfolio-cues i { flex-basis: 60px; width: 60px; height: 58px; background-size: 240px auto; background-position-y: -5px; }
+  .r-portfolio-cues .r-cue-coffee { background-position-x: -60px; }
+  .r-portfolio-cues .r-cue-tea { background-position-x: -120px; }
+  .r-portfolio-cues .r-cue-food { background-position-x: -180px; }
   .r-process-note { padding-bottom: 150px; }
   .r-process-note::after { width: 205px; height: 150px; right: 3vw; }
   .r-featured-frame { height: 320px; }
