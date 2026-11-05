@@ -352,7 +352,22 @@ body { background: var(--cream); color: var(--green); }
 .r-about-difference article { padding-top: 18px; border-top: 2px solid var(--rumira-coral); }
 .r-about-difference h3 { font: 600 21px/1.2 'Fraunces', Georgia, serif; }
 .r-about-difference p { font-size: 13px; line-height: 1.6; color: var(--muted); }
-.r-process-intro .r-process-image { height: 440px; border-radius: 180px 180px 24px 24px; }
+.r-process-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .95fr); align-items: center; gap: 6vw; padding-block: 75px; background: linear-gradient(120deg, var(--rumira-mint-pale), var(--rumira-cream)); }
+.r-process-hero-copy small { color: var(--rumira-ink); }
+.r-process-hero h1 { color: var(--rumira-ink); font-size: clamp(48px, 5.2vw, 76px); }
+.r-process-hero h1 em { color: var(--rumira-ink); white-space: nowrap; text-decoration: underline; text-decoration-color: var(--rumira-gold); text-decoration-thickness: .1em; text-underline-offset: .1em; }
+.r-process-hero p { color: var(--muted); }
+.r-process-hero-image { height: 410px; margin: 0; overflow: hidden; border-radius: 28px 130px 28px 28px; box-shadow: 16px 16px 0 var(--rumira-turquoise); }
+.r-process-hero-image img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.r-process-intro { background: var(--paper); }
+.r-process-intro .r-process-image { height: 440px; border-radius: 28px; }
+.r-process-image img { object-position: center; }
+.r-process-intro h2 em, .r-process-benefits h2 em { color: var(--rumira-ink); text-decoration: underline; text-decoration-color: var(--rumira-gold); text-decoration-thickness: .1em; text-underline-offset: .1em; }
+.r-steps { background: var(--rumira-cream); }
+.r-steps b { color: var(--rumira-ink); }
+.r-process-benefits { background: var(--paper); }
+.r-process-benefits li::before { color: var(--rumira-turquoise); }
+.r-process-principles { background: var(--rumira-mint-pale); }
 .r-page-hero.dark h1 em { white-space: nowrap; }
 .r-capabilities { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 0; margin: 26px 0 0; list-style: none; }
 .r-capabilities li { padding: 10px 12px; border-left: 3px solid var(--rumira-turquoise); background: var(--rumira-mint-pale); color: var(--rumira-ink); font-size: 12px; font-weight: 700; }
@@ -413,6 +428,10 @@ body { background: var(--cream); color: var(--green); }
   @keyframes rumira-feature-in { from { opacity: .45; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 }
 @media (max-width: 800px) {
+  .r-process-hero { grid-template-columns: 1fr; gap: 35px; padding: 65px 8vw 75px; }
+  .r-process-hero h1 { font-size: clamp(42px, 9vw, 64px); }
+  .r-process-hero-image { height: 340px; box-shadow: 10px 10px 0 var(--rumira-turquoise); }
+  .r-process-intro .r-process-image { height: 340px; }
   .r-hero { background: url('/decor-farm-tools.svg') left 4px bottom 8px / 74px auto no-repeat, url('/decor-leaves.svg') right -7px top -12px / 93px auto no-repeat, linear-gradient(130deg,var(--rumira-mint-pale),var(--rumira-cream)); }
   .r-about-hero { background: url('/decor-leaves.svg') right -10px top -4px / 106px auto no-repeat, var(--rumira-mint); }
   .px-hero { background: url('/decor-food-linework.svg') right -14px top -12px / 100px auto no-repeat, linear-gradient(115deg,var(--rumira-mint),var(--rumira-cream)); }
@@ -438,6 +457,7 @@ body { background: var(--cream); color: var(--green); }
   .r-process-note::after { width: 260px; height: 185px; right: 5vw; bottom: -18px; }
 }
 @media (max-width: 500px) {
+  .r-process-hero h1 em { white-space: normal; }
   .r-process-note { padding-bottom: 150px; }
   .r-process-note::after { width: 205px; height: 150px; right: 3vw; }
   .r-featured-frame { height: 320px; }
