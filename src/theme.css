@@ -88,7 +88,7 @@ body { background: var(--cream); color: var(--green); }
   --px-orange: #e85b4a;
   background: var(--cream);
 }
-.px-topline { min-height: 36px; height: auto; padding: 7px 12px; background: var(--rumira-gold); color: var(--rumira-ink); font-size: 12px; font-weight: 700; text-align: center; }
+.px-topline { background: var(--rumira-ink); }
 .px-banner { background: var(--rumira-turquoise); color: var(--rumira-ink); }
 .px-header { background: var(--rumira-mint-pale); border-color: var(--line); }
 .px-header nav a { color: var(--rumira-ink); font-size: 15px; }
@@ -105,11 +105,8 @@ body { background: var(--cream); color: var(--green); }
 .px-eyebrow { color: var(--rumira-ink); }
 .px-hero h1 em, .px-detail h1 em { color: var(--rumira-coral); }
 .px-hero p, .px-intro p, .px-group-heading p, .px-card p, .px-description { color: var(--muted); }
-.px-tabs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; width: 100%; }
-.px-tabs button { color: var(--rumira-ink); border: 1px solid var(--line); border-radius: 14px; background: var(--paper); min-height: 54px; padding: 10px 12px; font-size: 14px !important; font-weight: 700; white-space: normal; text-align: center; }
+.px-tabs button { color: var(--rumira-ink); border-radius: 100px; padding: 12px 16px; font-size: 15px !important; font-weight: 700; }
 .px-tabs button.active { color: var(--rumira-ink); background: var(--rumira-lime); }
-.px-toolbar { display: block; }
-.px-search { max-width: 310px; margin-top: 24px; }
 .px-search { border-color: #b4d7cf; }
 .px-card { background: var(--paper); border: 1px solid #cde5df; border-radius: 24px; overflow: hidden; box-shadow: 0 6px 22px #173b370c; transition: transform .25s ease, box-shadow .25s ease; }
 .px-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px #173b371c; }
@@ -417,12 +414,8 @@ body { background: var(--cream); color: var(--green); }
   .r-page-hero.dark > * { position: relative; z-index: 1; }
   .r-contact { background: url('/decor-food-linework.svg') right -14px top -10px / 100px auto no-repeat, var(--rumira-mint-pale); }
   .r-page-hero.dark h1 { font-size: clamp(36px, 8vw, 64px); }
-  .r-about-intro .r-about-image { order: 2; }
   .r-process-principles { padding: 65px 8vw; }
   .r-principles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .px-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: visible; }
-  .px-tabs button { min-height: 58px; font-size: 14px !important; }
-  .px-search { max-width: none; }
   .r-featured-frame { height: 370px; box-shadow: 10px 10px 0 var(--rumira-lime); }
   .r-about-stats, .r-about-difference>div { grid-template-columns: repeat(2, 1fr); }
   .r-about-chapters, .r-about-values, .r-about-flow, .r-about-difference, .r-process-benefits { padding: 65px 8vw; }
