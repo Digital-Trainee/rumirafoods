@@ -429,6 +429,10 @@ body { background: var(--cream); color: var(--green); }
   @keyframes rumira-feature-in { from { opacity: .45; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 }
 @media (max-width: 800px) {
+  .r-contact { grid-template-columns: minmax(0, 1fr); }
+  .r-contact > div, .r-contact form { min-width: 0; }
+  .r-contact form { width: 100%; }
+  .r-contact input, .r-contact select, .r-contact textarea { min-width: 0; width: 100%; }
   .r-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; align-items: stretch; padding: 30px 8vw; }
   .r-stats div { min-width: 0; min-height: 86px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 0 8px; text-align: center; border-right: 1px solid #568b83; }
   .r-stats div:last-of-type { border-right: 0; }
@@ -464,6 +468,9 @@ body { background: var(--cream); color: var(--green); }
   .r-process-note::after { width: 260px; height: 185px; right: 5vw; bottom: -18px; }
 }
 @media (max-width: 500px) {
+  .r-grid > a { min-width: 0; }
+  .r-grid h3 { font-size: clamp(18px, 5vw, 22px); overflow-wrap: anywhere; }
+  .px-card-heading h3 { min-width: 0; overflow-wrap: anywhere; }
   .r-stats { padding: 26px 5vw; }
   .r-stats div { padding: 0 4px; }
   .r-stats b { font-size: clamp(28px, 8vw, 38px); }
