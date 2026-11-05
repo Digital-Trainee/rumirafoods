@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const slides = [
   {
@@ -48,6 +48,8 @@ const slides = [
 export default function FeaturedCarousel({ navigate }) {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
+  const pointerStart = useRef(null);
+  const suppressClick = useRef(false);
 
   useEffect(() => {
     if (paused || matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
@@ -58,16 +60,43 @@ export default function FeaturedCarousel({ navigate }) {
   }, [paused]);
 
   const slide = slides[index];
+  const handlePointerDown = (event) => {
+    if (event.pointerType === 'mouse' && event.button !== 0) return;
+    pointerStart.current = { id: event.pointerId, x: event.clientX, y: event.clientY, captured: false };
+    suppressClick.current = false;
+    setPaused(true);
+  };
+  const handlePointerMove = (event) => {
+    const start = pointerStart.current;
+    if (!start || start.id !== event.pointerId || start.captured) return;
+    const dx = event.clientX - start.x;
+    const dy = event.clientY - start.y;
+    if (Math.abs(dx) > 12 && Math.abs(dx) > Math.abs(dy)) {
+      event.currentTarget.setPointerCapture(event.pointerId);
+      start.captured = true;
+    }
+  };
+  const handlePointerUp = (event) => {
+    if (!pointerStart.current || pointerStart.current.id !== event.pointerId) return;
+    const dx = event.clientX - pointerStart.current.x;
+    const dy = event.clientY - pointerStart.current.y;
+    pointerStart.current = null;
+    if (Math.abs(dx) < 45 || Math.abs(dx) <= Math.abs(dy)) return;
+    suppressClick.current = true;
+    setIndex((current) => (current + (dx < 0 ? 1 : slides.length - 1)) % slides.length);
+    setTimeout(() => { suppressClick.current = false; }, 250);
+  };
   const openCategory = (event) => {
     event.preventDefault();
+    if (suppressClick.current) return;
     navigate(slide.target.split('#')[0]);
     const sectionId = slide.target.split('#')[1];
     if (sectionId) setTimeout(() => document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' }), 50);
   };
 
-  return <div className="r-featured" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onFocusCapture={() => setPaused(true)} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setPaused(false); }} aria-label="Featured food categories">
-    <div className="r-featured-frame" key={slide.id}>
-      <img className="r-featured-photo" src={slide.image} alt={slide.alt} />
+  return <div className="r-featured" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onFocusCapture={() => setPaused(true)} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setPaused(false); }} onClickCapture={(event) => { if (suppressClick.current) { event.preventDefault(); event.stopPropagation(); suppressClick.current = false; } }} aria-label="Featured food categories">
+    <div className="r-featured-frame" key={slide.id} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerCancel={() => { pointerStart.current = null; }} onDragStart={(event) => event.preventDefault()}>
+      <img className="r-featured-photo" src={slide.image} alt={slide.alt} draggable="false" />
       <a href={slide.target} onClick={openCategory}><small>EXPLORE THE COLLECTION</small><strong>{slide.name}</strong><span>Explore category ↗</span></a>
     </div>
     <div className="r-featured-controls" aria-label="Choose a featured category">

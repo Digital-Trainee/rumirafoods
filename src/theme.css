@@ -296,7 +296,8 @@ body { background: var(--cream); color: var(--green); }
 
 /* The rotating category feature on the home page. */
 .r-featured { min-width: 0; }
-.r-featured-frame { height: 470px; position: relative; overflow: hidden; border-radius: 240px 240px 28px 28px; box-shadow: 18px 18px 0 var(--rumira-lime); background: var(--rumira-mint); }
+.r-featured-frame { height: 470px; position: relative; overflow: hidden; border-radius: 240px 240px 28px 28px; box-shadow: 18px 18px 0 var(--rumira-lime); background: var(--rumira-mint); touch-action: pan-y; user-select: none; cursor: grab; }
+.r-featured-frame:active { cursor: grabbing; }
 .r-featured-photo { width: 100%; height: 100%; display: block; object-fit: cover; }
 .r-featured-frame::after { content: ''; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, #173b37c9); pointer-events: none; }
 .r-featured-frame a { position: absolute; z-index: 1; left: 30px; right: 30px; bottom: 28px; display: grid; gap: 7px; color: #fff; }
@@ -428,6 +429,12 @@ body { background: var(--cream); color: var(--green); }
   @keyframes rumira-feature-in { from { opacity: .45; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 }
 @media (max-width: 800px) {
+  .r-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; align-items: stretch; padding: 30px 8vw; }
+  .r-stats div { min-width: 0; min-height: 86px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 0 8px; text-align: center; border-right: 1px solid #568b83; }
+  .r-stats div:last-of-type { border-right: 0; }
+  .r-stats b { font-size: clamp(30px, 6vw, 40px); line-height: 1; }
+  .r-stats span { font-size: 11px; line-height: 1.35; }
+  .r-stats p { grid-column: 1 / -1; width: auto; margin: 24px 0 0; padding-top: 18px; border-top: 1px solid #568b83; text-align: center; line-height: 1.5; }
   .r-process-hero { grid-template-columns: 1fr; gap: 35px; padding: 65px 8vw 75px; }
   .r-process-hero h1 { font-size: clamp(42px, 9vw, 64px); }
   .r-process-hero-image { height: 340px; box-shadow: 10px 10px 0 var(--rumira-turquoise); }
@@ -457,6 +464,11 @@ body { background: var(--cream); color: var(--green); }
   .r-process-note::after { width: 260px; height: 185px; right: 5vw; bottom: -18px; }
 }
 @media (max-width: 500px) {
+  .r-stats { padding: 26px 5vw; }
+  .r-stats div { padding: 0 4px; }
+  .r-stats b { font-size: clamp(28px, 8vw, 38px); }
+  .r-stats span { font-size: 10px; }
+  .r-stats p { font-size: 11px; }
   .r-process-hero h1 em { white-space: normal; }
   .r-process-note { padding-bottom: 150px; }
   .r-process-note::after { width: 205px; height: 150px; right: 3vw; }
