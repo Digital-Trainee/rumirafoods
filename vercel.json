@@ -1,10 +1,10 @@
 {
   "rewrites": [
-    { "source": "/about", "destination": "/index.html" },
-    { "source": "/products", "destination": "/index.html" },
-    { "source": "/products/:path*", "destination": "/index.html" },
-    { "source": "/process", "destination": "/index.html" },
-    { "source": "/contact", "destination": "/index.html" },
-    { "source": "/thank-you", "destination": "/index.html" }
+    { "source": "/about", "destination": "/meta/about.html" },
+    { "source": "/products", "destination": "/meta/products.html" },
+    { "source": "/products/:slug", "destination": "/meta/products/:slug.html" },
+    { "source": "/process", "destination": "/meta/process.html" },
+    { "source": "/contact", "destination": "/meta/contact.html" },
+    { "source": "/thank-you", "destination": "/meta/thank-you.html" }
   ]
 }

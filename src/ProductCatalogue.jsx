@@ -16,7 +16,7 @@ function Brand({ navigate }) {
 function Photo({ product, large }) {
   const isDipProduct = ['coffee-dips', 'flavoured-coffee', 'herbal-teas'].includes(product.groupId);
   return <div className={`px-photo${large ? ' px-photo-large' : ''}${isDipProduct ? ' px-photo-dip' : ''}`}>
-    <img src={product.image} alt={product.name} loading={large ? 'eager' : 'lazy'} />
+    <img src={product.image} alt={product.imageAlt || product.name} loading={large ? 'eager' : 'lazy'} />
   </div>;
 }
 

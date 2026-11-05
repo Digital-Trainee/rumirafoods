@@ -12,6 +12,7 @@ import FeaturedCarousel from './FeaturedCarousel.jsx';
 import Testimonials from './Testimonials.jsx';
 import { setupScrollReveal } from './scrollReveal.js';
 import { catalog, groups, groupImage } from './catalog.js';
+import { updatePageSeo } from './seo-client.js';
 
 const phone = '919999179434';
 const email = 'rumira2025@gmail.com';
@@ -77,6 +78,7 @@ function App() {
     return () => removeEventListener('popstate', listener);
   }, []);
   useEffect(setupScrollReveal, []);
+  useEffect(() => { updatePageSeo(path, catalog); }, [path]);
 
   if (path === '/products' || path.startsWith('/products/')) return <ProductCatalogue path={path} navigate={go} />;
   const page = path === '/about' ? <About navigate={go} /> : path === '/process' ? <Process /> : path === '/contact' ? <ContactForm navigate={go} /> : path === '/thank-you' ? <ThankYou navigate={go} /> : <Home />;
