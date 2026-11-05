@@ -371,7 +371,7 @@ body { background: var(--cream); color: var(--green); }
 .r-process-principles { background: var(--rumira-mint-pale); }
 .r-page-hero.dark h1 em { white-space: nowrap; }
 .r-capabilities { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 0; margin: 26px 0 0; list-style: none; }
-.r-capabilities li { padding: 10px 12px; border-left: 3px solid var(--rumira-turquoise); background: var(--rumira-mint-pale); color: var(--rumira-ink); font-size: 12px; font-weight: 700; }
+.r-capabilities li { padding: 13px 16px; border-left: 3px solid var(--rumira-turquoise); background: var(--rumira-mint-pale); color: var(--rumira-ink); font-size: 16px; line-height: 1.35; font-weight: 700; }
 .r-process-principles { padding: 90px 11vw; background: var(--rumira-cream); }
 .r-process-principles-heading { max-width: 720px; margin-bottom: 34px; }
 .r-process-principles-heading small { color: var(--rumira-ink); font-size: 11px; font-weight: 700; letter-spacing: .15em; }
