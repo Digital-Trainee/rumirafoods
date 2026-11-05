@@ -331,7 +331,8 @@ body { background: var(--cream); color: var(--green); }
 .r-about-heading h1 { font: 600 clamp(43px, 5vw, 70px)/1.06 'Fraunces', Georgia, serif; letter-spacing: -.04em; margin: 18px 0 0; }
 .r-about-heading h1 em { color: var(--rumira-coral); }
 .r-about-intro p + p { margin-top: 18px; }
-.r-about-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin: 0 0 75px; padding: 28px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.r-about-facts-section { padding: 0 11vw 90px; background: var(--paper); }
+.r-about-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; padding: 28px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .r-about-facts div { display: flex; flex-direction: column; gap: 7px; }
 .r-about-facts strong { color: var(--rumira-ink); font: 600 clamp(23px, 2.5vw, 34px)/1.1 'Fraunces', Georgia, serif; }
 .r-about-facts span { color: var(--muted); font-size: 12px; }
@@ -424,6 +425,7 @@ body { background: var(--cream); color: var(--green); }
   .r-principles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .r-featured-frame { height: 370px; box-shadow: 10px 10px 0 var(--rumira-lime); }
   .r-about-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+  .r-about-facts-section { padding: 0 8vw 65px; }
   .r-about-stats, .r-about-difference>div { grid-template-columns: repeat(2, 1fr); }
   .r-about-chapters, .r-about-values, .r-about-flow, .r-about-difference, .r-process-benefits { padding: 65px 8vw; }
   .r-about-chapters article, .r-process-benefits { grid-template-columns: 1fr; gap: 30px; }
