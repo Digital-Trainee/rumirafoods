@@ -28,7 +28,7 @@ export default function Testimonials({ navigate }) {
 
   return <section className="rumira-testimonials" aria-labelledby="rumira-testimonials-title">
     <div className="rumira-testimonials-heading">
-      <div><small>WORDS FROM OUR CUSTOMERS</small><h2 id="rumira-testimonials-title">Loved in <em>everyday kitchens.</em></h2><p>Explore what customers shared about their favourite Rumira foods.</p></div>
+      <div><small>WORDS FROM OUR CUSTOMERS</small><h2 id="rumira-testimonials-title">Loved in <em>offices, hotels and kitchens.</em></h2><p>Explore what customers shared about their favourite Rumira foods.</p></div>
       <div className="rumira-testimonials-controls">
         <button type="button" aria-label="Previous testimonials" onClick={() => move(-1)}>←</button>
         <button type="button" aria-label="Next testimonials" onClick={() => move(1)}>→</button>
