@@ -339,6 +339,16 @@ body { background: var(--cream); color: var(--green); }
 .r-about-facts span { color: var(--muted); font-size: 12px; }
 .r-about-chapters h2 em, .r-about-values h2 em, .r-process-benefits h2 em { color: var(--rumira-coral); }
 .r-about-chapters p, .r-about-values p, .r-about-flow p, .r-process-benefits p { color: var(--muted); line-height: 1.75; }
+.r-about-philosophy { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 7vw; align-items: center; padding: 66px 11vw; background: var(--rumira-cream); }
+.r-about-philosophy small { color: var(--rumira-ink); font-size: 11px; font-weight: 700; letter-spacing: .15em; }
+.r-about-philosophy h2 { margin: 14px 0 17px; color: var(--rumira-ink); font: 600 clamp(32px, 3.5vw, 48px)/1.12 'Fraunces', Georgia, serif; }
+.r-about-philosophy h2 span { color: var(--rumira-turquoise); }
+.r-about-philosophy p { margin: 0; color: var(--muted); line-height: 1.7; }
+.r-about-philosophy-parts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.r-about-philosophy-parts > div { min-width: 0; padding: 22px 0 0; border-top: 3px solid var(--rumira-turquoise); }
+.r-about-philosophy-parts > div:last-child { border-color: var(--rumira-gold); }
+.r-about-philosophy h3 { margin: 0 0 10px; color: var(--rumira-ink); font: 600 25px/1.1 'Fraunces', Georgia, serif; }
+.r-about-philosophy-parts p { font-size: 14px; }
 .r-about-values { padding: 90px 11vw; text-align: center; background: var(--rumira-cream); }
 .r-about-values p { max-width: 700px; margin: 0 auto; }
 .r-about-values>div { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
@@ -429,6 +439,7 @@ body { background: var(--cream); color: var(--green); }
   @keyframes rumira-feature-in { from { opacity: .45; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 }
 @media (max-width: 800px) {
+  .r-about-philosophy { grid-template-columns: 1fr; gap: 30px; padding: 60px 8vw; }
   .r-contact { grid-template-columns: minmax(0, 1fr); }
   .r-contact > div, .r-contact form { min-width: 0; }
   .r-contact form { width: 100%; }
@@ -468,6 +479,7 @@ body { background: var(--cream); color: var(--green); }
   .r-process-note::after { width: 260px; height: 185px; right: 5vw; bottom: -18px; }
 }
 @media (max-width: 500px) {
+  .r-about-philosophy-parts { grid-template-columns: 1fr; gap: 24px; }
   .r-grid > a { min-width: 0; }
   .r-grid h3 { font-size: clamp(18px, 5vw, 22px); overflow-wrap: anywhere; }
   .px-card-heading h3 { min-width: 0; overflow-wrap: anywhere; }
