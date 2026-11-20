@@ -23,8 +23,8 @@ const go = (path) => {
   scrollTo({ top: 0, behavior: 'smooth' });
 };
 
-function Logo() {
-  return <a className="r-logo" href="/" onClick={(event) => { event.preventDefault(); go('/'); }}><b>R</b><span>RUMIRA <i>FOODS</i></span></a>;
+function Logo({ light = false }) {
+  return <a className="r-logo" href="/" aria-label="Rumira Foods home" onClick={(event) => { event.preventDefault(); go('/'); }}><img src={light ? '/rumira-logo-light.svg' : '/rumira-logo.svg'} alt="" width="52" height="52" /></a>;
 }
 
 function Btn({ href, children, green = false }) {
@@ -39,7 +39,7 @@ function Header() {
 }
 
 function Footer() {
-  return <footer className="r-footer"><div><Logo /><p>Healthy food everyday.<br />Your go-to clean label food brand.</p></div><div><small>EXPLORE</small><a href="/about" onClick={(event) => { event.preventDefault(); go('/about'); }}>About Rumira</a><a href="/products" onClick={(event) => { event.preventDefault(); go('/products'); }}>Our products</a><a href="/process" onClick={(event) => { event.preventDefault(); go('/process'); }}>Our approach</a></div><div><small>CONNECT</small><a href={`mailto:${email}`}>{email}</a><a href={wa('Hello Rumira Foods')} target="_blank" rel="noreferrer">+91 99991 79434 · WhatsApp</a></div><p className="copyright">© 2026 Rumira Foods <span>Made with care in India</span></p></footer>;
+  return <footer className="r-footer"><div><Logo light /><p>Healthy food everyday.<br />Your go-to clean label food brand.</p></div><div><small>EXPLORE</small><a href="/about" onClick={(event) => { event.preventDefault(); go('/about'); }}>About Rumira</a><a href="/products" onClick={(event) => { event.preventDefault(); go('/products'); }}>Our products</a><a href="/process" onClick={(event) => { event.preventDefault(); go('/process'); }}>Our approach</a></div><div><small>CONNECT</small><a href={`mailto:${email}`}>{email}</a><a href={wa('Hello Rumira Foods')} target="_blank" rel="noreferrer">+91 99991 79434 · WhatsApp</a></div><p className="copyright">© 2026 Rumira Foods <span>Made with care in India</span></p></footer>;
 }
 
 const portfolioLabels = {
@@ -51,7 +51,7 @@ const portfolioLabels = {
 
 function Home() {
   return <>
-    <section className="r-hero"><div><small>WOMEN GROWN · WOMEN OWNED</small><h1>Healthy food <em>everyday.</em></h1><p>Rumira Group brings you thoughtfully processed, clean label food. From harvest to home.</p><div className="r-actions"><Btn href="/products">Explore our products</Btn><Btn green href={wa('Hello Rumira Foods, I would like to know more about your products.')}>WhatsApp us</Btn></div></div><FeaturedCarousel navigate={go} /></section>
+    <section className="r-hero" aria-label="Rumira Foods featured products"><FeaturedCarousel navigate={go}><div className="r-hero-copy"><small>WOMEN GROWN · WOMEN OWNED</small><h1>Healthy food<br /><em>everyday.</em></h1><p>Rumira Group brings you thoughtfully processed, clean label food. From harvest to home.</p><a className="r-hero-whatsapp" href={wa('Hello Rumira Foods, I would like to know more about your products.')} target="_blank" rel="noreferrer">WhatsApp us ↗</a></div></FeaturedCarousel></section>
     <section className="r-stats"><div><b>500+</b><span>associated farmers</span></div><div><b>{groups.length}</b><span>product categories</span></div><div><b>{catalog.length}</b><span>products to explore</span></div><p>Farmer-linked sourcing · In-house processing · B2B and HORECA supply</p></section>
     <section className="r-section"><div className="r-heading"><div><small>EXPLORE RUMIRA</small><h2>Our portfolio</h2></div><Btn href="/products">View all products</Btn></div><div className="r-grid">{groups.map((group, index) => <a key={group.id} href={`/products#${group.id}`} onClick={(event) => { event.preventDefault(); go('/products'); setTimeout(() => document.getElementById(group.id)?.scrollIntoView({ behavior: 'smooth' }), 50); }} style={{ backgroundImage: `linear-gradient(180deg,rgba(23,59,55,.08),rgba(23,59,55,.82)),url(${groupImage(group.id)})` }}><span>{String(index + 1).padStart(2, '0')}</span><div>{(portfolioLabels[group.id]?.audience ?? group.audience) && <small>{portfolioLabels[group.id]?.audience ?? group.audience}</small>}<h3>{portfolioLabels[group.id]?.title ?? group.title}</h3><b>↗</b></div></a>)}</div></section>
     <section className="r-story"><figure><img src="/process-farming.jpg" alt="Women harvesting leafy greens in a field" loading="lazy" /></figure><article><small>THE PEOPLE BEHIND RUMIRA</small><h2>Women grown.<br /><em>Women owned.</em></h2><p>Our work begins at the ground level with 500+ associated farmers and 50+ village enterprises across India, helping us bring pure food to your family.</p><Btn href="/about">Discover our story</Btn></article></section>

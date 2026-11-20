@@ -27,6 +27,7 @@ body { background: var(--cream); color: var(--green); }
 /* Home, process and contact pages */
 .r-header { background: var(--rumira-mint-pale); border-color: var(--line); box-shadow: 0 8px 30px #173b3708; }
 .r-logo b { background: var(--rumira-lime); color: var(--rumira-ink); border-radius: 9px 21px 9px 21px; transform: rotate(-8deg); }
+.r-logo img, .px-brand img { display: block; width: 52px; height: 52px; }
 .r-nav { color: var(--rumira-ink); font-size: 15px; font-weight: 700; }
 .r-nav a.active, .r-nav a:hover { color: var(--rumira-ink); text-decoration: underline 2px var(--rumira-turquoise); text-underline-offset: 6px; }
 .r-hero { background: url('/decor-farm-tools.svg') left -35px bottom -20px / 145px auto no-repeat, url('/decor-leaves.svg') left -75px top -30px / 240px auto no-repeat, linear-gradient(130deg,var(--rumira-mint-pale),var(--rumira-cream)); }
@@ -135,6 +136,7 @@ body { background: var(--cream); color: var(--green); }
 .px-drawer, .px-modal { background: var(--paper); }
 
 @media(max-width:700px) {
+  .r-logo img, .px-brand img { width: 44px; height: 44px; }
   .r-hero-photo { box-shadow: 10px 10px 0 var(--rumira-lime); }
   .px-header nav.open { background: var(--paper); }
   .px-detail-info { padding: 18px; }
@@ -308,6 +310,52 @@ body { background: var(--cream); color: var(--green); }
 .r-featured-controls button { width: 11px; height: 11px; padding: 0; border: 0; border-radius: 50%; background: #a7cfc7; cursor: pointer; }
 .r-featured-controls button.active { width: 28px; border-radius: 20px; background: var(--rumira-coral); }
 .r-featured-controls button:focus-visible, .r-featured-frame a:focus-visible { outline: 3px solid var(--rumira-coral); outline-offset: 4px; }
+
+/* Full-photo home banner using Rumira's existing navigation and copy. */
+.r-hero { display: block; min-height: 0; padding: 0; background: var(--rumira-ink); color: #fff; }
+.r-hero .r-featured { position: relative; height: calc(100svh - 82px); min-height: 640px; overflow: hidden; }
+.r-hero .r-featured-frame { position: absolute; inset: 0; height: 100%; border-radius: 0; box-shadow: none; background: var(--rumira-ink); }
+.r-hero .r-featured-photo { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: center; mask-image: none; }
+.r-hero .r-featured-frame::after { z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(0, 31, 20, .88), rgba(0, 31, 20, .68) 45%, rgba(0, 31, 20, .42)), linear-gradient(0deg, rgba(0, 22, 15, .55), transparent 38%); }
+.r-hero-copy { position: absolute; z-index: 2; top: 20%; left: 5vw; width: min(940px, 65vw); max-width: none; }
+.r-hero .r-hero-copy small { color: #d6e85a; font-size: 13px; }
+.r-hero .r-featured-frame .r-hero-whatsapp { position: static; display: inline-block; margin-top: 20px; color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 5px; }
+.r-hero .r-hero-copy h1 { margin: 24px 0 0; color: #fff; font-size: clamp(76px, 7.6vw, 150px); line-height: .96; letter-spacing: -.055em; }
+.r-hero .r-hero-copy h1 em { color: #a5d64e; font-style: normal; }
+.r-hero .r-hero-copy p { position: relative; max-width: 750px; margin: 50px 0 0; padding-left: 78px; color: #f0f2e9; font: 500 clamp(16px, 1.25vw, 21px)/1.55 'Fraunces', Georgia, serif; }
+.r-hero .r-hero-copy p::before { content: ''; position: absolute; top: .8em; left: 0; width: 52px; height: 1px; background: #e5eee0b3; }
+.r-hero .r-featured-arrow { position: absolute; z-index: 3; top: 53%; width: 64px; height: 64px; border: 1px solid #ffffff8c; border-radius: 50%; background: #08291faa; color: #fff; font: 42px/1 Georgia, serif; cursor: pointer; }
+.r-hero .r-featured-prev { left: 30px; }
+.r-hero .r-featured-next { right: 30px; }
+.r-hero .r-hero-product-cta { position: absolute; z-index: 3; left: 50%; bottom: 75px; transform: translateX(-50%); display: flex; align-items: center; gap: 25px; padding: 9px 9px 9px 25px; border: 1px solid #ffffff8c; border-radius: 100px; background: #ffffff38; color: #fff; font: 700 14px 'DM Sans', sans-serif; letter-spacing: .07em; white-space: nowrap; }
+.r-hero-product-cta span { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: #a5d64e; color: var(--rumira-ink); font-size: 24px; }
+.r-hero .r-featured-controls { position: absolute; z-index: 3; left: 50%; bottom: 27px; transform: translateX(-50%); margin: 0; }
+.r-hero .r-featured-controls button { width: 44px; height: 3px; border-radius: 2px; background: #ffffff80; }
+.r-hero .r-featured-controls button.active { width: 44px; background: #a5d64e; }
+.r-hero a:focus-visible, .r-hero button:focus-visible { outline: 3px solid #d6e85a; outline-offset: 4px; }
+
+@media (max-width: 800px) {
+  .r-hero .r-featured { height: calc(100svh - 70px); min-height: 700px; }
+  .r-hero .r-featured-photo { object-position: 62% center; }
+  .r-hero .r-featured-frame::after { background: linear-gradient(90deg, rgba(0, 31, 20, .82), rgba(0, 31, 20, .4)), linear-gradient(0deg, rgba(0, 22, 15, .62), transparent 45%); }
+  .r-hero-copy { top: 17%; left: 8vw; width: 84vw; }
+  .r-hero .r-hero-copy h1 { font-size: clamp(58px, 11vw, 88px); }
+  .r-hero .r-hero-copy p { max-width: 570px; margin-top: 32px; padding-left: 56px; font-size: 17px; }
+  .r-hero .r-hero-copy p::before { width: 36px; }
+  .r-hero .r-featured-arrow { top: 63%; width: 44px; height: 44px; font-size: 32px; }
+  .r-hero .r-featured-prev { left: 4vw; }
+  .r-hero .r-featured-next { right: 4vw; }
+}
+@media (max-width: 500px) {
+  .r-hero .r-featured { min-height: 670px; }
+  .r-hero .r-featured-photo { object-position: 61% center; }
+  .r-hero .r-featured-frame::after { background: linear-gradient(90deg, rgba(0, 31, 20, .84), rgba(0, 31, 20, .45)), linear-gradient(0deg, rgba(0, 22, 15, .72), transparent 55%); }
+  .r-hero-copy { top: 15%; }
+  .r-hero .r-hero-copy h1 { font-size: clamp(48px, 13vw, 68px); }
+  .r-hero .r-hero-copy p { font-size: 15px; }
+  .r-hero .r-hero-product-cta { bottom: 76px; }
+  .r-hero .r-featured-controls button, .r-hero .r-featured-controls button.active { width: 26px; }
+}
 .r-story figure, .r-process-image { position: relative; min-height: 420px; margin: 0; overflow: hidden; }
 .r-story figure img, .r-process-image img { width: 100%; height: 100%; display: block; object-fit: cover; }
 
@@ -344,7 +392,7 @@ body { background: var(--cream); color: var(--green); }
 .r-about-philosophy h2 { display: grid; gap: 3px; margin: 18px 0 22px; color: var(--rumira-ink); font-family: 'Fraunces', Georgia, serif; line-height: 1; }
 .r-about-philosophy h2 > span { font-size: clamp(31px, 3.2vw, 46px); font-weight: 600; white-space: nowrap; }
 .r-about-philosophy h2 i { color: var(--rumira-turquoise); font-style: normal; }
-.r-about-philosophy h2 strong { font-size: clamp(54px, 6.6vw, 94px); font-weight: 650; letter-spacing: -.065em; text-decoration: underline; text-decoration-color: var(--rumira-gold); text-decoration-thickness: .08em; text-underline-offset: .08em; }
+.r-about-philosophy h2 strong { font-size: clamp(36px, 3.4vw, 52px); font-weight: 650; letter-spacing: -.065em; text-decoration: underline; text-decoration-color: var(--rumira-gold); text-decoration-thickness: .08em; text-underline-offset: .08em; }
 .r-about-philosophy-intro > p { max-width: 47ch; margin: 0; color: var(--muted); font-size: 16px; line-height: 1.75; }
 .r-about-philosophy-parts { display: grid; gap: 16px; padding-right: 24px; }
 .r-about-philosophy-parts article { position: relative; isolation: isolate; min-width: 0; overflow: hidden; padding: 25px 30px 27px; background: var(--paper); border-left: 5px solid var(--rumira-turquoise); border-radius: 4px 26px 4px 26px; box-shadow: 0 15px 32px #173b3712; }
@@ -460,7 +508,7 @@ body { background: var(--cream); color: var(--green); }
   .r-process-hero h1 { font-size: clamp(42px, 9vw, 64px); }
   .r-process-hero-image { height: 340px; box-shadow: 10px 10px 0 var(--rumira-turquoise); }
   .r-process-intro .r-process-image { height: 340px; }
-  .r-hero { background: url('/decor-farm-tools.svg') left 4px bottom 8px / 74px auto no-repeat, url('/decor-leaves.svg') right -7px top -12px / 93px auto no-repeat, linear-gradient(130deg,var(--rumira-mint-pale),var(--rumira-cream)); }
+  .r-hero { background: var(--rumira-ink); }
   .r-about-hero { background: url('/decor-leaves.svg') right -10px top -4px / 106px auto no-repeat, var(--rumira-mint); }
   .px-hero { background: url('/decor-food-linework.svg') right -14px top -12px / 100px auto no-repeat, linear-gradient(115deg,var(--rumira-mint),var(--rumira-cream)); }
   .r-page-hero.dark { position: relative; isolation: isolate; overflow: hidden; }
@@ -486,7 +534,7 @@ body { background: var(--cream); color: var(--green); }
 }
 @media (max-width: 500px) {
   .r-about-philosophy h2 > span { font-size: clamp(27px, 8vw, 38px); }
-  .r-about-philosophy h2 strong { font-size: clamp(48px, 15vw, 72px); }
+  .r-about-philosophy h2 strong { font-size: clamp(34px, 9vw, 42px); }
   .r-about-philosophy-parts .r-philosophy-mira { margin-left: 14px; }
   .r-about-philosophy-parts article { padding: 23px 23px 25px; }
   .r-grid > a { min-width: 0; }

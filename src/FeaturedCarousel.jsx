@@ -2,50 +2,50 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const slides = [
   {
+    id: 'nutraceuticals',
+    name: 'Nutraceutical powders',
+    target: '/products#botanicals',
+    image: '/hero-banners/nutraceuticals.jpg',
+    alt: 'Illustrative assortment of botanical ingredient powders'
+  },
+  {
     id: 'dehydrated',
     name: 'Dehydrated veg & fruits',
     target: '/products',
-    image: '/hero-categories/dehydrated.jpg',
+    image: '/hero-banners/dehydrated.jpg',
     alt: 'Illustrative assortment of dehydrated fruit and vegetable pieces'
   },
   {
     id: 'snacks',
     name: 'Healthy snacks',
     target: '/products#snacks',
-    image: '/hero-categories/snacks.jpg',
+    image: '/hero-banners/snacks.jpg',
     alt: 'Illustrative assortment of makhana and vegetable chips'
   },
   {
     id: 'millets',
     name: 'Ready to eat millets',
     target: '/products#millets',
-    image: '/hero-categories/millets.jpg',
+    image: '/hero-banners/millets.jpg',
     alt: 'Illustrative assortment of millet laddus and cookies'
   },
   {
     id: 'tea-coffee',
     name: 'Functional tea & coffee dips',
     target: '/products',
-    image: '/hero-categories/tea-coffee.jpg',
+    image: '/hero-banners/tea-coffee.jpg',
     alt: 'Illustrative clear herbal tea and black coffee brewed with dip bags'
-  },
-  {
-    id: 'nutraceuticals',
-    name: 'Nutraceutical powders',
-    target: '/products#botanicals',
-    image: '/hero-categories/nutraceuticals.jpg',
-    alt: 'Illustrative assortment of botanical ingredient powders'
   },
   {
     id: 'seasonings',
     name: 'Masala & seasoning',
     target: '/products#seasonings',
-    image: '/hero-categories/seasonings.jpg',
+    image: '/hero-banners/seasonings.jpg',
     alt: 'Illustrative assortment of masala and culinary seasoning flakes'
   }
 ];
 
-export default function FeaturedCarousel({ navigate }) {
+export default function FeaturedCarousel({ navigate, children }) {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const pointerStart = useRef(null);
@@ -86,19 +86,14 @@ export default function FeaturedCarousel({ navigate }) {
     setIndex((current) => (current + (dx < 0 ? 1 : slides.length - 1)) % slides.length);
     setTimeout(() => { suppressClick.current = false; }, 250);
   };
-  const openCategory = (event) => {
-    event.preventDefault();
-    if (suppressClick.current) return;
-    navigate(slide.target.split('#')[0]);
-    const sectionId = slide.target.split('#')[1];
-    if (sectionId) setTimeout(() => document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' }), 50);
-  };
-
   return <div className="r-featured" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onFocusCapture={() => setPaused(true)} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setPaused(false); }} onClickCapture={(event) => { if (suppressClick.current) { event.preventDefault(); event.stopPropagation(); suppressClick.current = false; } }} aria-label="Featured food categories">
     <div className="r-featured-frame" key={slide.id} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerCancel={() => { pointerStart.current = null; }} onDragStart={(event) => event.preventDefault()}>
       <img className="r-featured-photo" src={slide.image} alt={slide.alt} draggable="false" />
-      <a href={slide.target} onClick={openCategory}><small>EXPLORE THE COLLECTION</small><strong>{slide.name}</strong><span>Explore category ↗</span></a>
+      {children}
     </div>
+    <button className="r-featured-arrow r-featured-prev" type="button" aria-label="Previous featured category" onClick={() => setIndex((current) => (current + slides.length - 1) % slides.length)}>‹</button>
+    <button className="r-featured-arrow r-featured-next" type="button" aria-label="Next featured category" onClick={() => setIndex((current) => (current + 1) % slides.length)}>›</button>
+    <a className="r-hero-product-cta" href="/products" onClick={(event) => { event.preventDefault(); navigate('/products'); }}>Explore our products <span aria-hidden="true">↗</span></a>
     <div className="r-featured-controls" aria-label="Choose a featured category">
       {slides.map((item, position) => <button key={item.id} type="button" className={position === index ? 'active' : ''} aria-label={`Show ${item.name}`} aria-current={position === index ? 'true' : undefined} onClick={() => setIndex(position)} />)}
     </div>
