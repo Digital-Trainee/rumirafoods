@@ -28,8 +28,8 @@ body { background: var(--cream); color: var(--green); }
 .r-header { background: var(--rumira-mint-pale); border-color: var(--line); box-shadow: 0 8px 30px #173b3708; }
 .r-logo b { background: var(--rumira-lime); color: var(--rumira-ink); border-radius: 9px 21px 9px 21px; transform: rotate(-8deg); }
 .r-logo img, .px-brand img { display: block; width: 52px; height: 52px; }
-.rumira-wordmark { display: inline-flex; align-items: baseline; gap: 7px; white-space: nowrap; color: var(--rumira-ink); font: 700 18px/1 'DM Sans', sans-serif; letter-spacing: .11em; }
-.rumira-wordmark span { font-size: 11px; font-weight: 600; letter-spacing: .18em; }
+.rumira-wordmark { display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 5px; white-space: nowrap; color: var(--rumira-ink); font: 700 18px/1 'DM Sans', sans-serif; letter-spacing: .11em; }
+.rumira-wordmark span { font-size: 11px; font-weight: 600; letter-spacing: .28em; }
 .r-footer .rumira-wordmark, .px-footer .rumira-wordmark { color: #f5f4e9; }
 .r-footer .rumira-wordmark span, .px-footer .rumira-wordmark span { color: var(--rumira-lime); }
 .r-nav-whatsapp { display: none; }
@@ -155,7 +155,7 @@ body { background: var(--cream); color: var(--green); }
 
 @media(max-width:700px) {
   .r-logo img, .px-brand img { width: 44px; height: 44px; }
-  .rumira-wordmark { font-size: 16px; gap: 5px; }
+  .rumira-wordmark { font-size: 16px; gap: 4px; }
   .rumira-wordmark span { font-size: 10px; }
   .r-hero-photo { box-shadow: 10px 10px 0 var(--rumira-lime); }
   .px-header nav.open { background: var(--paper); }
