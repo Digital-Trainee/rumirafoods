@@ -10,7 +10,7 @@ const wa = (message) => `https://wa.me/${phone}?text=${encodeURIComponent(messag
 const url = (product) => `/products/${product.id}`;
 
 function Brand({ navigate, light = false }) {
-  return <a className="px-brand" href="/" aria-label="Rumira Foods home" onClick={(event) => { event.preventDefault(); navigate('/'); }}><img src={light ? '/rumira-logo-light.svg' : '/rumira-logo.svg'} alt="" width="52" height="52" /></a>;
+  return <a className="px-brand" href="/" aria-label="Rumira Foods home" onClick={(event) => { event.preventDefault(); navigate('/'); }}><img src={light ? '/rumira-logo-light.svg' : '/rumira-logo.svg'} alt="" width="52" height="52" /><span className="rumira-wordmark"><strong>RUMIRA</strong><span>FOODS</span></span></a>;
 }
 
 function Photo({ product, large }) {

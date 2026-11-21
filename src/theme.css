@@ -28,6 +28,11 @@ body { background: var(--cream); color: var(--green); }
 .r-header { background: var(--rumira-mint-pale); border-color: var(--line); box-shadow: 0 8px 30px #173b3708; }
 .r-logo b { background: var(--rumira-lime); color: var(--rumira-ink); border-radius: 9px 21px 9px 21px; transform: rotate(-8deg); }
 .r-logo img, .px-brand img { display: block; width: 52px; height: 52px; }
+.rumira-wordmark { display: inline-flex; align-items: baseline; gap: 7px; white-space: nowrap; color: var(--rumira-ink); font: 700 18px/1 'DM Sans', sans-serif; letter-spacing: .11em; }
+.rumira-wordmark span { font-size: 11px; font-weight: 600; letter-spacing: .18em; }
+.r-footer .rumira-wordmark, .px-footer .rumira-wordmark { color: #f5f4e9; }
+.r-footer .rumira-wordmark span, .px-footer .rumira-wordmark span { color: var(--rumira-lime); }
+.r-nav-whatsapp { display: none; }
 .r-nav { color: var(--rumira-ink); font-size: 15px; font-weight: 700; }
 .r-nav a.active, .r-nav a:hover { color: var(--rumira-ink); text-decoration: underline 2px var(--rumira-turquoise); text-underline-offset: 6px; }
 .r-hero { background: url('/decor-farm-tools.svg') left -35px bottom -20px / 145px auto no-repeat, url('/decor-leaves.svg') left -75px top -30px / 240px auto no-repeat, linear-gradient(130deg,var(--rumira-mint-pale),var(--rumira-cream)); }
@@ -39,7 +44,20 @@ body { background: var(--cream); color: var(--green); }
 .r-btn { background: var(--rumira-ink); color: #fff; border-radius: 100px; padding-inline: 23px; transition: transform .2s ease, box-shadow .2s ease; }
 .r-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px #173b3729; }
 .r-btn.green { background: var(--rumira-lime); color: var(--rumira-ink); }
-.r-header-cta { color: var(--rumira-ink); }
+.r-header-cta { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 0 18px; border-radius: 24px; background: var(--rumira-ink); color: #fff; white-space: nowrap; transition: background .2s ease, transform .2s ease; }
+.r-header-cta:hover { background: #28665c; transform: translateY(-1px); }
+.r-header-cta:focus-visible, .r-nav-whatsapp:focus-visible { outline: 3px solid var(--rumira-turquoise); outline-offset: 3px; }
+@media (min-width: 801px) and (max-width: 1250px) {
+  .r-header { padding-inline: 3vw; }
+  .r-nav { gap: 16px; margin-right: 16px; font-size: 13px; }
+}
+@media (min-width: 801px) and (max-width: 1050px) {
+  .r-header-cta { display: none; }
+}
+@media (max-width: 800px) {
+  .r-header-cta { display: none; }
+  .r-nav.open .r-nav-whatsapp { display: inline-flex; align-items: center; justify-content: center; align-self: flex-start; padding: 12px 18px; border-radius: 24px; background: var(--rumira-ink); color: #fff; }
+}
 .r-hero-photo { background-image: linear-gradient(0deg,#173b3717,transparent),url('/product-images/fruits-apple-slices.jpg'); border-radius: 240px 240px 28px 28px; box-shadow: 18px 18px 0 var(--rumira-lime); }
 .r-hero-photo span { background: var(--rumira-gold); color: var(--rumira-ink); box-shadow: 0 7px 22px #173b372b; }
 .r-stats, .r-story, .r-page-hero.dark { background: var(--rumira-ink); }
@@ -137,6 +155,8 @@ body { background: var(--cream); color: var(--green); }
 
 @media(max-width:700px) {
   .r-logo img, .px-brand img { width: 44px; height: 44px; }
+  .rumira-wordmark { font-size: 16px; gap: 5px; }
+  .rumira-wordmark span { font-size: 10px; }
   .r-hero-photo { box-shadow: 10px 10px 0 var(--rumira-lime); }
   .px-header nav.open { background: var(--paper); }
   .px-detail-info { padding: 18px; }

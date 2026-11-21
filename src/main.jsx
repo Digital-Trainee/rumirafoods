@@ -24,7 +24,7 @@ const go = (path) => {
 };
 
 function Logo({ light = false }) {
-  return <a className="r-logo" href="/" aria-label="Rumira Foods home" onClick={(event) => { event.preventDefault(); go('/'); }}><img src={light ? '/rumira-logo-light.svg' : '/rumira-logo.svg'} alt="" width="52" height="52" /></a>;
+  return <a className="r-logo" href="/" aria-label="Rumira Foods home" onClick={(event) => { event.preventDefault(); go('/'); }}><img src={light ? '/rumira-logo-light.svg' : '/rumira-logo.svg'} alt="" width="52" height="52" /><span className="rumira-wordmark"><strong>RUMIRA</strong><span>FOODS</span></span></a>;
 }
 
 function Btn({ href, children, green = false }) {
@@ -35,7 +35,7 @@ function Btn({ href, children, green = false }) {
 function Header() {
   const [open, setOpen] = useState(false);
   const links = [['/', 'Home'], ['/about', 'About Us'], ['/products', 'Our Products'], ['/process', 'Process & Production'], ['/contact', 'Contact Us']];
-  return <header className="r-header"><Logo /><button className="r-menu" type="button" aria-label="Toggle menu" aria-expanded={open} onClick={() => setOpen(!open)}>{open ? '×' : '☰'}</button><nav className={open ? 'r-nav open' : 'r-nav'}>{links.map(([path, name]) => <a className={location.pathname === path ? 'active' : ''} href={path} key={path} onClick={(event) => { event.preventDefault(); setOpen(false); go(path); }}>{name}</a>)}</nav><a className="r-header-cta" href={wa('Hello Rumira Foods, I would like to know more about your products.')} target="_blank" rel="noreferrer">WhatsApp us ↗</a></header>;
+  return <header className="r-header"><Logo /><button className="r-menu" type="button" aria-label="Toggle menu" aria-expanded={open} onClick={() => setOpen(!open)}>{open ? '×' : '☰'}</button><nav className={open ? 'r-nav open' : 'r-nav'}>{links.map(([path, name]) => <a className={location.pathname === path ? 'active' : ''} href={path} key={path} onClick={(event) => { event.preventDefault(); setOpen(false); go(path); }}>{name}</a>)}<a className="r-nav-whatsapp" href={wa('Hello Rumira Foods, I would like to know more about your products.')} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>WhatsApp us ↗</a></nav><a className="r-header-cta" href={wa('Hello Rumira Foods, I would like to know more about your products.')} target="_blank" rel="noreferrer">WhatsApp us ↗</a></header>;
 }
 
 function Footer() {
