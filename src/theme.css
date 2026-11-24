@@ -9,6 +9,7 @@
   --line: #cde5df;
   --rumira-ink: #173b37;
   --rumira-coral: #e85b4a;
+  --rumira-coral-deep: #c84839;
   --rumira-lime: #d6e85a;
   --rumira-mint: #8fddd3;
   --rumira-mint-pale: color-mix(in srgb, var(--rumira-mint) 25%, white);
@@ -95,7 +96,7 @@ body { background: var(--cream); color: var(--green); }
 .r-footer .r-logo { color: #fff; }
 .r-footer .copyright { border-color: #4c756e; color: #b6d8cf; }
 .r-footer a:hover { color: var(--rumira-lime); }
-.r-float { background: var(--rumira-ink); color: #fff; box-shadow: 0 7px 24px #173b3729; }
+.r-float { background: var(--rumira-coral-deep); color: #fff; box-shadow: 0 7px 24px #173b3729; }
 
 /* Catalogue and product detail pages */
 .px-body { background: var(--cream); }
@@ -152,7 +153,7 @@ body { background: var(--cream); color: var(--green); }
 .px-footer-grid a:not(.px-brand), .px-footer-grid p, .px-footer-bottom { color: #d5ece5; }
 .px-footer-grid a:not(.px-brand):hover { color: var(--rumira-lime); }
 .px-footer-bottom { border-color: #4c756e; }
-.px-float { background: var(--rumira-ink); color: #fff; }
+.px-float { background: var(--rumira-coral-deep); color: #fff; }
 .px-drawer, .px-modal { background: var(--paper); }
 
 @media(max-width:700px) {
@@ -238,7 +239,7 @@ body { background: var(--cream); color: var(--green); }
   pointer-events: auto;
 }
 .rumira-contact-link svg { width: 22px; height: 22px; flex: none; }
-.rumira-contact-phone { background: var(--rumira-ink); color: #fff !important; }
+.rumira-contact-phone { background: var(--rumira-coral-deep); color: #fff !important; }
 .rumira-contact-whatsapp { background: var(--rumira-turquoise); }
 .rumira-contact-link:hover { box-shadow: 0 12px 26px #173b3745; }
 .rumira-contact-link:focus-visible { outline: 3px solid var(--rumira-coral); outline-offset: 4px; }
