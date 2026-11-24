@@ -95,7 +95,7 @@ body { background: var(--cream); color: var(--green); }
 .r-footer .r-logo { color: #fff; }
 .r-footer .copyright { border-color: #4c756e; color: #b6d8cf; }
 .r-footer a:hover { color: var(--rumira-lime); }
-.r-float { background: var(--rumira-gold); color: var(--rumira-ink); box-shadow: 0 7px 24px #173b3729; }
+.r-float { background: var(--rumira-ink); color: #fff; box-shadow: 0 7px 24px #173b3729; }
 
 /* Catalogue and product detail pages */
 .px-body { background: var(--cream); }
@@ -150,7 +150,7 @@ body { background: var(--cream); color: var(--green); }
 .px-footer-grid a:not(.px-brand), .px-footer-grid p, .px-footer-bottom { color: #d5ece5; }
 .px-footer-grid a:not(.px-brand):hover { color: var(--rumira-lime); }
 .px-footer-bottom { border-color: #4c756e; }
-.px-float { background: var(--rumira-gold); color: var(--rumira-ink); }
+.px-float { background: var(--rumira-ink); color: #fff; }
 .px-drawer, .px-modal { background: var(--paper); }
 
 @media(max-width:700px) {
@@ -236,7 +236,7 @@ body { background: var(--cream); color: var(--green); }
   pointer-events: auto;
 }
 .rumira-contact-link svg { width: 22px; height: 22px; flex: none; }
-.rumira-contact-phone { background: var(--rumira-gold); }
+.rumira-contact-phone { background: var(--rumira-ink); color: #fff !important; }
 .rumira-contact-whatsapp { background: var(--rumira-turquoise); }
 .rumira-contact-link:hover { box-shadow: 0 12px 26px #173b3745; }
 .rumira-contact-link:focus-visible { outline: 3px solid var(--rumira-coral); outline-offset: 4px; }
@@ -342,9 +342,8 @@ body { background: var(--cream); color: var(--green); }
 .r-hero .r-featured-frame .r-hero-whatsapp { position: static; display: inline-block; margin-top: 20px; color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 5px; }
 .r-hero .r-hero-copy h1 { margin: 24px 0 0; color: #fff; font-size: clamp(76px, 7.6vw, 150px); line-height: .96; letter-spacing: -.055em; }
 .r-hero .r-hero-copy h1 em { color: #a5d64e; font-style: normal; }
-.r-hero .r-hero-copy p { position: relative; max-width: 750px; margin: 50px 0 0; padding-left: 78px; color: #f0f2e9; font: 500 clamp(16px, 1.25vw, 21px)/1.55 'Fraunces', Georgia, serif; }
-.r-hero .r-hero-copy p::before { content: ''; position: absolute; top: .8em; left: 0; width: 52px; height: 1px; background: #e5eee0b3; }
-.r-hero .r-featured-arrow { position: absolute; z-index: 3; top: 53%; width: 64px; height: 64px; border: 1px solid #ffffff8c; border-radius: 50%; background: #08291faa; color: #fff; font: 42px/1 Georgia, serif; cursor: pointer; }
+.r-hero .r-hero-copy p { max-width: 750px; margin: 50px 0 0; color: #f0f2e9; font: 500 clamp(16px, 1.25vw, 21px)/1.55 'Fraunces', Georgia, serif; }
+.r-hero .r-featured-arrow { position: absolute; z-index: 3; top: 73%; width: 64px; height: 64px; border: 1px solid #ffffff8c; border-radius: 50%; background: #08291faa; color: #fff; font: 42px/1 Georgia, serif; cursor: pointer; }
 .r-hero .r-featured-prev { left: 30px; }
 .r-hero .r-featured-next { right: 30px; }
 .r-hero .r-hero-product-cta { position: absolute; z-index: 3; left: 50%; bottom: 75px; transform: translateX(-50%); display: flex; align-items: center; gap: 25px; padding: 9px 9px 9px 25px; border: 1px solid #ffffff8c; border-radius: 100px; background: #ffffff38; color: #fff; font: 700 14px 'DM Sans', sans-serif; letter-spacing: .07em; white-space: nowrap; }
@@ -360,8 +359,7 @@ body { background: var(--cream); color: var(--green); }
   .r-hero .r-featured-frame::after { background: linear-gradient(90deg, rgba(0, 31, 20, .82), rgba(0, 31, 20, .4)), linear-gradient(0deg, rgba(0, 22, 15, .62), transparent 45%); }
   .r-hero-copy { top: 17%; left: 8vw; width: 84vw; }
   .r-hero .r-hero-copy h1 { font-size: clamp(58px, 11vw, 88px); }
-  .r-hero .r-hero-copy p { max-width: 570px; margin-top: 32px; padding-left: 56px; font-size: 17px; }
-  .r-hero .r-hero-copy p::before { width: 36px; }
+  .r-hero .r-hero-copy p { max-width: 570px; margin-top: 32px; font-size: 17px; }
   .r-hero .r-featured-arrow { top: 63%; width: 44px; height: 44px; font-size: 32px; }
   .r-hero .r-featured-prev { left: 4vw; }
   .r-hero .r-featured-next { right: 4vw; }
