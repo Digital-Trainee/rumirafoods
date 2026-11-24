@@ -119,6 +119,8 @@ body { background: var(--cream); color: var(--green); }
 .px-basket-btn { background: var(--paper); }
 .px-basket-btn span { background: var(--rumira-gold); color: var(--rumira-ink); }
 .px-hero { background: url('/decor-product-icons.svg') right 9% bottom -45px / 120px auto no-repeat, url('/decor-food-linework.svg') right 0 top 2px / 145px auto no-repeat, linear-gradient(115deg,var(--rumira-mint),var(--rumira-cream)); }
+.px-catalogue { padding-top: 32px; }
+.px-catalogue > .px-toolbar { margin-top: 0; }
 .px-hero-subtitle { font: 600 clamp(25px, 3vw, 38px)/1.15 'Fraunces', Georgia, serif; color: var(--rumira-ink) !important; margin: 20px 0 14px !important; }
 .px-hero small, .px-intro small, .px-group-heading small, .px-related-title small,
 .px-eyebrow { color: var(--rumira-ink); }
