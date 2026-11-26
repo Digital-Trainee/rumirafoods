@@ -8,16 +8,14 @@ export const groups = [
   { id: 'snacks', name: 'Savoury snacks', title: 'Savoury snacks', audience: 'Retail snacks', intro: 'Ingredient transparency · Controlled processing · Flavour innovation' },
   { id: 'seasonings', name: 'Seasonings & masalas', title: 'Seasonings & masala products', audience: 'Everyday flavour', intro: 'Aromatic ingredients · Controlled blending · Consistent seasoning performance' },
   { id: 'botanicals', name: 'Nutraceuticals', title: 'Nutraceuticals', audience: '', intro: 'Verified sourcing · Identity testing · Defined specifications' },
-  { id: 'coffee-dips', name: 'Coffee easy dips', title: 'Functional coffee dips', audience: 'Easy-brew coffee', intro: 'Ingredient-led blends · Convenient dip bags · Everyday brewing' },
-  { id: 'flavoured-coffee', name: 'Flavoured coffee', title: 'Flavoured coffee dips', audience: 'Easy-brew coffee', intro: 'Familiar flavours · Aromatic coffee · Convenient dip bags' },
-  { id: 'herbal-teas', name: 'Herbal dip teas', title: 'Herbal dip teas & green teas', audience: 'Tea and infusions', intro: 'Botanical blends · Easy-to-prepare dips · Gentle everyday rituals' }
+  { id: 'herbal-teas', name: 'Tea', title: 'Tea collection', audience: 'Tea and infusions', intro: 'Botanical blends · Everyday rituals · Nine distinctive teas' },
+  { id: 'coffee-dips', name: 'Coffee', title: 'Coffee collection', audience: 'Coffee blends', intro: 'Aromatic coffee · Botanical ingredients · Five distinctive blends' }
 ];
 
 export const catalog = [...productData, ...dipProducts].map((product) => ({ ...product, group: groups.find((group) => group.id === product.groupId) }));
 const categoryImages = {
-  'coffee-dips': '/category-images/functional-coffee.jpg',
-  'flavoured-coffee': '/dip-product-images/flavoured-coffee-cardamom.jpg',
-  'herbal-teas': '/category-images/herbal-tea.jpg'
+  'coffee-dips': '/product-images/coffee-ashwagandha.jpg',
+  'herbal-teas': '/product-images/tea-ashwagandha-calm.jpg'
 };
 
 export const groupImage = (id) => categoryImages[id] || catalog.find((product) => product.groupId === id)?.image;

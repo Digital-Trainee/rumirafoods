@@ -46,7 +46,7 @@ const portfolioLabels = {
   powders: { audience: 'Dehydrated', title: 'Vegetable powders' },
   snacks: { audience: 'Savoury RTE', title: 'Healthy snacks' },
   botanicals: { audience: 'Ayurvedic', title: 'Nutraceutical powders' },
-  'coffee-dips': { audience: 'Superbrew', title: 'Functional tea & coffee' }
+  'coffee-dips': { audience: 'Coffee blends', title: 'Coffee collection' }
 };
 
 function Home() {

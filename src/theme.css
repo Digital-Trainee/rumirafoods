@@ -141,6 +141,9 @@ body { background: var(--cream); color: var(--green); }
 .px-plus:hover { background: var(--rumira-turquoise); color: var(--rumira-ink); }
 .px-photo-large { border-radius: 210px 210px 24px 24px; }
 .px-detail-info { background: var(--paper); padding: 26px; border-radius: 24px; }
+.px-product-notes { display: grid; gap: 14px; margin: 20px 0; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--rumira-mint-pale); }
+.px-product-notes small { display: block; margin-bottom: 5px; color: var(--rumira-ink); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
+.px-product-notes p { margin: 0; color: var(--rumira-ink); font-size: 14px; line-height: 1.6; }
 .px-regulatory { background: var(--rumira-cream); border-color: var(--rumira-gold); }
 .px-secondary { background: #d6e85a; color: var(--rumira-ink); border-radius: 100px; }
 .px-banner small { color: var(--rumira-ink); }
@@ -472,6 +475,8 @@ body { background: var(--cream); color: var(--green); }
 .r-process-benefits li::before { content: '✳'; color: var(--rumira-coral); margin-right: 14px; }
 .px-photo-dip, .px-photo-dip img { background: #faf8f3; }
 .px-photo-dip img { object-fit: contain; }
+.px-photo-client, .px-photo-client img { background: #f7f1e9; }
+.px-photo-client img { object-fit: contain; }
 
 /* Customer words are browsable on the home page and paired with their products. */
 .rumira-testimonials { padding: 90px 11vw 100px; background: url('/decor-food-linework.svg') right 2% top 10px / 155px auto no-repeat, linear-gradient(120deg, var(--rumira-mint-pale) 15%, var(--rumira-mint) 100%); overflow: hidden; }

@@ -32,7 +32,7 @@ function render(path) {
     ['property', 'og:description', seo.description],
     ['property', 'og:url', seo.url],
     ['property', 'og:image', seo.imageUrl],
-    ['property', 'og:image:type', seo.product ? 'image/jpeg' : 'image/png'],
+    ['property', 'og:image:type', seo.imageUrl.toLowerCase().split('?')[0].endsWith('.png') ? 'image/png' : 'image/jpeg'],
     ['property', 'og:image:alt', seo.imageAlt],
     ['name', 'twitter:card', 'summary_large_image'],
     ['name', 'twitter:title', seo.title],

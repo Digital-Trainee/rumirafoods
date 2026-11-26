@@ -1,93 +1,128 @@
 [
-    {
-        "id":  "coffee-dips-ashwagandha",
-        "name":  "Ashwagandha Coffee Dip",
-        "groupId":  "coffee-dips",
-        "description":  "A smooth, aromatic coffee blend with ashwagandha, bringing a distinctive botanical touch to your everyday coffee ritual. Convenient dip bags make every cup simple to prepare.",
-        "image":  "/dip-product-images/coffee-dips-ashwagandha.jpg"
-    },
-    {
-        "id":  "coffee-dips-herbal",
-        "name":  "Herbal Coffee Dip",
-        "groupId":  "coffee-dips",
-        "description":  "A comforting coffee blend with selected herbs, a rich aroma and a smooth, rounded taste. An easy-to-brew option for those who enjoy a herbal twist on classic coffee.",
-        "image":  "/dip-product-images/coffee-dips-herbal.jpg"
-    },
-    {
-        "id":  "coffee-dips-shilajit",
-        "name":  "Shilajit Coffee Dip",
-        "groupId":  "coffee-dips",
-        "description":  "A bold, aromatic coffee blend featuring shilajit for a distinctive, ingredient-led twist on your everyday brew.",
-        "image":  "/dip-product-images/coffee-dips-shilajit.jpg"
-    },
-    {
-        "id":  "coffee-dips-dark-roast",
-        "name":  "Dark Roast Coffee Dip",
-        "groupId":  "coffee-dips",
-        "description":  "Deep, intense and full-bodied, this dark roast delivers a bold aroma and lingering finish for those who enjoy a stronger cup of coffee.",
-        "image":  "/dip-product-images/coffee-dips-dark-roast.jpg"
-    },
-    {
-        "id":  "coffee-dips-turmeric-pepper",
-        "name":  "Turmeric Pepper Coffee Dip",
-        "groupId":  "coffee-dips",
-        "description":  "An unconventional blend of coffee, turmeric and black pepper, bringing earthy notes and a gentle spice character to your cup.",
-        "image":  "/dip-product-images/coffee-dips-turmeric-pepper.jpg"
-    },
-    {
-        "id":  "flavoured-coffee-berry",
-        "name":  "Berry Coffee Dip",
-        "groupId":  "flavoured-coffee",
-        "description":  "A fruity, aromatic coffee blend with berry-inspired flavour notes, offering a refreshing twist on your regular coffee ritual.",
-        "image":  "/dip-product-images/flavoured-coffee-berry.jpg"
-    },
-    {
-        "id":  "flavoured-coffee-orange",
-        "name":  "Orange Coffee Dip",
-        "groupId":  "flavoured-coffee",
-        "description":  "Bright citrus notes meet rich coffee in this distinctive blend, creating a fragrant cup with a fresh orange-inspired finish.",
-        "image":  "/dip-product-images/flavoured-coffee-orange.jpg"
-    },
-    {
-        "id":  "flavoured-coffee-cardamom",
-        "name":  "Cardamom Coffee Dip",
-        "groupId":  "flavoured-coffee",
-        "description":  "A warm, aromatic blend that pairs coffee with the familiar fragrance of cardamom for a refined take on a classic flavour combination.",
-        "image":  "/dip-product-images/flavoured-coffee-cardamom.jpg"
-    },
-    {
-        "id":  "flavoured-coffee-chocolate",
-        "name":  "Chocolate Coffee Dip",
-        "groupId":  "flavoured-coffee",
-        "description":  "Rich coffee meets indulgent chocolate notes in a smooth, satisfying blend made for those who enjoy a hint of cocoa in their cup.",
-        "image":  "/dip-product-images/flavoured-coffee-chocolate.jpg"
-    },
-    {
-        "id":  "herbal-teas-ashwagandha-green",
-        "name":  "Ashwagandha Green Tea",
-        "groupId":  "herbal-teas",
-        "description":  "A light green tea blend featuring ashwagandha, offering a gentle botanical note in an easy-to-prepare tea dip.",
-        "image":  "/dip-product-images/herbal-teas-ashwagandha-green.jpg"
-    },
-    {
-        "id":  "herbal-teas-turmeric-ginger",
-        "name":  "Turmeric Ginger Green Tea",
-        "groupId":  "herbal-teas",
-        "description":  "Green tea meets the earthy warmth of turmeric and the lively spice of ginger in a comforting, aromatic blend.",
-        "image":  "/dip-product-images/herbal-teas-turmeric-ginger.jpg"
-    },
-    {
-        "id":  "herbal-teas-ginger-peppermint",
-        "name":  "Ginger Peppermint Green Tea",
-        "groupId":  "herbal-teas",
-        "description":  "A refreshing blend of green tea, ginger and peppermint, combining warming spice with a clean, cooling mint finish.",
-        "image":  "/dip-product-images/herbal-teas-ginger-peppermint.jpg"
-    },
-    {
-        "id":  "herbal-teas-chamomile-lavender",
-        "name":  "Chamomile Lavender Tea",
-        "groupId":  "herbal-teas",
-        "description":  "A delicate herbal infusion with chamomile and lavender, bringing floral aromas and a gentle flavour to your tea ritual.",
-        "image":  "/dip-product-images/herbal-teas-chamomile-lavender.jpg"
-    }
+  {
+    "id": "herbal-teas-ashwagandha-calm",
+    "name": "Ashwagandha Calm Tea",
+    "groupId": "herbal-teas",
+    "description": "A botanical tea blend with ashwagandha, chamomile, lavender, rose.",
+    "ingredients": "Ashwagandha, Chamomile, Lavender, Rose",
+    "benefits": "Supports relaxation, stress management and a calming daily wellness ritual.",
+    "image": "/product-images/tea-ashwagandha-calm.jpg"
+  },
+  {
+    "id": "herbal-teas-detox-herbal",
+    "name": "Detox Herbal Tea",
+    "groupId": "herbal-teas",
+    "description": "A botanical tea blend with hibiscus, dandelion, mint, amla.",
+    "ingredients": "Hibiscus, Dandelion, Mint, Amla",
+    "benefits": "Refreshing antioxidant-rich infusion supporting everyday hydration and wellness.",
+    "image": "/product-images/tea-detox-herbal.jpg"
+  },
+  {
+    "id": "herbal-teas-gut-health",
+    "name": "Gut Health Tea",
+    "groupId": "herbal-teas",
+    "description": "A botanical tea blend with fennel, peppermint, ginger, ajwain, lemongrass.",
+    "ingredients": "Fennel, Peppermint, Ginger, Ajwain, Lemongrass",
+    "benefits": "Supports digestive comfort and helps with occasional bloating.",
+    "image": "/product-images/tea-gut-health.jpg"
+  },
+  {
+    "id": "herbal-teas-butterfly-pea-blue",
+    "name": "Butterfly Pea Blue Tea",
+    "groupId": "herbal-teas",
+    "description": "A botanical tea blend with butterfly pea, rose, lemongrass, mint, hibiscus.",
+    "ingredients": "Butterfly Pea, Rose, Lemongrass, Mint, Hibiscus",
+    "benefits": "Naturally vibrant blue-purple infusion with antioxidant-rich botanicals.",
+    "image": "/product-images/tea-butterfly-pea-blue.jpg"
+  },
+  {
+    "id": "herbal-teas-immunity-blend",
+    "name": "Immunity Blend Tea",
+    "groupId": "herbal-teas",
+    "description": "A botanical tea blend with tulsi, amla, ginger, turmeric, black pepper.",
+    "ingredients": "Tulsi, Amla, Ginger, Turmeric, Black Pepper",
+    "benefits": "Combines traditional wellness ingredients with antioxidant properties.",
+    "image": "/product-images/tea-immunity-blend.jpg"
+  },
+  {
+    "id": "herbal-teas-womens-wellness",
+    "name": "Women’s Wellness Tea",
+    "groupId": "herbal-teas",
+    "description": "A botanical tea blend with rose, hibiscus, fennel, spearmint, ginger.",
+    "ingredients": "Rose, Hibiscus, Fennel, Spearmint, Ginger",
+    "benefits": "A floral herbal infusion for daily women's wellness and self-care.",
+    "image": "/product-images/tea-womens-wellness.jpg"
+  },
+  {
+    "id": "herbal-teas-caffeine-free-energy",
+    "name": "Caffeine-Free Energy Tea",
+    "groupId": "herbal-teas",
+    "description": "A botanical tea blend with rooibos, orange peel, ginger, cinnamon, lemongrass.",
+    "ingredients": "Rooibos, Orange Peel, Ginger, Cinnamon, Lemongrass",
+    "benefits": "Naturally caffeine-free, refreshing and warming everyday vitality blend.",
+    "image": "/product-images/tea-caffeine-free-energy.jpg"
+  },
+  {
+    "id": "herbal-teas-metabolism-blend",
+    "name": "Metabolism Blend Tea",
+    "groupId": "herbal-teas",
+    "description": "A botanical tea blend with green tea, cinnamon, ginger, spearmint, lemongrass.",
+    "ingredients": "Green Tea, Cinnamon, Ginger, Spearmint, Lemongrass",
+    "benefits": "Supports an active lifestyle with a refreshing, antioxidant-rich infusion.",
+    "image": "/product-images/tea-metabolism-blend.jpg"
+  },
+  {
+    "id": "herbal-teas-focus",
+    "name": "Focus Tea",
+    "groupId": "herbal-teas",
+    "description": "A botanical tea blend with brahmi, rosemary, peppermint, green tea, gotu kola.",
+    "ingredients": "Brahmi, Rosemary, Peppermint, Green Tea, Gotu Kola",
+    "benefits": "A refreshing botanical blend designed for focus and mental wellness.",
+    "image": "/product-images/tea-focus.jpg"
+  },
+  {
+    "id": "coffee-dips-ashwagandha",
+    "name": "Ashwagandha Coffee",
+    "groupId": "coffee-dips",
+    "description": "A coffee blend with ashwagandha, cinnamon, cardamom, cacao.",
+    "ingredients": "Coffee, Ashwagandha, Cinnamon, Cardamom, Cacao",
+    "benefits": "Combines traditional adaptogenic botanicals with coffee for a distinctive daily wellness experience.",
+    "image": "/product-images/coffee-ashwagandha.jpg"
+  },
+  {
+    "id": "coffee-dips-shilajit",
+    "name": "Shilajit Coffee",
+    "groupId": "coffee-dips",
+    "description": "A coffee blend with purified shilajit extract, cacao, cinnamon, cardamom.",
+    "ingredients": "Coffee, Purified Shilajit Extract, Cacao, Cinnamon, Cardamom",
+    "benefits": "Premium coffee positioned around traditional vitality and men's wellness.",
+    "image": "/product-images/coffee-shilajit.jpg"
+  },
+  {
+    "id": "coffee-dips-turmeric-pepper",
+    "name": "Turmeric Pepper Immunity Coffee",
+    "groupId": "coffee-dips",
+    "description": "A coffee blend with turmeric, black pepper, ginger, cinnamon.",
+    "ingredients": "Coffee, Turmeric, Black Pepper, Ginger, Cinnamon",
+    "benefits": "Combines traditional spices and antioxidant-rich ingredients in an aromatic wellness coffee.",
+    "image": "/product-images/coffee-turmeric-pepper-immunity.jpg"
+  },
+  {
+    "id": "coffee-dips-saffron-royal",
+    "name": "Saffron Royal Coffee",
+    "groupId": "coffee-dips",
+    "description": "A coffee blend with saffron, cardamom, vanilla, cinnamon.",
+    "ingredients": "Coffee, Saffron, Cardamom, Vanilla, Cinnamon",
+    "benefits": "A premium aromatic coffee offering an indulgent and luxurious daily experience.",
+    "image": "/product-images/coffee-saffron-royal.jpg"
+  },
+  {
+    "id": "coffee-dips-focus",
+    "name": "Focus Coffee",
+    "groupId": "coffee-dips",
+    "description": "A coffee blend with brahmi, lion's mane mushroom extract, cacao, cinnamon.",
+    "ingredients": "Coffee, Brahmi, Lion's Mane Mushroom Extract, Cacao, Cinnamon",
+    "benefits": "Combines coffee with traditional and functional botanicals for a focus-oriented coffee experience.",
+    "image": "/product-images/coffee-focus.jpg"
+  }
 ]

@@ -14,8 +14,16 @@ for (const page of pages) {
   await access(join(dist, new URL(image).pathname)).catch(() => errors.push(`${page}: missing image ${image}`));
   if (page === 'meta/thank-you.html' && !html.includes('content="noindex, nofollow"')) errors.push('Thank-you page must be noindex');
 }
-const ashwagandha = await readFile(join(dist, 'meta/products/botanicals-ashwagandha.html'), 'utf8');
-if (!ashwagandha.includes('/product-images/botanicals-ashwagandha.jpg')) errors.push('Ashwagandha image metadata is incorrect');
+const products = [
+  ...JSON.parse(await readFile('src/catalog-data.json', 'utf8')),
+  ...JSON.parse(await readFile('src/dip-products.json', 'utf8'))
+];
+for (const product of products) {
+  const html = await readFile(join(dist, `meta/products/${product.id}.html`), 'utf8');
+  if (!html.includes(`/product-images/${product.image.split('/').pop()}`)) errors.push(`${product.id}: image metadata is incorrect`);
+  const mime = product.image.endsWith('.png') ? 'image/png' : 'image/jpeg';
+  if (!html.includes(`property="og:image:type" content="${mime}"`)) errors.push(`${product.id}: image MIME type is incorrect`);
+}
 const sitemap = await readFile(join(dist, 'sitemap.xml'), 'utf8');
 if ((sitemap.match(/<loc>/g) || []).length !== pages.length - 1) errors.push('Sitemap URL count does not match indexable pages');
 console.log(`Checked ${pages.length} page metadata files and ${pages.length - 1} sitemap URLs: ${errors.length} errors.`);
