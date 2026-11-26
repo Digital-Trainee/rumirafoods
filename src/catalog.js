@@ -16,7 +16,7 @@ export const groups = [
 export const catalog = [...productData, ...dipProducts].map((product) => ({ ...product, group: groups.find((group) => group.id === product.groupId) }));
 const categoryImages = {
   'coffee-dips': '/product-images/coffee-ashwagandha.jpg',
-  'flavoured-coffee': '/dip-product-images/flavoured-coffee-cardamom.jpg',
+  'flavoured-coffee': '/product-images/flavoured-coffee-cardamom-client.jpg',
   'herbal-teas': '/product-images/tea-ashwagandha-calm.jpg'
 };
 
