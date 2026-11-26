@@ -16,7 +16,10 @@ function Brand({ navigate, light = false }) {
 function Photo({ product, large }) {
   const isDipProduct = ['coffee-dips', 'herbal-teas'].includes(product.groupId);
   const isClientPhoto = product.image.includes('-client.') || ['snacks-chips-combo', 'botanicals-black-haldi'].includes(product.id);
-  return <div className={`px-photo${large ? ' px-photo-large' : ''}${isDipProduct ? ' px-photo-dip' : ''}${isClientPhoto ? ' px-photo-client' : ''}`}>
+  const isPortraitCoffee = ['coffee-dips-focus', 'coffee-dips-saffron-royal'].includes(product.id);
+  const isWidePowder = product.groupId === 'powders' && isClientPhoto && !['powders-palak-powder', 'powders-mushroom-powder'].includes(product.id);
+  const shape = isWidePowder ? 'wide' : isPortraitCoffee ? 'portrait' : product.groupId === 'coffee-dips' ? 'square' : isClientPhoto || product.groupId === 'herbal-teas' ? 'landscape' : '';
+  return <div className={`px-photo${large ? ' px-photo-large' : ''}${isDipProduct ? ' px-photo-dip' : ''}${isClientPhoto ? ' px-photo-client' : ''}${shape ? ` px-photo-${shape}` : ''}`}>
     <img src={product.image} alt={product.imageAlt || product.name} loading={large ? 'eager' : 'lazy'} />
   </div>;
 }

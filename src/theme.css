@@ -474,9 +474,25 @@ body { background: var(--cream); color: var(--green); }
 .r-process-benefits li { padding: 17px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
 .r-process-benefits li::before { content: '✳'; color: var(--rumira-coral); margin-right: 14px; }
 .px-photo-dip, .px-photo-dip img { background: #faf8f3; }
-.px-photo-dip img { object-fit: contain; }
+.px-photo-dip img { object-fit: cover; }
 .px-photo-client, .px-photo-client img { background: #f7f1e9; }
-.px-photo-client img { object-fit: contain; }
+.px-photo-client img { object-fit: cover; }
+.px-card-image > .px-photo-wide,
+.px-card-image > .px-photo-landscape,
+.px-card-image > .px-photo-square,
+.px-card-image > .px-photo-portrait { height: auto; }
+.px-card-image > .px-photo-wide { aspect-ratio: 2 / 1; }
+.px-card-image > .px-photo-landscape { aspect-ratio: 3 / 2; }
+.px-card-image > .px-photo-square,
+.px-card-image > .px-photo-portrait { aspect-ratio: 1 / 1; }
+.px-detail > .px-photo-large.px-photo-wide,
+.px-detail > .px-photo-large.px-photo-landscape,
+.px-detail > .px-photo-large.px-photo-square,
+.px-detail > .px-photo-large.px-photo-portrait { height: auto; }
+.px-detail > .px-photo-large.px-photo-wide { aspect-ratio: 2 / 1; }
+.px-detail > .px-photo-large.px-photo-landscape { aspect-ratio: 3 / 2; }
+.px-detail > .px-photo-large.px-photo-square { aspect-ratio: 1 / 1; }
+.px-detail > .px-photo-large.px-photo-portrait { aspect-ratio: 4 / 5; }
 
 /* Customer words are browsable on the home page and paired with their products. */
 .rumira-testimonials { padding: 90px 11vw 100px; background: url('/decor-food-linework.svg') right 2% top 10px / 155px auto no-repeat, linear-gradient(120deg, var(--rumira-mint-pale) 15%, var(--rumira-mint) 100%); overflow: hidden; }
