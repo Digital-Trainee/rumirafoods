@@ -124,5 +124,33 @@
     "ingredients": "Coffee, Brahmi, Lion's Mane Mushroom Extract, Cacao, Cinnamon",
     "benefits": "Combines coffee with traditional and functional botanicals for a focus-oriented coffee experience.",
     "image": "/product-images/coffee-focus.jpg"
+  },
+  {
+    "id": "flavoured-coffee-berry",
+    "name": "Berry Coffee Dip",
+    "groupId": "flavoured-coffee",
+    "description": "A fruity, aromatic coffee blend with berry-inspired flavour notes, offering a refreshing twist on your regular coffee ritual.",
+    "image": "/dip-product-images/flavoured-coffee-berry.jpg"
+  },
+  {
+    "id": "flavoured-coffee-orange",
+    "name": "Orange Coffee Dip",
+    "groupId": "flavoured-coffee",
+    "description": "Bright citrus notes meet rich coffee in this distinctive blend, creating a fragrant cup with a fresh orange-inspired finish.",
+    "image": "/dip-product-images/flavoured-coffee-orange.jpg"
+  },
+  {
+    "id": "flavoured-coffee-cardamom",
+    "name": "Cardamom Coffee Dip",
+    "groupId": "flavoured-coffee",
+    "description": "A warm, aromatic blend that pairs coffee with the familiar fragrance of cardamom for a refined take on a classic flavour combination.",
+    "image": "/dip-product-images/flavoured-coffee-cardamom.jpg"
+  },
+  {
+    "id": "flavoured-coffee-chocolate",
+    "name": "Chocolate Coffee Dip",
+    "groupId": "flavoured-coffee",
+    "description": "Rich coffee meets indulgent chocolate notes in a smooth, satisfying blend made for those who enjoy a hint of cocoa in their cup.",
+    "image": "/dip-product-images/flavoured-coffee-chocolate.jpg"
   }
 ]

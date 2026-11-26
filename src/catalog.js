@@ -9,12 +9,14 @@ export const groups = [
   { id: 'seasonings', name: 'Seasonings & masalas', title: 'Seasonings & masala products', audience: 'Everyday flavour', intro: 'Aromatic ingredients · Controlled blending · Consistent seasoning performance' },
   { id: 'botanicals', name: 'Nutraceuticals', title: 'Nutraceuticals', audience: '', intro: 'Verified sourcing · Identity testing · Defined specifications' },
   { id: 'herbal-teas', name: 'Tea', title: 'Tea collection', audience: 'Tea and infusions', intro: 'Botanical blends · Everyday rituals · Nine distinctive teas' },
-  { id: 'coffee-dips', name: 'Coffee', title: 'Coffee collection', audience: 'Coffee blends', intro: 'Aromatic coffee · Botanical ingredients · Five distinctive blends' }
+  { id: 'coffee-dips', name: 'Coffee', title: 'Coffee collection', audience: 'Coffee blends', intro: 'Aromatic coffee · Botanical ingredients · Five distinctive blends' },
+  { id: 'flavoured-coffee', name: 'Flavoured coffee', title: 'Flavoured coffee dips', audience: 'Easy-brew coffee', intro: 'Berry · Orange · Cardamom · Chocolate' }
 ];
 
 export const catalog = [...productData, ...dipProducts].map((product) => ({ ...product, group: groups.find((group) => group.id === product.groupId) }));
 const categoryImages = {
   'coffee-dips': '/product-images/coffee-ashwagandha.jpg',
+  'flavoured-coffee': '/dip-product-images/flavoured-coffee-cardamom.jpg',
   'herbal-teas': '/product-images/tea-ashwagandha-calm.jpg'
 };
 

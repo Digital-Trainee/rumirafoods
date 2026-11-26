@@ -20,7 +20,7 @@ const products = [
 ];
 for (const product of products) {
   const html = await readFile(join(dist, `meta/products/${product.id}.html`), 'utf8');
-  if (!html.includes(`/product-images/${product.image.split('/').pop()}`)) errors.push(`${product.id}: image metadata is incorrect`);
+  if (!html.includes(product.image)) errors.push(`${product.id}: image metadata is incorrect`);
   const mime = product.image.endsWith('.png') ? 'image/png' : 'image/jpeg';
   if (!html.includes(`property="og:image:type" content="${mime}"`)) errors.push(`${product.id}: image MIME type is incorrect`);
 }
