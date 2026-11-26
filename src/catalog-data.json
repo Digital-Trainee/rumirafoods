@@ -196,20 +196,6 @@
     "image": "/product-images/seasonings-chilli-flakes.jpg"
   },
   {
-    "id": "seasonings-parsley-flakes",
-    "name": "Parsley Flakes",
-    "groupId": "seasonings",
-    "description": "Carefully dried parsley is processed into a convenient herb format for consistent culinary use. Suitable for soups, pasta, dressings, savoury bakery products and food-manufacturing applications.",
-    "image": "/product-images/seasonings-parsley-flakes.jpg"
-  },
-  {
-    "id": "seasonings-oregano-flakes",
-    "name": "Oregano Flakes",
-    "groupId": "seasonings",
-    "description": "Dried oregano is handled and packed to protect its characteristic aromatic profile. A versatile seasoning ingredient for pizza, pasta, sauces, marinades and ready-to-use culinary blends.",
-    "image": "/product-images/seasonings-oregano-flakes.jpg"
-  },
-  {
     "id": "seasonings-thetcha-powder",
     "name": "Thetcha Powder",
     "groupId": "seasonings",
