@@ -1,4 +1,4 @@
-export const defaultSiteUrl = 'https://rumirafoods.vercel.app';
+export const defaultSiteUrl = 'https://rumirafoods.com';
 
 const pageDetails = {
   '/': {
